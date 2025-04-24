@@ -1,6 +1,5 @@
 ---
 title: Um Artigo Científico de Exemplo
-description: Este é um exemplo de artigo científico com todos os campos preenchidos.
 pubDate: 2025-04-24T10:00:00.000Z
 heroImage: https://img.freepik.com/vetores-gratis/ilustracao-de-protecao-ambiental-em-aquarela_23-2150067901.jpg?semt=ais_hybrid&w=740
 summary: Este artigo aborda um exemplo fictício para demonstrar a configuração de artigos científicos no site.

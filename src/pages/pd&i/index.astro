@@ -35,7 +35,7 @@ const articles = (await getCollection('articles')).sort(
 	>
 		<div id="project" class="w-full article">
 			<h3 class="font-semibold">Estrutura do projeto</h3>
-			<div class="w-1/2 mx-auto">
+			<div class="mx-auto w-1/2">
 				<ProjectStructure />
 			</div>
 		</div>
@@ -45,8 +45,8 @@ const articles = (await getCollection('articles')).sort(
 			<h3 class="font-semibold">Publicações científicas</h3>
 			{
 				articles.map((article) => (
-					<li class=" flex flex-col justify-center items-center  mx-auto ">
-						<a href={article.data.link} class="">
+					<li class="w-full flex flex-col justify-center items-center  mx-auto ">
+						<a href={article.data.link} class="w-full">
 							<ArticlePost {...article.data} />
 						</a>
 					</li>

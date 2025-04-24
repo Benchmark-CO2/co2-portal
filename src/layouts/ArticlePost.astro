@@ -15,7 +15,7 @@ const { title, heroImage, pubDate, authors } = Astro.props;
     alt={`Imagem principal de ${title}`}
     class="w-36 h-full object-cover max-md:w-full max-md:h-36"
   />
-  <div class="p-4 h-full flex-1 flex flex-col justify-between">
+  <div class="p-4 h-full flex-1 flex flex-col justify-between w-full">
     <p>
       <h2 class="text-lg font-semibold text-foreground">{title}</h2>
       <FormattedDate date={pubDate} />

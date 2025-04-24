@@ -24,6 +24,8 @@ collections:
     folder: "src/content/articles"
     create: true
     slug: "{{slug}}"
+    format: "frontmatter"
+    extension: "md"
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Resumo", name: "summary", widget: "text" }
