@@ -19,3 +19,21 @@ collections:
       - { label: "Data de Publicação", name: "pubDate", widget: "datetime" }
       - { label: "Imagem Principal", name: "heroImage", widget: "image" }
       - { label: "Conteúdo", name: "body", widget: "markdown" }
+  - name: "artigos"
+    label: "Artigos"
+    folder: "src/content/articles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Resumo", name: "summary", widget: "text" }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }
+      - { label: "Imagem Principal", name: "heroImage", widget: "image" }
+      - { label: "Data de Publicação", name: "pubDate", widget: "datetime" }
+      - { label: "Link", name: "link", widget: "string" }
+      - label: "Autores"
+        name: "authors"
+        widget: "list"
+        fields:
+          - { label: "Nome", name: "name", widget: "string" }
+          - { label: "Imagem", name: "image", widget: "image" }
