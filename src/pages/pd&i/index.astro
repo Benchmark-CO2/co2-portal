@@ -1,0 +1,70 @@
+---
+import { getCollection } from 'astro:content';
+import Footer from '../../components/Footer.astro';
+import ProjectStructure from '../../components/ProjectStructure.astro';
+import ArticlePost from '../../layouts/ArticlePost.astro';
+import Layout from '../../layouts/Layout.astro';
+
+const articles = (await getCollection('articles')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<Layout>
+	<script is:client="load">
+		document.addEventListener('DOMContentLoaded', () => {
+			const modal = document.getElementById('modal');
+			const modalBackdrop = document.getElementById('modal-backdrop');
+			const project = document.getElementById('project');
+			const openModal = () => modal?.classList.remove('hidden');
+			const closeModal = () => modal?.classList.add('hidden');
+
+			// Abrir modal ao clicar no projeto
+			project?.addEventListener('click', openModal);
+
+			// Fechar modal ao clicar no backdrop
+			modalBackdrop?.addEventListener('click', (e) => {
+				if (e.target === modalBackdrop) {
+					closeModal();
+				}
+			});
+		});
+	</script>
+	<section
+		class="flex max-md:flex-col max-md:gap-10 p-4 max-md:p-2 pt-10 h-full"
+	>
+		<div id="project" class="w-full article">
+			<h3 class="font-semibold">Estrutura do projeto</h3>
+			<div class="w-1/2 mx-auto">
+				<ProjectStructure />
+			</div>
+		</div>
+		<ul
+			class="flex flex-col gap-8 list-none m-0 p-0 w-1/2 max-md:w-full ml-auto max-h-[900px] overflow-auto border-l-4 border-l-foreground/10 pl-4 pr-2 max-md:pl-0 max-md:border-l-0 max-md:pt-2 max-md:mt-0"
+		>
+			<h3 class="font-semibold">Publicações científicas</h3>
+			{
+				articles.map((article) => (
+					<li class=" flex flex-col justify-center items-center  mx-auto ">
+						<a href={article.data.link} class="">
+							<ArticlePost {...article.data} />
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</section>
+	<div id="modal" class="hidden transition">
+		<div
+			id="modal-backdrop"
+			class="fixed z-60 inset-0 bg-black/50 backdrop-blur-sm flex justify-center items-center"
+		>
+			<div
+				class="bg-neutral-700 w-[55%] h-fit rounded-lg shadow-lg flex flex-col justify-center items-center max-md:w-11/12"
+			>
+				<ProjectStructure fullImage={true} />
+			</div>
+		</div>
+	</div>
+	<Footer />
+</Layout>

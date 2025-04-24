@@ -1,0 +1,55 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+
+type Props = CollectionEntry<'articles'>['data'];
+
+const { title, heroImage, pubDate, authors } = Astro.props;
+---
+
+<div
+  class="flex rounded-lg overflow-hidden shadow-sm h-62 border border-foreground/40 max-md:flex-col max-md:h-fit"
+>
+  <img
+    src={heroImage}
+    alt={`Imagem principal de ${title}`}
+    class="w-36 h-full object-cover max-md:w-full max-md:h-36"
+  />
+  <div class="p-4 h-full flex-1 flex flex-col justify-between">
+    <p>
+      <h2 class="text-lg font-semibold text-foreground">{title}</h2>
+      <FormattedDate date={pubDate} />
+    </p>
+    <div class="flex flex-col gap-2 mt-4">
+      {
+        authors.length > 0 ? (
+          <h3 class="text-sm text-foreground">
+            Autor{authors.length > 1 ? 'es' : ''}:
+          </h3>
+        ) : null
+      }
+
+      <ul
+        class="flex justify-start list-none gap-2 max-w-[400px] max-md:max-w-[320px] overflow-auto mx-auto"
+      >
+        {
+          authors.map((author) => (
+            <li
+              class="flex flex-col items-center gap-2 w-16 min-w-16"
+              key={author.name}
+            >
+              <img
+                src={author.thumbnail}
+                alt={`Foto de ${author.name}`}
+                class="w-12 h-16 rounded-md object-cover select-none"
+              />
+              <span class="text-sm text-foreground/70 text-center">
+                {author.name}
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</div>
