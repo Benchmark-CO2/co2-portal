@@ -4,7 +4,7 @@ description: Este é um exemplo de artigo científico com todos os campos preenc
 pubDate: 2025-04-24T10:00:00.000Z
 heroImage: https://img.freepik.com/vetores-gratis/ilustracao-de-protecao-ambiental-em-aquarela_23-2150067901.jpg?semt=ais_hybrid&w=740
 summary: Este artigo aborda um exemplo fictício para demonstrar a configuração de artigos científicos no site.
-link: https://photos.xgroovy.com/contents/albums/sources/293000/293572/290071.jpg
+link: https://www.google.com
 authors:
   - name: Dr. João Silva
     thumbnail: https://cdn.pixabay.com/photo/2012/04/26/19/47/man-42934_1280.png

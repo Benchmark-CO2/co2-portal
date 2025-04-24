@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function ImageCarousel({ images }) {
+export default function ImageCarousel({ images }: { images: string[] } ) {
   const total = images.length;
   const [index, setIndex] = useState(1);
   const [transition, setTransition] = useState(true);

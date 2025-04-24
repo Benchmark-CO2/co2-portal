@@ -1,11 +1,15 @@
 ---
+interface Props {
+  fullImage?: boolean;
+}
 
+const { fullImage } = Astro.props;
 ---
 
-<div>
+<div class="w-full max-md:w-full bg-neutral-500 p-4 rounded-md">
   <img
-    src="/images/uploads/design-sem-nome-8.png"
+    src="/images/uploads/Group 26.png"
     alt=""
-    class="w-full h-[80%] object-cover"
+    class={`${fullImage ? 'object-contain' : 'object-cover'} w-full h-full mt-8 mx-auto`}
   />
 </div>
