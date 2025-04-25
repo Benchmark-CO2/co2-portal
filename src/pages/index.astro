@@ -1,6 +1,5 @@
 ---
 import Carousel from '../components/Carousel.tsx';
-import Footer from '../components/Footer.astro';
 import Layout from '../layouts/Layout.astro';
 
 const images = [
@@ -21,7 +20,7 @@ const images = [
 
 <Layout class="bg-background">
 	<main
-		class="w-full flex flex-col justify-center items-center py-8 gap-10 bg-background max-md:px-6"
+		class="w-full flex flex-col justify-center items-center gap-10 bg-background"
 	>
 		<div
 			class="flex justify-between w-3/4 gap-10 max-md:flex-col max-md:w-full"
@@ -48,6 +47,4 @@ const images = [
 		</div>
 		<Carousel images={images} client:visible />
 	</main>
-
-	<Footer />
 </Layout>
