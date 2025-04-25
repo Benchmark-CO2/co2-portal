@@ -27,7 +27,6 @@ import ThemeToggle from './ThemeToggle.astro';
     <h2 class="text-4xl font-bold">
       <a href="/">{SITE_TITLE}</a>
     </h2>
-    <!-- Botão do menu sanduíche (visível apenas em dispositivos móveis) -->
     <button
       id="menu-button"
       class="block md:hidden text-foreground"
@@ -47,7 +46,6 @@ import ThemeToggle from './ThemeToggle.astro';
           d="M4 6h16M4 12h16m-7 6h7"></path>
       </svg>
     </button>
-    <!-- Links do menu (desktop e mobile) -->
     <div
       id="menu-container"
       class="fixed top-0 left-0 w-full h-screen bg-black/80 z-40 transform -translate-x-full transition-transform duration-300 md:hidden"
@@ -57,8 +55,8 @@ import ThemeToggle from './ThemeToggle.astro';
         class="flex flex-col gap-4 p-4 bg-background h-full w-[80%]"
       >
         <HeaderLink href="/">Institucional</HeaderLink>
-        <HeaderLink href="/pd&i">Blog</HeaderLink>
-        <HeaderLink href="/about">PD&I</HeaderLink>
+        <HeaderLink href="/pd&i">PD&I</HeaderLink>
+        <HeaderLink href="/about">About</HeaderLink>
         <HeaderLink href={FRONT_URL}>Benchmark</HeaderLink>
       </div>
     </div>
@@ -72,7 +70,6 @@ import ThemeToggle from './ThemeToggle.astro';
       <HeaderLink href="/about">About</HeaderLink>
       <HeaderLink href={FRONT_URL}>Benchmark</HeaderLink>
     </div>
-    <!-- Alternador de tema -->
     <ThemeToggle />
   </nav>
 </header>

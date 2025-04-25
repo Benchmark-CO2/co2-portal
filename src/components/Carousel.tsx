@@ -47,13 +47,14 @@ export default function ImageCarousel({ images }: { images: string[] } ) {
 
       <button
         onClick={prevSlide}
-        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white px-3 py-1 rounded-full shadow"
+        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-background/50 rounded-full shadow w-10 h-14 backdrop-blur-sm text-foreground text-3xl"
       >
         ‹
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white px-3 py-1 rounded-full shadow"
+        
+        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-background/50 rounded-full shadow w-10 h-14 backdrop-blur-sm text-foreground text-3xl"
       >
         ›
       </button>
