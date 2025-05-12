@@ -8,12 +8,12 @@ const { title, heroImage, pubDate, authors } = Astro.props;
 ---
 
 <div
-  class="flex rounded-lg overflow-hidden shadow-sm h-62 border border-foreground/40 max-md:flex-col max-md:h-fit"
+  class="flex rounded-lg overflow-hidden shadow-sm h-62 border border-foreground/40  max-md:h-fit"
 >
   <img
     src={heroImage}
     alt={`Imagem principal de ${title}`}
-    class="w-36 h-full object-cover max-md:w-full max-md:h-36"
+    class="w-36 h-full object-cover max-md:h-36 max-md:my-auto"
   />
   <div class="p-4 h-full flex-1 flex flex-col justify-between w-full">
     <p>
