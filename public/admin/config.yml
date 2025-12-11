@@ -39,3 +39,18 @@ collections:
         fields:
           - { label: "Nome", name: "name", widget: "string" }
           - { label: "Imagem", name: "image", widget: "image" }
+  - name: dados
+    label: Dados
+    folder: content/dados
+    create: true
+    format: "json"        # Aqui você define que o arquivo será JSON
+    extension: "json"
+    fields:
+      - { name: title, label: Título, widget: string }
+      - { name: active, label: Ativo, widget: boolean }
+      - { name: meta, label: Metadados, widget: object,
+          fields: [
+            { name: category, label: Categoria, widget: string },
+            { name: tags, label: Tags, widget: list }
+          ]
+        }
