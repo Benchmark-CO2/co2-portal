@@ -5,7 +5,7 @@ pubDate: 'Jun 19 2024'
 heroImage: '/blog-placeholder-1.jpg'
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+<span style="color:#F00">Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.</span>
 
 ## Headings
 

@@ -1,12 +1,12 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
+import BlogPost from '../layouts/BlogPost.astro';
 import Layout from '../layouts/Layout.astro';
-import NoticePost from '../layouts/NoticePost';
 
-type INotice = CollectionEntry<'notices'>;
+type INotice = CollectionEntry<'blog'>;
 
-const notices = await getCollection('notices');
+const notices = await getCollection('blog');
 // notices = notices.groupBy((article: INotice) => {
 // 	const date = new Date(article.data.pubDate);
 // 	return `${date.getFullYear()}-${date.getMonth() + 1}`;
@@ -16,13 +16,6 @@ const currentYear = new Date().getFullYear();
 const currentMonth = new Date().getMonth() + 1;
 
 const currentMonthNotices = notices
-	.filter((article: INotice) => {
-		const articleDate = new Date(article.data.pubDate);
-		return (
-			articleDate.getFullYear() === currentYear &&
-			articleDate.getMonth() === currentMonth - 1
-		);
-	})
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const currentMonthName = new Intl.DateTimeFormat('pt-BR', {
@@ -50,12 +43,22 @@ const currentMonthName = new Intl.DateTimeFormat('pt-BR', {
 				) : null
 			}
 			{
-				currentMonthNotices.map((notice) => (
-					<li class="w-full flex flex-col justify-center items-center  mx-auto ">
-						<NoticePost {...notice} client:visible />
-					</li>
-				))
-			}
+				currentMonthNotices.map((notice) => {
+					const Content = notice.rendered?.html
+
+					return (
+							<li class="w-full flex flex-col justify-center items-center mx-auto">
+									<BlogPost {...notice.data}>
+											{Content && (
+												<div
+													class="prose prose-zinc mb-8 text-lg"
+													set:html={Content}
+												></div>
+											)}
+									</BlogPost>
+							</li>
+					);
+			})
 		</ul>
 	</div>
 </Layout>
