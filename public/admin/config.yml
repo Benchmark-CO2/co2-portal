@@ -48,7 +48,7 @@ collections:
     fields:
       - { name: title, label: Título, widget: string }
       - { name: active, label: Ativo, widget: boolean }
-      - { name: meta, label: Metadados, widget: object,
+      - { name: meta, label: Metadados, widget: list,
           fields: [
             { name: category, label: Tópicos, widget: string },
             { name: questions, label: Tópicos, widget: list,
