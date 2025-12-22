@@ -132,7 +132,6 @@
       "role": "Pesquisador",
       "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Arthur+Araujo.png"
     },
-  
     {
       "name": "Cristina de Hollanda Cavalcanti Tsuha",
       "role": "Pesquisadora",
@@ -164,35 +163,35 @@
       "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Talita+Silva.png"
     },
     {
-      "name": "Gabrielle Gieremek",
-      "role": "Pesquisadora",
-      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Gabrielle+Gieremek.png"
-    },
-    {
       "name": "Juliana Clark",
       "role": "Pesquisadora",
       "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Juliana+Clark.png"
+    },
+    {
+      "name": "Gabrielle Gieremek",
+      "role": "Pesquisadora",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Gabrielle+Gieremek.png"
     }
   ],
   "advisoryCommittee": [
     {
       "name": "Abram Belk",
-      "role": "",
+      "role": "''",
       "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Abram+Belk.png"
     },
     {
       "name": "Ana Cecília Sestak",
-      "role": "",
+      "role": "''",
       "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Ana+Sestak.png"
     },
     {
       "name": "Carlos Massucato",
-      "role": "",
+      "role": "''",
       "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Carlos+Massucato.png"
     },
     {
       "name": "Clarice Degani",
-      "role": "",
+      "role": "''",
       "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Clarisse+Degani.png"
     }
   ],
