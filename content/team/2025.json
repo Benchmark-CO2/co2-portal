@@ -163,14 +163,14 @@
       "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Talita+Silva.png"
     },
     {
-      "name": "Juliana Clark",
-      "role": "Pesquisadora",
-      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Juliana+Clark.png"
-    },
-    {
       "name": "Gabrielle Gieremek",
       "role": "Pesquisadora",
       "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Gabrielle+Gieremek.png"
+    },
+    {
+      "name": "Juliana Clark",
+      "role": "Pesquisadora",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Juliana+Clark.png"
     }
   ],
   "advisoryCommittee": [
