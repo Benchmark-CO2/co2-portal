@@ -1,4 +1,200 @@
 {
   "title": "2025",
-  "active": true
+  "active": true,
+  "team": [
+    {
+      "name": "Vanderley Moacyr John",
+      "role": "Coordenação",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Vanderley+John.png"
+    },
+    {
+      "name": "Mayara Munaro",
+      "role": "Coordenação adjunta",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Mayara+Munaro.png"
+    },
+    {
+      "name": "Lucas Melchiori Pereira",
+      "role": "Liderança plataforma",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Lucas+Pereira.png"
+    },
+    {
+      "name": "Ercília Hirota Pereira",
+      "role": "Gestão operacional",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Erc%C3%ADlia+Pereira.png"
+    },
+    {
+      "name": "Rubiane Antunes",
+      "role": "Gestão operacional",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Rubiane+Antunes.png"
+    },
+    {
+      "name": "Maria Alice Gonzales",
+      "role": "Gestão operacional",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Maria+Gonzales.png"
+    },
+    {
+      "name": "Gabriela Lopes Barroso",
+      "role": "Gestão da Rotina",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Gabriela+Barroso.png"
+    },
+    {
+      "name": "Jonas Firmino",
+      "role": "Administrativo",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Jonas+Firmino.png"
+    },
+    {
+      "name": "Eder Santin",
+      "role": "Jornalista Científico",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Eder+Santin.png"
+    },
+    {
+      "name": "Bruna Diniz Franqueira",
+      "role": "Transparência em Proteção de Dados",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Bruna+Franqueira.png"
+    },
+    {
+      "name": "Felipe Okino",
+      "role": "Desenvolvedor",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Felipe+Okino.png"
+    },
+    {
+      "name": "Mateus Miranda",
+      "role": "Desenvolvedor",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Mateus+Miranda.png"
+    },
+    {
+      "name": "Bruno Avelino",
+      "role": "Desenvolvedor",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Bruno+Avelino.png"
+    },
+    {
+      "name": "Anderson Alvarenga",
+      "role": "Desenvolvedor",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Anderson+Alvarenga.png"
+    },
+    {
+      "name": "Igor Vac",
+      "role": "Design UX/UI",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Igor+Vac.png"
+    },
+    {
+      "name": "Alessandra Petrecca",
+      "role": "Design UX/UI",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Alessandra+Petrecca.png"
+    },
+    {
+      "name": "Cassio Oliveira",
+      "role": "Pesquisador",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Cassio+Oliveira.png"
+    },
+    {
+      "name": "Rhonner Politzer Ramírez Flores",
+      "role": "Pesquisador",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Rhonner+Flores.png"
+    },
+    {
+      "name": "Heloisa Cristina Fernandes",
+      "role": "Pesquisadora",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Heloisa+Fernandes.png"
+    },
+    {
+      "name": "Carolina M. De Freitas M.De Souza",
+      "role": "Pesquisadora",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Carolina+Souza.png"
+    },
+    {
+      "name": "Kamilla Vasconcelos Savasini",
+      "role": "Pesquisadora",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Kamilla+Savasini.png"
+    },
+    {
+      "name": "Jean Appel",
+      "role": "Pesquisador",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Jean+Appel.png"
+    },
+    {
+      "name": "Katia Regina Garcia Punhagui",
+      "role": "Pesquisadora",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Katia+Punhagui.png"
+    },
+    {
+      "name": "Lucas Caldas",
+      "role": "Pesquisador ",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Lucas+Caldas.png"
+    },
+    {
+      "name": "Karine Hilgenber",
+      "role": "Pesquisadora",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Karine+Hilgenber.png"
+    },
+    {
+      "name": "Arthur Ferreira De Araujo",
+      "role": "Pesquisador",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Arthur+Araujo.png"
+    },
+  
+    {
+      "name": "Cristina de Hollanda Cavalcanti Tsuha",
+      "role": "Pesquisadora",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Cristina+Tsuha.png"
+    },
+    {
+      "name": "Zila Maria Garcia Mascarenhas",
+      "role": "Pesquisadora",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Zila+Mascarenhas.png"
+    },
+    {
+      "name": "Danielly Letícia Rebelatto",
+      "role": "Pesquisadora",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Danielly+Rebelatto.png"
+    },
+    {
+      "name": "Manuele Harnisch",
+      "role": "Pesquisadora",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Manuele+Harnisch.png"
+    },
+    {
+      "name": "Lígia Pegorer",
+      "role": "Pesquisadora",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/L%C3%ADgia+Pegorer.png"
+    },
+    {
+      "name": "Talita Silva",
+      "role": "Pesquisadora",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Talita+Silva.png"
+    },
+    {
+      "name": "Gabrielle Gieremek",
+      "role": "Pesquisadora",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Gabrielle+Gieremek.png"
+    },
+    {
+      "name": "Juliana Clark",
+      "role": "Pesquisadora",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Juliana+Clark.png"
+    }
+  ],
+  "advisoryCommittee": [
+    {
+      "name": "Abram Belk",
+      "role": "",
+      "photo": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Abram+Belk.png"
+    },
+    {
+      "name": "Ana Cecília Sestak",
+      "role": "",
+      "photo": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Ana+Sestak.png"
+    },
+    {
+      "name": "Carlos Massucato",
+      "role": "",
+      "photo": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Carlos+Massucato.png"
+    },
+    {
+      "name": "Clarice Degani",
+      "role": "",
+      "photo": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Clarisse+Degani.png"
+    }
+  ],
+  "stackholders": []
 }
