@@ -80,7 +80,6 @@ collections:
           fields: [
             { name: name, label: Nome, widget: string },
             { name: image, label: Imagem, widget: string },
-            { name: role, label: Cargo, widget: string },
           ]
         }
       - { name: stackeholders, label: Stackeholders, widget: list,

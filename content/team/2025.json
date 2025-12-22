@@ -178,22 +178,22 @@
     {
       "name": "Abram Belk",
       "role": "",
-      "photo": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Abram+Belk.png"
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Abram+Belk.png"
     },
     {
       "name": "Ana Cecília Sestak",
       "role": "",
-      "photo": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Ana+Sestak.png"
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Ana+Sestak.png"
     },
     {
       "name": "Carlos Massucato",
       "role": "",
-      "photo": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Carlos+Massucato.png"
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Carlos+Massucato.png"
     },
     {
       "name": "Clarice Degani",
       "role": "",
-      "photo": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Clarisse+Degani.png"
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Clarisse+Degani.png"
     }
   ],
   "stackholders": []
