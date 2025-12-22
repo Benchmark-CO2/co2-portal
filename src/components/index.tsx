@@ -94,8 +94,6 @@ export const StackeholderSection = () => {
               src={stakehoder.logo}
               alt="caixa logo"
               className="h-12 md:h-16 lg:h-20"
-              width={200}
-              height={20}
             />
           </a>
         ))}
