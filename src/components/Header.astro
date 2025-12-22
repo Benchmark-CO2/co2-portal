@@ -2,10 +2,11 @@
 import { FRONT_URL, SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
 import ThemeToggle from './ThemeToggle.astro';
+import PublicHeader from '../components/public-header/public-header'
 ---
 
 <header
-  class="bg-accent fixed top-0 px-4 h-16 w-full z-50 backdrop-blur-md dark:bg-background/60 border-b shadow-sm"
+  class="bg-accent fixed top-0 w-full z-50 backdrop-blur-md dark:bg-background/60 border-b shadow-sm"
 >
   <script is:client="load">
     document.addEventListener('DOMContentLoaded', () => {
@@ -23,53 +24,5 @@ import ThemeToggle from './ThemeToggle.astro';
       });
     });
   </script>
-  <nav class="flex justify-between items-center h-full">
-    <h2 class="text-4xl font-bold">
-      <a href="/">{SITE_TITLE}</a>
-    </h2>
-    <button
-      id="menu-button"
-      class="block md:hidden text-foreground"
-      aria-label="Abrir menu"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="2"
-        stroke="currentColor"
-        class="w-6 h-6"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M4 6h16M4 12h16m-7 6h7"></path>
-      </svg>
-    </button>
-    <div
-      id="menu-container"
-      class="fixed top-0 left-0 w-full h-screen bg-black/80 z-40 transform -translate-x-full transition-transform duration-300 md:hidden"
-    >
-      <div
-        id="menu"
-        class="flex flex-col gap-4 p-4 bg-background h-full w-[80%]"
-      >
-        <HeaderLink href="/">Institucional</HeaderLink>
-        <HeaderLink href="/pd&i">PD&I</HeaderLink>
-        <HeaderLink href="/communication">Comunicação</HeaderLink>
-        <HeaderLink href={FRONT_URL}>Benchmark</HeaderLink>
-      </div>
-    </div>
-
-    <div
-      id="menu"
-      class="max-md:hidden flex gap-6 p-4 h-full w-full justify-center"
-    >
-      <HeaderLink href="/">Institucional</HeaderLink>
-      <HeaderLink href="/pd&i">PD&I</HeaderLink>
-      <HeaderLink href="/communication">Comunicação</HeaderLink>
-      <HeaderLink href={FRONT_URL}>Benchmark</HeaderLink>
-    </div>
-    <ThemeToggle />
-  </nav>
+  <PublicHeader />
 </header>

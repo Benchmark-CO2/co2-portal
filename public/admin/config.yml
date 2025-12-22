@@ -50,7 +50,7 @@ collections:
       - { name: active, label: Ativo, widget: boolean }
       - { name: meta, label: Metadados, widget: list,
           fields: [
-            { name: category, label: Tópicos, widget: string },
+            { name: category, label: Tópico, widget: string },
             { name: questions, label: Tópicos, widget: list,
               fields: [
                 { name: question, label: Pergunta, widget: string },

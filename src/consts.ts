@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = 'BIPE';
 export const SITE_DESCRIPTION = 'Welcome to my website!';
-export const FRONT_URL = 'http://ec2-184-72-166-19.compute-1.amazonaws.com:8080'
+export const FRONT_URL = 'https://bipc.org.br/benchmark'

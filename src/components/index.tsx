@@ -2,17 +2,17 @@ import React from 'react'
 const stackeholders = [
   {
     name: "FDTE",
-    logo: '/fdte.png',
+    logo: '/images/assets/stackeholders/fdte.png',
     website: "https://www.fdte.org.br/",
   },
   {
     name: "USP",
-    logo: '/usp.png',
+    logo: '/images/assets/stackeholders/usp.png',
     website: "https://www5.usp.br/",
   },
   {
     name: "caixa",
-    logo: '/caixa.png',
+    logo: '/images/assets/stackeholders/caixa.png',
     website: "https://www.caixa.gov.br/",
   },
 ];
