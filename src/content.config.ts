@@ -46,4 +46,31 @@ const notices = defineCollection({
 }),
 });
 
-export const collections = { blog, articles, notices };
+const team = defineCollection({
+	loader: glob({ base: './content/team', pattern: '**/*.{json}' }),
+	schema: z.object({
+		team: z.array(
+			z.object({
+				name: z.string(),
+				role: z.string(),
+				image: z.string()
+			})
+		),
+		advisoryCommittee: z.array(
+			z.object({
+				name: z.string(),
+				role: z.string(),
+				image: z.string()
+			})
+		),
+		stackeholders: z.array(
+			z.object({
+				name: z.string(),
+				role: z.string(),
+				image: z.string()
+			})
+		),
+	})
+})
+
+export const collections = { blog, articles, notices, team };

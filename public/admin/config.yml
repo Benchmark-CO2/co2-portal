@@ -60,3 +60,33 @@ collections:
             
           ]
         }
+  - name: team
+    label: Equipe
+    folder: content/team
+    create: true
+    format: "json"        # Aqui você define que o arquivo será JSON
+    extension: "json"
+    fields:
+      - { name: title, label: Título, widget: string }
+      - { name: active, label: Ativo, widget: boolean }
+      - { name: team, label: Equipe, widget: list,
+          fields: [
+            { name: name, label: Nome, widget: string },
+            { name: image, label: Imagem, widget: string },
+            { name: role, label: Cargo, widget: string },
+          ]
+        }
+      - {name: advisoryCommittee, label: Comitê, widget: list, 
+          fields: [
+            { name: name, label: Nome, widget: string },
+            { name: image, label: Imagem, widget: string },
+            { name: role, label: Cargo, widget: string },
+          ]
+        }
+      - { name: stackeholders, label: Stackeholders, widget: list,
+          fields: [
+            { name: name, label: Nome, widget: string },
+            { name: image, label: Imagem, widget: string },
+            { name: role, label: Cargo, widget: string },
+          ]
+        }

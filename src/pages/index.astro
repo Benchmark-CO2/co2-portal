@@ -5,6 +5,10 @@ import {TopSection,
 StackeholderSection,
 TeamSection,
 } from '../components/index'
+import { getCollection } from 'astro:content';
+
+const _team = (await getCollection('team'));
+
 
 const BUCKET_URL = 'https://bipc-avatar.s3.sa-east-1.amazonaws.com'
 const team = [
@@ -204,7 +208,7 @@ const advisoryCommittee = [
   },
 ];
 
-
+console.log('team', _team)
 ---
 
 <Layout class="bg-background">
