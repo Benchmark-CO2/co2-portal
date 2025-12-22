@@ -47,8 +47,10 @@ const notices = defineCollection({
 });
 
 const team = defineCollection({
-	loader: glob({ base: './content/team', pattern: '**/*.{json}' }),
+	loader: glob({ base: './content/team', pattern: '*.json' }),
 	schema: z.object({
+		title: z.string().optional(),
+		active: z.boolean().optional(),
 		team: z.array(
 			z.object({
 				name: z.string(),
@@ -60,16 +62,17 @@ const team = defineCollection({
 			z.object({
 				name: z.string(),
 				role: z.string(),
-				image: z.string()
+				image: z.string().optional(),
+				photo: z.string().optional()
 			})
-		),
+		).optional(),
 		stackeholders: z.array(
 			z.object({
 				name: z.string(),
 				role: z.string(),
 				image: z.string()
 			})
-		),
+		).optional(),
 	})
 })
 
