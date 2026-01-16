@@ -76,4 +76,41 @@ const team = defineCollection({
 	})
 })
 
-export const collections = { blog, articles, notices, team };
+const faq = defineCollection({
+	loader: glob({ base: './content/dados', pattern: '*.json' }),
+	schema: z.object({
+		title: z.string().optional(),
+		active: z.boolean().optional(),
+		meta: z.array(
+			z.object({
+				category: z.string(),
+				questions: z.array(
+					z.object({
+						question: z.string(),
+						response: z.string(),
+					})
+				),
+			})
+		).optional(),
+	}),
+});
+
+const glossary = defineCollection({
+	loader: glob({ base: './content/glossario', pattern: '*.json' }),
+	schema: z.object({
+		title: z.string().optional(),
+		active: z.boolean().optional(),
+		meta: z.array(
+			z.object({
+				letter: z.string(),
+				items: z.array(
+					z.object({
+						item: z.string(),
+						description: z.string(),
+					})
+				),
+			})
+		).optional(),
+	}),
+});
+export const collections = { blog, articles, notices, team, glossary, faq };

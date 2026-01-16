@@ -1,0 +1,25 @@
+---
+import { getCollection } from "astro:content";
+import GlossaryList from "../../components/glossary.tsx";
+import Layout from "../../layouts/Layout.astro";
+const questions = await getCollection("glossary")
+
+const recordGlossary = {} as Record<string, {item: string, description: string}[]>;
+(questions || []).flatMap(el => el.data.meta).forEach(el => {
+  if (!el?.letter) return
+  if (recordGlossary?.[el.letter as string]) {
+    recordGlossary[el.letter as string] = [...recordGlossary[el.letter as string], ...(el?.items || [])]
+  } else {
+    recordGlossary[el.letter as string] = el?.items || []
+  }
+})
+
+console.log(questions)
+---
+
+<Layout>
+  <div class="w-2/3 flex flex-col items-start mx-auto">
+    <h1 class="text-3xl font-bold text-primary text-">Glossário</h1>
+    <GlossaryList client:load items={recordGlossary} />
+  </div>
+</Layout>

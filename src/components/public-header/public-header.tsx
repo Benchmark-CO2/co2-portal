@@ -1,15 +1,17 @@
-import { useIsMobile } from "../../hooks/useIsMobile";
-import { cn } from "../../../lib/utils";
 import {
   BarChart3,
+  Book,
   GlobeLock,
   Headset,
+  HelpCircle,
   Info,
   Menu,
   User,
   X,
 } from "lucide-react";
 import { useState } from "react";
+import { cn } from "../../../lib/utils";
+import { useIsMobile } from "../../hooks/useIsMobile";
 import Divider from "../ui/divider";
 import { Link } from '../ui/link';
 
@@ -50,6 +52,24 @@ export default function PublicHeader() {
         <span className="text-sm">Benchmark</span>
       </Link>
       <Link
+        to="/faq"
+        activeProps={activeProps}
+        className="flex items-center gap-2 hover:text-gray-300 transition-colors"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        <HelpCircle size={18} />
+        <span className="text-sm">FAQ</span>
+      </Link>
+      <Link
+        to="/glossario"
+        activeProps={activeProps}
+        className="flex items-center gap-2 hover:text-gray-300 transition-colors"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        <Book size={18} />
+        <span className="text-sm">Glossário</span>
+      </Link>
+      <Link
         to={"/contact"}
         activeProps={activeProps}
         className="flex items-center gap-2 hover:text-gray-300 transition-colors"
@@ -74,13 +94,13 @@ export default function PublicHeader() {
       />
 
       <Link
-        to="/login"
+        to="https://bipc.org.br/login"
         activeProps={activeProps}
         className="flex items-center gap-2 hover:text-gray-300 transition-colors"
         onClick={() => setIsMenuOpen(false)}
       >
         <User size={18} />
-        <span className="text-sm">Entrar na Plataforma</span>
+        <span className="text-sm font-bold">Entrar na Plataforma</span>
       </Link>
     </>
   );

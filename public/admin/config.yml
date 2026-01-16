@@ -60,6 +60,27 @@ collections:
             
           ]
         }
+  - name: glossario
+    label: Glossário
+    folder: content/glossario
+    create: true
+    format: "json"        # Aqui você define que o arquivo será JSON
+    extension: "json"
+    fields:
+      - { name: title, label: Título, widget: string }
+      - { name: active, label: Ativo, widget: boolean }
+      - { name: meta, label: Metadados, widget: list,
+          fields: [
+            { name: letter, label: Inicial, widget: string },
+            { name: items, label: Itens, widget: list,
+              fields: [
+                { name: item, label: Item, widget: string },
+                { name: description, label: Descrição, widget: string },
+              ]
+            },
+            
+          ]
+        }
   - name: team
     label: Equipe
     folder: content/team

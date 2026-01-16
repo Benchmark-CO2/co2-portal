@@ -1,0 +1,15 @@
+---
+import { getCollection } from "astro:content";
+import FaqList from "../../components/FAQ.tsx";
+import Layout from "../../layouts/Layout.astro";
+const questions = await getCollection("faq")
+
+const onlyQuestions = questions.flatMap(category => category.data.meta?.flatMap(item => item.questions) ?? [])
+---
+
+<Layout>
+  <div class="w-2/3 flex flex-col items-start mx-auto">
+    <h1 class="text-3xl font-bold text-primary text-">Perguntas Frequentes</h1>
+    <FaqList client:load items={onlyQuestions} />
+  </div>
+</Layout>
