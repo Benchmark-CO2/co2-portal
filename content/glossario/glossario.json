@@ -4,33 +4,21 @@
       "letter": "A",
       "items": [
         {
-          "item": "Arc Raiders é um jogo bom?",
-          "description": "Depende do ponto de vista. Se você gosta de jogos com gráficos ruins e jogabilidade travada, então sim, é um jogo bom. Caso contrário, talvez não seja a melhor escolha."
-        },
-        {
-          "item": "Arc Raiders é um jogo pay to win?",
-          "description": "Não, Arc Raiders não é um jogo pay to win. Todos os jogadores têm acesso às mesmas armas e equipamentos, e o sucesso no jogo depende mais da habilidade do jogador do que de quanto dinheiro ele gasta."
+          "item": "Aço Reforçado",
+          "description": "Aço submetido a processos químicos ou térmicos (como galvanização ou têmpera) para aumentar sua resistência mecânica, durabilidade ou proteção contra corrosão."
         }
       ]
     },
     {
       "items": [
         {
-          "item": "BIPC é bom?",
-          "description": "Sim, BIPC é bom para aprender sobre desenvolvimento e trabalhar em equipe."
-        },
-        {
-          "item": "BCrea ou Cau?",
-          "description": "Cau"
-        },
-        {
-          "item": "Bor que Não consigo criar projeto",
-          "description": "Falar com @Mateuzin"
+          "item": "Brita Graduada Simples (BGS)",
+          "description": "Brita graduada é composta por mistura obrigatória em usina, de produtos integralmente de britagem de rocha sã, apresentando granulometria contínua e extensa, cuja estabilização é obtida pela ação mecânica do equipamento de compactação."
         }
       ],
       "letter": "B"
     }
   ],
   "active": true,
-  "title": "FAQ"
+  "title": "Glossário"
 }
