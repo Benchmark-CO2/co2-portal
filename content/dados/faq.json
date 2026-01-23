@@ -1,23 +1,6 @@
 {
   "meta": [
     {
-      "category": "Titulo topico",
-      "questions": [
-        {
-          "question": "Qual o tamanho do anao jorginho?",
-          "response": "1,43"
-        },
-        {
-          "question": "Qual o tamanho do pé do jorginho",
-          "response": "44"
-        },
-        {
-          "question": "Quanto tempo até o relatório do bipc ficar pronto?",
-          "response": "3"
-        }
-      ]
-    },
-    {
       "questions": [
         {
           "question": "Crea ou Cau?",
