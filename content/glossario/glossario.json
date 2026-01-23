@@ -21,15 +21,6 @@
         }
       ],
       "letter": "B"
-    },
-    {
-      "letter": "D",
-      "items": [
-        {
-          "item": "Deca",
-          "description": "Decanoato"
-        }
-      ]
     }
   ],
   "active": true,
