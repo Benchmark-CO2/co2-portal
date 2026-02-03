@@ -12,9 +12,9 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body class="bg-background! text-foreground! h-screen flex flex-col">
+  <body class="bg-background! text-foreground! h-screen flex flex-col w-full overflow-hidden">
     <Header />
-    <div class="mt-16 p-6 flex-1">
+    <div class="mt-16 p-6 flex-1 overflow-y-auto">
       <slot />
     </div>
     <Footer />

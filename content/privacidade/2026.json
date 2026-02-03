@@ -1,0 +1,277 @@
+{
+  "title": "Política de Privacidade",
+  "sub-title": "Esta Política de Privacidade descreve como coletamos, usamos e protegemos suas informações pessoais ao utilizar nossa plataforma de benchmark de emissões de CO2. Ao acessar ou usar nossa plataforma, você concorda com os termos desta política.",
+  "board": {
+    "resume": "Esta Política de Privacidade tem por finalidade demonstrar o compromisso da plataforma BIPc, sediada na Cidade de São Paulo, com relação à privacidade e proteção dos dados pessoais coletados de seus USUÁRIOS (pessoas físicas que acessam o site ou realizaram cadastro na plataforma).\n\nServe para dar total transparência sobre como tratamos seus Dados Pessoais ('Dados Pessoais'). É possivel acessar e visualizar esta Política a qualquer momento por meio do endereço bipc.org.br/privacidade.\n\nComo condição para acesso e uso das funcionalidades exclusivas do site da BIPc, o USUÁRIO declara que fez a leitura completa e atenta da presente Política de Privacidade e está plenamente de acordo com seus termos, conferindo, assim, sua livre e expressa concordância com o estipulado neste instrumento e autorizando a obtenção dos dados e informações aqui mencionados, bem como sua utilização para os fins especificados abaixo. Caso não esteja de acordo com estas diretivas, o USUÁRIO deverá descontinuar o seu acesso.",
+    "sections": [
+      {
+        "title": "QUADRO RESUMO",
+        "table": {         
+          "headers": [],
+          "rows": [
+            {
+              "columns": [
+                {
+                  "content": "Controlador dos Dados Pessoais",
+                  "bold": true
+                },
+                {
+                  "content": "Conselho Brasileiro de Construção Sustentável, inscrita sob o CNPJ nº 08.924.551/0001-53 com endereço em Avenida Queiroz Filho, 1700 – Torre B Conj. 407 – Bairro Vila Hamburguesa – São Paulo – SP – CEP:05319-000."
+                }
+              ]
+            },
+            {
+              "columns": [
+                {
+                  "content": "Com quem compartilhamos seus dados:",
+                  "bold": true
+                },
+                {
+                  "content": "Os dados pessoais que o usuário insere na plataforma BIPc não são compartilhados com nenhuma outra organização. Poderá ocorrer o compartilhamento dos dados de projetos de baixo carbono incluídos na plataforma de benchmark (ver nossos Termos de Uso) para análises direcionadas – mas nunca o compartilhamento de dados individualizados de projetos ou dados pessoais dos responsáveis pelos projetos. Os dados pessoais somente poderão ser compartilhados com as autoridades ou instituições governamentais competentes."
+                }
+              ]
+            },
+            {
+              "columns": [
+                {
+                  "content": "Seus direitos enquanto titular de dados:",
+                  "bold": true
+                },
+                {
+                  "content": "Temos o compromisso com a transparência. Por isso, garantimos que todos os direitos sobre seus dados possam ser exercidos, respeitados os limites legais aplicáveis. Se quiser entender quais são seus direitos, veja o tópico 6 abaixo."
+                }
+              ]
+            },
+            {
+              "columns": [
+                {
+                  "content": "Contato:",
+                  "bold": true
+                },
+                {
+                  "content": "Em caso de dúvidas e solicitações, entre em contato por meio do e-mail: privacidade@bipc.org.br."
+                }
+              ]
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "title": "1. COLETA E USO DE DADOS E REGISTRO DE ATIVIDADES",
+        "description": "Os dados coletados do USUÁRIO atendem ao princípio da necessidade e podem incluir:",
+        "table": {
+          "headers": [
+            "CATEGORIA DE DADOS",
+            "DADOS COLETADOS",
+            "FINALIDADES DE USO"
+          ],
+          "rows": [
+            {
+              "columns": [
+                {
+                  "content": "CADASTRAIS\n(coletados a partir do preenchimento do formulário de cadastro)"
+                },
+                {
+                  "content": "Nome Completo, Email, Número de identidade de habilitação funcional (CREA ou CAU), Especificação da área de atuação profissional (Engenharia ou Arquitetura), Nome da Empresa, Data de Nascimento, Cidade que reside"
+                },
+                {
+                  "content": "Viabilizar o cadastro e acesso à plataforma; identificar organização para projetos colaborativos; verificar habilitação profissional para evitar projetos fraudulentos. Após a finalização da fase do projeto, e geração de relatórios, os dados cadastrais poderão ser utilizados após 1 (um) ano para contactar o usuário. Os usuários serão contactados de forma aleatória, com o objetivo de verificações amostrais a respeito da confirmação, após a construção, dos dados informados ainda em fase de projeto."
+                }
+              ]
+            },
+            {
+              "columns": [
+                {
+                  "content": "REGISTROS ELETRÔNICOS\n(coletados de forma automática)"
+                },
+                {
+                  "content": "IP, Cookies, registros de acesso (data e hora de acesso à aplicação, associado ao IP de origem)"
+                },
+                {
+                  "content": "Registro de acesso para fins de cumprimento de obrigação legal (Marco Civil da Internet)"
+                }
+              ]
+            },
+            {
+              "columns": [
+                {
+                  "content": "FALE CONOSCO\n(coletados a partir do preenchimento do formulário de contato)"
+                },
+                {
+                  "content": "Nome, E-mail, Assunto e Mensagem"
+                },
+                {
+                  "content": "Permitir o contato com a plataforma, por meio dos dados necessários para o retorno do contato"
+                }
+              ]
+            }
+          ]
+        },
+        "content": "Os dados não poderão ser usados para finalidades secundárias – ou seja, objetivos não previstos na tabela acima. A plataforma BIPc se compromete a utilizar os dados estritamente necessários para os fins acima, sendo certo que quaisquer usos secundários serão previamente informados ao titular de dados pessoais, para que haja expectativa legítima sobre a atividade de tratamento pretendida. A plataforma BIPc informa que não utiliza nenhum tipo de decisão automatizada que impacte o USUÁRIO.\n\nA plataforma BIPc não é responsável pela precisão, veracidade ou falta delas nas informações prestadas pelo USUÁRIO ou pela sua desatualização, sendo de responsabilidade do USUÁRIO prestá-las com exatidão e atualizá-las sempre que necessário.\n\nA base de dados formada por meio da coleta de dados na plataforma BIPc é de responsabilidade da BIPc, sendo que seu uso, acesso e compartilhamento, quando necessários, serão feitos dentro dos limites e propósitos dos negócios da BIPc e descritos nesta Política de Privacidade.\n\nTodos os dados pessoais poderão ser utilizados como meio probatório em casos de atos ilícitos ou contrários a esta Política de Privacidade ou qualquer outro documento legal disponibilizado pela plataforma BIPc (como termos de uso), bem como para cumprimento de ordem judicial ou de requisição administrativa. A BIPc dará ciência e emitirá notificação aos USUÁRIOS no caso de qualquer uso dos dados para as finalidades previstas no item 1.2."
+      },
+      {
+        "title": "2. COOKIES",
+        "description": "Cookies são arquivos de texto armazenados no seu computador que contêm pequenas quantidades de informações que são baixadas no seu dispositivo quando você visita um site ou aplicativo. Os cookies podem ter diferentes finalidades e são oferecidos para permitir que você tenha uma melhor jornada e navegue entre as páginas com eficiência, lembrando suas preferências e, geralmente, melhorando a sua experiência como usuário.\n\nA plataforma BIPc coleta cookies necessários e cookies analíticos, cuja descrição e finalidade são descritos abaixo:",
+        "content": "Para restringir a coleta de cookies, trazemos algumas orientações. De acordo com o navegador utilizado, siga as orientações respectivas:\n\n&bull;No Mozilla Firefox, clique no botão do Firefox e escolher a opção \"Nova janela privativa\". Saiba mais aqui;\n&bull;No Chrome, use o botão de configurações e selecione \"Nova janela anônima\". Saiba mais aqui;\n&bull;No Internet Explorer, isso é feito pelas opções, no menu \"Segurança\" e na alternativa \"Navegação InPrivate\". Saiba mais aqui;\n&bull;No Opera, pelo botão do navegador, clique na alternativa \"Nova janela privada\". Saiba mais aqui.\nQualquer alteração na coleta e/ou tratamento de cookies, será devidamente informada por meio de avisos na BIPc ou envio de notificações ao e-mail cadastrado na plataforma."
+      },
+      {
+        "title": "3. BASES LEGAIS QUE PERMITEM A COLETA E TRATAMENTO DOS DADOS PELA PLATAFORMA BIPc",
+        "description": "A coleta e tratamento (qualquer operação com seus dados pessoais, como armazenamento e uso) são autorizados com base nas hipóteses previstas na lei listadas no quadro abaixo",
+        "table": {
+          "headers": [
+            "CATEGORIA DE DADOS",
+            "BASE LEGAL DE TRATAMENTO"
+          ],
+          "rows": [
+            {
+              "columns": [
+                {
+                  "content": "CADASTRAIS\n(coletados a partir do preenchimento do formulário de cadastro)"
+                },
+                {
+                  "content": "Consentimento (preenchimento voluntário dos dados no formulário de cadastro – com informação sobre a necessidade de cada dado). Alguns dados cadastrais são coletados com base na execução do contrato (ou seja, são dados necessários para permitir o funcionamento da plataforma de benchmark de projetos com baixa pegada de carbono). Já no caso do uso dos dados de contato para viabilizar a confirmação da veracidade dos dados referente aos projetos cadastrados na plataforma, o tratamento é feito com base no legítimo interesse – subordinado ao interesse dos titulares e da sociedade em geral na confiabilidade dos dados referente à pegada de carbono da construção civil no país."
+                }
+              ]
+            },
+            {
+              "columns": [
+                {
+                  "content": "REGISTROS ELETRÔNICOS\n(coletados de forma automática)"
+                },
+                {
+                  "content": "Os registros eletrônicos como IP de origem, data e hora de conexão são coletados para cumprimento de obrigação legal. Já os dados de analytics são coletados com base no legítimo interesse, sendo permitido o opt-out."
+                }
+              ]
+            }, 
+            {
+              "columns": [
+                {
+                  "content": "FALE CONOSCO\n(coletados a partir do preenchimento do formulário de contato)"
+                },
+                {
+                  "content": "Os dados são preenchidos de forma voluntária no formulário de contato e sem esses dados, não é possível permitir o contato entre o USUÁRIOS e a plataforma BIPc. A hipótese da lei que autoriza esse tratamento é execução de contrato."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "title": "4. ARMAZENAMENTO, TRANSFERÊNCIA, RETENÇÃO E ELIMINAÇÃO DOS DADOS",
+        "content": "Os dados coletados são armazenados e tratados na AWS, de acordo com os critérios utilizados por tal ferramenta e informado a seus clientes. A plataforma BIPc utiliza instâncias localizadas no Brasil, em São Paulo. Não há transferência internacional envolvendo os dados pessoais.\n\nA BIPc deverá buscar que a ferramenta utilizada assegure que os dados coletados sejam armazenados em ambiente seguro, de acordo com a legislação específica aplicável. Todavia, considerando que nenhum sistema de segurança é infalível e que a BIPc pode ter capacidade limitada para modificar termos e condições dos negócios de seus parceiros, a BIPc se exime de quaisquer responsabilidades por eventuais danos e/ou prejuízos decorrentes de falhas, vírus ou invasões do banco de dados da BIPc, exceto nos casos em que incorrer em dolo ou culpa (ou seja, que der causa).\n\nAlguns dados poderão ser apagados antes do prazo de 6 (seis) meses, caso haja solicitação pelo USUÁRIO e não haja mais finalidade de uso nem obrigação legal ou judicial que justifique sua retenção."
+      },
+      {
+        "title": "RETENÇÃO",
+        "description": "Os dados deverão ser mantidos enquanto durar sua finalidade de uso (ou seja, enquanto o USUÁRIO manter ativo seu cadastro) ou obrigação legal ou judicial que justifique sua retenção, conforme especificações abaixo:",
+        "content": "<b>DADOS CADASTRAIS</b>: Caso o USUÁRIO solicite a exclusão do seu cadastro (e, consequentemente, de seus dados pessoais), todos os dados serão eliminados, com exceção dos dados relacionados ao projeto, necessários para manter o benchmark interativo. Nesses casos, o dado será associado a um código aleatório (hash), com exclusão dos demais dados biográficos (e-mail, nome, nº de habilitação profissional etc.).\n\n<b>DADOS DE FALE CONOSCO</b>: Os dados de contato serão eliminados 6 (seis) meses após a finalização da demanda junto ao USUÁRIO.\n\n<b>REGISTROS ELETRÔNICOS</b>: Serão mantidos por 6 (seis) meses de acordo com o prazo mínimo previsto nas obrigações legais impostas pelo Marco Civil da Internet (art. 15)\n\nAinda, os dados poderão ser armazenados por período:\n\nLegal possivelmente vinculado à relação jurídica com você;\n&bull;Necessário para o cumprimento de eventual obrigação legal ou regulatória;\n&bull;Ou caso haja outro motivo justo para armazená-lo.\n&bull;Ao término da finalidade de uso e do prazo de retenção obrigatória, os dados poderão ser eliminados com o uso de métodos de descarte seguros ou utilizados de forma anonimizada para fins estatísticos."
+      },
+      {
+        "title": "5. COMPARTILHAMENTO",
+        "description": "Os dados coletados e as atividades registradas poderão ser compartilhados:",
+        "content": "i) Com autoridades judiciais, administrativas ou governamentais competentes, sempre que houver requisição legal das autoridades ou ordem judicial;\n\nii) Com empresas e profissionais que atuam com segurança da informação (mediante assinatura de acordo de confidencialidade) e com autoridades públicas na detecção e combate a fraudes ou outras atividades ilegais, visando à proteção da base de clientes da plataforma BIPc, de sua propriedade intelectual e dos sistemas que utiliza;\n\niii) De forma automática em caso de alteração da organização gestora da BIPc, na hipótese de eventual substituição da responsabilidade pela CBCS;\n\niv) De forma automática, com os provedores dos serviços contratados pela BIPc para viabilizar o site e todas as funcionalidades e serviços disponibilizados pela BIPc. A AWS é uma das fornecedoras da plataforma BIPc, contratada para a finalidade de armazenamento e ambiente de processamento dos dados.\n\nTodos os terceiros contratados para a finalidade do item \"iv\" acima obrigam-se a tratar os dados com confidencialidade e somente para a finalidade contratada, assegurando o cumprimento legal em matéria de privacidade e proteção de dados e utilizando, em todo o tempo, as melhores práticas de segurança da informação.\n\nCaso empresas terceirizadas realizem o tratamento de quaisquer dados coletados pela BIPc, deverão respeitar as condições aqui estipuladas e as melhores práticas de segurança da informação, obrigatoriamente."
+      },
+      {
+        "title": "6. DIREITOS DO TITULAR",
+        "description": "Nós levamos a sério os seus direitos e, por conta disso, relacionamos abaixo os seus direitos sobre dados pessoais. São eles:",
+        "table": {
+          "headers": [
+            "DIREITOS DE TITULARES",
+            "O QUE SIGNIFICA O DIREITO?"
+          ],
+          "rows": [
+            {
+              "columns": [
+                {
+                  "content": "Confirmação"
+                },
+                {
+                  "content": "Você pode questionar se existem dados pessoais seus sendo tratados pela BIPc"
+                }
+              ]
+            },
+            {
+              "columns": [
+                {
+                  "content": "Acesso"
+                },
+                {
+                  "content": "Você pode requerer o acesso aos seus dados pessoais armazenados pela Plataforma, ou em decorrência de um dos nossos serviços, mediante solicitação em nosso canal de contato através do e-mail privacidade@bipc.com.br."
+                }
+              ]
+            },
+            {
+              "columns": [
+                {
+                  "content": "Correção"
+                },
+                {
+                  "content": "Em caso de dados incorretos, você pode solicitar a correção ou atualização de seus dados, mediante solicitação em nosso canal de contato privacidade@bipc.com.br."
+                }
+              ]
+            },
+            {
+              "columns": [
+                {
+                  "content": "Exclusão"
+                },
+                {
+                  "content": "A qualquer momento, você pode solicitar a exclusão de seus dados pessoais pelo nosso canal de contato privacidade@bipc.com.br. É possível que após o requerimento de exclusão dos seus dados, alguns dados permaneçam armazenados, para fins de cumprimento de obrigações legais ou para a proteção dos interesses legais do CBCS, como gestor da plataforma BIPc, ou dos seus patrocinados, apoiadores ou financiadores (i.e., Caixa Econômica Federal, FDTE - Fundação para o Desenvolvimento Tecnológico da Engenharia e Universidade de São Paulo – USP)."
+                }
+              ]
+            },
+            {
+              "columns": [
+                {
+                  "content": "Revogação do Consentimento"
+                },
+                {
+                  "content": "A BIPc mantém opção facilitada de revogação do consentimento (opt-out) aplicável às situações em que este for solicitado"
+                }
+              ]
+            },
+            {
+              "columns": [
+                {
+                  "content": "Portabilidade"
+                },
+                {
+                  "content": "Você poderá requerer a portabilidade dos dados armazenados em nossos sistemas. Isto significa que, caso haja esse tipo de requerimento, a BIPc entregará cópia dos seus dados pessoais em formato de leitura comum e interoperável, não podendo ser garantida, entretanto, a compatibilidade entre tal formato e as configurações técnicas da empresa receptora desses dados."
+                }
+              ]
+            },
+            {
+              "columns": [
+                {
+                  "content": "Oposição"
+                },
+                {
+                  "content": "Caso compreenda que seus dados pessoais estejam sendo tratados em descumprimento à lei, você poderá se opor a esse tratamento, mediante solicitação em nosso canal de contato privacidade@bipc.com.br"
+                }
+              ]
+            }
+          ]
+        },
+        "content": "Caso você sinta dificuldade em exercer quaisquer dos direitos previstos nesta Política de Privacidade, entre em contato conosco."
+      },
+      {
+        "title": "7. SEGURANÇA",
+        "content": "Nós consideramos todas as informações coletadas confidenciais, garantindo que estas serão tratadas e armazenadas conforme as determinações desta Política e com a adoção das adequadas medidas de segurança técnicas e administrativas, conforme o grau de sensibilidade dos dados e os riscos inerentes à atividade.\n\nDentre as medidas de segurança que adotamos, estão a adoção de certificação HTTPS na comunicação entre cliente e o servidor; protocolos de recuperação de pânico; cabeçalhos de segurança como Content-Security-Policy, X-Frame-Options e X-Content-Type-Options para mitigar ataques como XSS (Cross-Site Scripting) e clickjacking; CORS, para restrição de requisição de outros domínios (acesso apenas a uma lista de origens confiáveis); mecanismos de autenticação e autorização por meio de tokens de autenticação (Bearer Token); e CPS (Contente Security Policy), para evitar ataques.\n\nInternamente, os dados dos USUÁRIOS serão acessados somente por profissionais devidamente autorizados pela BIPc, que tenham assinado previamente o Termo de Responsabilidade e cujo acesso aos dados seja adequado à função que exerce. As medidas buscam respeitar os princípios de proporcionalidade, necessidade e relevância para os objetivos da BIPc, além do compromisso de confidencialidade e preservação da privacidade nos termos desta Política de Privacidade.\n\nNo entanto, apesar de nossos melhores esforços, é impossível garantir que agentes mal-intencionados não conseguirão ter acesso ou fazer uso indevido desses dados. Por esse motivo, incentivamos que sejam tomadas todas as medidas técnicas de segurança apropriadas, como navegar em redes seguras, preservação dos crachás de acesso, dentre outras."
+      },
+      {
+        "title": "8. ATUALIZAÇÃO DAS POLÍTICAS",
+        "content": "A plataforma BIPc reserva a si o direito de alterar o teor desta Política de Privacidade a qualquer momento, conforme a finalidade ou necessidade, tal qual para adequação e conformidade legal de disposição de lei ou norma que tenha força jurídica equivalente.\n\nDiante do compromisso com a transparência, a BIPc compromete-se a informar o USUÁRIO sempre que fizer quaisquer alterações na política, por comunicações no e-mail de cadastro ou por meio de modais/avisos disponibilizados no ato de login da plataforma.\n\nOcorrendo atualizações neste documento que necessariamente demandem nova coleta de consentimento, a BIPc notificará o USUÁRIO pelos meios de contato por ele fornecidos."
+      },
+      {
+        "title": "9. ENCARREGADO PELO TRATAMENTO DE DADOS (OU ENCARREGADO DE DADOS)",
+        "content": "O Encarregado pelo Tratamento de Dados Pessoais conduz e orienta a organização acerca dos aspectos relativos à Privacidade e Proteção dos Dados Pessoais do indivíduo, objetivando a conformidade com as normas de proteção de dados. O Encarregado tem como responsabilidade ser o canal de comunicação entre o Controlador, os titulares de dados pessoais e a Autoridade Nacional de Proteção de Dados – ANPD.\n\nPor meio desta Política, visamos ser transparentes, utilizando uma linguagem clara e concisa, de modo a informá-lo acerca do tratamento que realizamos com seus dados pessoais.\n\nEm caso de qualquer dúvida com relação às disposições constantes nesta Política de Privacidade ou necessidade de contato com o Encarregado de Dados Lucas Melchiori Pereira.\n\nO USUÁRIO poderá entrar em contato pelo e-mail privacidade@bipc.com.br, sendo que as respostas ao contato serão enviadas sempre de segunda a sexta, das 9h às 18h, exceto em feriados nacionais."
+      },
+      {
+        "title": "10. INFORMAÇÕES SOBRE O CONTROLADOR E FORO DE COMPETÊNCIA",
+        "content": "A plataforma BIPc é gerida pelo Conselho Brasileiro de Construção Sustentável, inscrita sob o CNPJ nº 08.924.551/0001-53 com endereço em Avenida Queiroz Filho, 1700 – Torre B Conj. 407 – Bairro Vila Hamburguesa – São Paulo – SP – CEP:05319-000.\n\nEste termo de uso será regido, interpretada e executada de acordo com as Leis da República Federativa do Brasil, incluindo a Lei nº 12.965/2014 (Marco Civil da Internet) e a Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais), independentemente das Leis de outros estados ou Países, sendo competente o foro da cidade de São Paulo, São Paulo, para dirimir qualquer dúvida decorrente deste documento."
+      }
+    ]
+  },
+  "version": "1.0",
+  "lastUpdated": "02 de novembro de 2025"
+}

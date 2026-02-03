@@ -23,7 +23,7 @@ export default function Glossary({ items }: GlossaryProps) {
 
   return (
     <div>
-      <div className='flex gap-3 text-secondary mt-4 text-xl cursor-pointer'>
+      <div className='flex gap-3 text-secondary mt-4 text-xl cursor-pointer w-full flex-wrap'>
         {alfabet.map((letter) => (
           <div key={letter} onClick={() => handleClickLetter(letter)}>
             <h2>{letter}</h2>

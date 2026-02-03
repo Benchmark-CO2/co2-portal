@@ -1,8 +1,6 @@
 ---
-import { FRONT_URL, SITE_TITLE } from '../consts';
-import HeaderLink from './HeaderLink.astro';
-import ThemeToggle from './ThemeToggle.astro';
-import PublicHeader from '../components/public-header/public-header'
+import PublicHeader from './public-header/public-header.tsx';
+
 ---
 
 <header
@@ -24,5 +22,5 @@ import PublicHeader from '../components/public-header/public-header'
       });
     });
   </script>
-  <PublicHeader />
+  <PublicHeader client:only="react" />
 </header>

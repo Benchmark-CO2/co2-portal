@@ -6,20 +6,20 @@ media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/content/blog"
-    create: true
-    slug: "{{slug}}"
-    extension: "md"
-    format: "frontmatter"
-    fields:
-      - { label: "Título", name: "title", widget: "string" }
-      - { label: "Descrição", name: "description", widget: "text" }
-      - { label: "Data de Publicação", name: "pubDate", widget: "datetime" }
-      - { label: "Imagem Principal", name: "heroImage", widget: "image" }
-      - { label: "Conteúdo", name: "body", widget: "markdown" }
-  - name: "artigos"
+  # - name: "blog"
+  #   label: "Blog"
+  #   folder: "src/content/blog"
+  #   create: true
+  #   slug: "{{slug}}"
+  #   extension: "md"
+  #   format: "frontmatter"
+  #   fields:
+  #     - { label: "Título", name: "title", widget: "string" }
+  #     - { label: "Descrição", name: "description", widget: "text" }
+  #     - { label: "Data de Publicação", name: "pubDate", widget: "datetime" }
+  #     - { label: "Imagem Principal", name: "heroImage", widget: "image" }
+  #     - { label: "Conteúdo", name: "body", widget: "markdown" }
+  # - name: "artigos"
     label: "Artigos"
     folder: "src/content/articles"
     create: true
@@ -108,5 +108,44 @@ collections:
             { name: name, label: Nome, widget: string },
             { name: image, label: Imagem, widget: string },
             { name: role, label: Cargo, widget: string },
+          ]
+        }
+  - name: privacy
+    label: Política de Privacidade
+    folder: content/privacidade
+    create: true
+    format: "json"
+    extension: "json"
+    fields:
+      - { name: title, label: Título, widget: string }
+      - { name: sub-title, label: Subtítulo, widget: string }
+      - { name: active, label: Ativo, widget: boolean }
+      - { name: lastUpdated, label: "Atualizado em", widget: string }
+      - { name: version, label: Versão, widget: string }
+      - { name: board, label: "Quadro Resumo", widget: object,
+          fields: [
+            { name: resume, label: Resumo, widget: text, required: false },
+            { name: sections, label: Seções, widget: list,
+              fields: [
+                { name: title, label: Título, widget: string },
+                { name: content, label: Conteúdo, widget: text, required: false },
+                { name: description, label: Descrição, widget: text, required: false },
+                { name: table, label: Tabela, widget: object,
+                  fields: [
+                    { name: headers, label: Cabeçalhos, widget: list, field: { label: Cabeçalho, name: header, widget: string } },
+                    { name: rows, label: Linhas, widget: list,
+                      fields: [
+                        { name: columns, label: Colunas, widget: list,
+                          fields: [
+                            { name: content, label: Conteúdo, widget: string },
+                            { name: bold, label: Negrito, widget: boolean, required: false }
+                          ]
+                        }
+                      ]
+                    },
+                  ], required: false
+                },
+              ]
+            },
           ]
         }

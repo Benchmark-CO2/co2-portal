@@ -1,9 +1,12 @@
 ---
+import { getCollection } from 'astro:content';
+import PrivacyPageContent from '../components/privacidade';
 import Layout from '../layouts/Layout.astro';
-import PrivacyPageContent from '../components/privacidade'
 
+const privacy = await getCollection("privacy")
+const privacyItem = privacy[0]?.data || {};
 ---
 
 <Layout>
-  <PrivacyPageContent />
+  <PrivacyPageContent client:load privacy={privacyItem} />
 </Layout>

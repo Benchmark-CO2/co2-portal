@@ -113,4 +113,40 @@ const glossary = defineCollection({
 		).optional(),
 	}),
 });
-export const collections = { blog, articles, notices, team, glossary, faq };
+
+const privacy = defineCollection({
+	loader: glob({ base: './content/privacidade', pattern: '*.json' }),
+	schema: z.object({
+		title: z.string().optional(),
+		"sub-title": z.string().optional(),
+		active: z.boolean().optional(),
+		version: z.string().optional(),
+		lastUpdated: z.string().optional(),
+		board: z.object({
+			resume: z.string().optional(),
+			sections: z.array(
+				z.object({
+					title: z.string(),
+					description: z.string().optional(),
+					table: z
+						.object({
+							headers: z.array(z.string()).optional(),
+							rows: z.array(
+								z.object({
+									columns: z.array(
+										z.object({
+											content: z.string(),
+											bold: z.boolean().optional(),
+										})
+									),
+								})
+							),
+						})
+						.optional(),
+					content: z.string().optional(),
+				})
+			),
+		}),
+	}),
+});	
+export const collections = { blog, articles, notices, team, glossary, faq, privacy };
