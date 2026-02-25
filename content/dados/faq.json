@@ -3,16 +3,108 @@
     {
       "questions": [
         {
-          "question": "Crea ou Cau?",
-          "response": "Crea"
+          "question": "1. O que é a plataforma BIPc?",
+          "response": "O BIPc (Benchmark Iterativo de Projetos de Baixo Carbono) é uma plataforma digital desenvolvida sob coordenação da Universidade de São Paulo (USP), com suporte financeiro da Caixa, para estimar, analisar e comparar o carbono e a energia embutidos em projetos de edificações, em especial os empreendimentos habitacionais. A ferramenta abriga uma base de dados de projetos alimentada ininterruptamente por empresas construtoras e projetistas do mercado da construção, que podem calcular a intensidade de carbono e energia de seus empreendimentos cadastrados. Podem também, a partir do consumo de materiais e de fatores de emissão definidos, obter referências comparativas (benchmark) com outros projetos de mesma natureza."
         },
         {
-          "question": "Crea ou Cau?",
-          "response": "Cau"
+          "question": "2. Qual é a relevância do BIPc para a agenda climática e para a pesquisa em construção civil?",
+          "response": "A construção civil responde por uma parcela significativa das emissões globais de CO₂, especialmente em função do uso intensivo de cimento e aço. No contexto brasileiro, embora a matriz elétrica seja relativamente limpa, o carbono embutido nos materiais utilizados permanece como um desafio central. O BIPc contribui para minimizar este problema ao fornecer instrumentos de quantificação e comparação, fundamentais para o avanço de pesquisas, políticas públicas e estratégias de mitigação baseadas em evidências."
         },
         {
-          "question": "Não consigo criar projeto",
-          "response": "Falar com @Mateuzin"
+          "question": "3. O BIPc analisa apenas projetos estruturais?",
+          "response": "Não. O foco inicial da plataforma foram, de fato, os projetos estruturais, uma vez que seus materiais predominantes, em especial cimento e aço (no caso de estruturas de concreto), respondem pela maior parcela de carbono e energia embutidos. Contudo, o objetivo analítico do BIPc é mais amplo: evidenciar como decisões de projeto condicionam o consumo de materiais e o desempenho ambiental do edifício como um todo. Por isso, a plataforma analisa também os demais sistemas de uma edificação, como fundações, vedações, revestimentos, cobertura, além de incluir os serviços de pavimentação e terraplanagem."
+        },
+        {
+          "question": "4. Qual é a relação entre decisões de projeto e carbono embutido, segundo a abordagem do BIPc?",
+          "response": "A plataforma parte do pressuposto de que decisões tomadas na fase de concepção — como sistema construtivo, dimensionamento e padronização — determinam grande parte do impacto ambiental do edifício. O BIPc permite demonstrar que projetos estruturalmente equivalentes podem apresentar diferenças substanciais de carbono embutido, e que mudanças podem ser feitas sem prejuízo à segurança ou ao desempenho técnico."
+        },
+        {
+          "question": "5. O BIPc substitui normas técnicas ou métodos tradicionais de projeto estrutural?",
+          "response": "Não. O BIPc não substitui normas, códigos de obras ou a responsabilidade técnica dos profissionais. Trata-se de uma ferramenta complementar, voltada à análise comparativa e à incorporação de critérios ambientais no processo decisório, sem interferir nos requisitos normativos de segurança e desempenho."
+        },
+        {
+          "question": "6. Quem são os principais usuários do BIPc no contexto acadêmico?",
+          "response": "No meio acadêmico, o BIPc pode ser utilizado por:\n• Professores e pesquisadores das áreas de engenharia, arquitetura e urbanismo;\n• Estudantes de graduação e pós-graduação;\n• Grupos de pesquisa em Avaliação do Ciclo de Vida, sustentabilidade e desempenho ambiental;\n• Instituições envolvidas em formulação de políticas públicas e financiamento habitacional.\n"
+        },
+        {
+          "question": "7. De que forma o BIPc contribui para a redução efetiva das emissões?",
+          "response": "O BIPc atua em três dimensões fundamentais:\n1) Quantificação, ao estimar o carbono e a energia embutidos nos materiais que integram determinado projeto;\n2) Comparação, ao permitir a análise do projeto e soluções equivalentes;\n3) Indução, ao evidenciar oportunidades de desmaterialização e otimização ainda na fase de projeto do empreendimento.\nEsses elementos são essenciais para transformar objetivos climáticos abstratos em estratégias operacionais mensuráveis.\n"
+        },
+        {
+          "question": "8. Como o BIPc dialoga com a realidade brasileira da construção civil?",
+          "response": "A plataforma foi concebida considerando as especificidades nacionais, como:\n• A matriz energética brasileira;\n• As práticas construtivas predominantes;\n• A carência histórica de indicadores ambientais sistematizados;\n• O mercado habitacional brasileiro.\nEste enfoque evita a aplicação acrítica de parâmetros internacionais e fortalece a produção de conhecimento contextualizado."
+        },
+        {
+          "question": "9. Qual é a relação do BIPc com o financiamento habitacional?",
+          "response": "O BIPc fornece subsídios técnicos para que instituições financeiras incorporem critérios ambientais objetivos em suas análises. Ao transformar o carbono e a energia embutidos em indicadores mensuráveis, a plataforma permite que o financiamento atue como instrumento de indução tecnológica e ambiental, especialmente em programas de grande escala, como o Programa Minha Casa Minha Vida (MCMV). Além disso, a ferramenta permite reduzir o consumo de materiais e, consequentemente, baixar custos dos projetos."
+        },
+        {
+          "question": "10. O BIPc se articula com bases de dados ambientais e declarações de produto?",
+          "response": "Sim. A plataforma utiliza fatores de emissão provenientes do Sidac (Sistema de Informação do Desempenho Ambiental da Construção) e, de forma complementar, Declarações Ambientais de Produto (EPDs), seguindo protocolos rigorosos de uso. Essa articulação garante consistência metodológica, rastreabilidade e reprodutibilidade."
+        },
+        {
+          "question": "11. O BIPc incentiva a inovação em materiais e sistemas construtivos?",
+          "response": "Embora não prescreva soluções específicas, o BIPc cria um ambiente analítico favorável à inovação, ao demonstrar o impacto ambiental de escolhas de projeto. Isso estimula a pesquisa e a adoção de:\n• Cimentos com menor teor de clínquer;\n• Soluções estruturais de projeto mais eficientes;\n• Processos construtivos racionalizados e industrializados.\n"
+        },
+        {
+          "question": "12. Qual é o principal diferencial científico do BIPc?",
+          "response": "O principal diferencial do BIPc é operacionalizar o conceito de carbono e energia embutidos em escala de projeto de forma automática, transformando-o em indicador comparável, verificável e aplicável a políticas públicas, financiamento e pesquisa acadêmica."
+        },
+        {
+          "question": "13. Como o BIPc se insere no contexto das metas climáticas?",
+          "response": "A plataforma responde à necessidade de reduzir emissões setoriais de GEE em consonância com o Acordo de Paris e seus desdobramentos recentes, ao fornecer ferramentas que permitem monitorar, comparar e orientar estratégias de mitigação no setor da construção civil."
+        },
+        {
+          "question": "14. Por que o carbono e a energia embutidos nos materiais são relevantes no contexto da descarbonização da construção civil brasileira?",
+          "response": "No Brasil, onde as emissões operacionais dos edifícios tendem a ser menores devido à matriz elétrica limpa e à baixa necessidade de aquecimento das edificações, o carbono e a energia embutidos assumem papel dominante. Assim, compreender e reduzir as emissões associadas aos materiais e à fase construtiva é essencial para avanços efetivos na descarbonização do setor."
+        },
+        {
+          "question": "15. Por que é necessária uma linha de base nacional de carbono e energia embutidos?",
+          "response": "Sem uma linha de base confiável não é possível estabelecer metas, avaliar políticas públicas ou comparar desempenhos. O BIPc contribui para a construção dessa linha de base, especialmente no contexto das habitações financiadas pelo programa MCMV."
+        },
+        {
+          "question": "16. Qual é a vinculação do BIPc a projetos de pesquisa, desenvolvimento e inovação?",
+          "response": "O BIPc integra um projeto de PD&I voltado à mitigação de CO₂ e à melhoria da qualidade de vida em habitações, com foco em moradias financiadas pelo MCMV."
+        },
+        {
+          "question": "17. Qual é o papel institucional da Caixa no desenvolvimento do BIPc?",
+          "response": "A Caixa atua como patrocinadora do projeto e agente estruturante, articulando financiamento, pesquisa aplicada e políticas públicas. O BIPc é parte de sua estratégia para integrar critérios ambientais mensuráveis aos processos de avaliação de projetos e ao Selo Casa Azul + Caixa, que é uma certificação socioambiental (ASG) criada em 2009 para reconhecer projetos habitacionais sustentáveis financiados pelo banco."
+        },
+        {
+          "question": "18. Quem compõe a equipe do BIPc?",
+          "response": "O projeto, que se desenvolve sob coordenação técnica da Universidade de São Paulo (USP), conta com a participação de pesquisadores de diversas instituições de ensino do país, como Escola Politécnica (POLI), Escola de Engenharia de São Carlos (EESC) e Faculdade de Arquitetura e Urbanismo (FAU), da USP, Universidade Tecnológica Federal do Paraná (UTFPR), Universidade Federal do Maranhão (UFMA) e Coordenação dos Programas de Pós-Graduação e Pesquisa de Engenharia da Universidade Federal do Rio de Janeiro (Coppe/UFRJ)."
+        },
+        {
+          "question": "19. Em que fase (s) do ciclo de projeto o BIPc atua?",
+          "response": "A plataforma permite fazer a estimativa do carbono e da energia embutidos no projeto nas fases de projeto básico, projeto executivo e versão final para execução da obra. Cada etapa terá exigências específicas quanto ao nível das informações fornecidas, o que implicará na acuracidade e na qualidade do benchmark, assim como nas possibilidades de redução do impacto ambiental. Por exemplo, na fase inicial de projeto os ajustes técnicos são mais viáveis e apresentam maior potencial de redução de emissões e custos, o que reforça a importância da concepção no desempenho ambiental final. Todavia, é a etapa de menor detalhamento e definições por parte do projetista."
+        },
+        {
+          "question": "20. Como ocorre a entrada de dados na plataforma?",
+          "response": "Os dados podem ser inseridos por meio de modelos BIM em formato IFC ou manualmente, permitindo flexibilidade e compatibilidade com diferentes níveis de maturidade digital dos projetos analisados."
+        },
+        {
+          "question": "21. Que tipos de análise o BIPc permite do ponto de vista técnico?",
+          "response": "O BIPc possibilita análises diferenciadas, de acordo com as tecnologias construtivas, de projeto por pavimento, por elemento construtivo e por material, além de comparações entre cenários, o que favorece estudos sobre desmaterialização, eficiência estrutural e impacto ambiental relativo."
+        },
+        {
+          "question": "22. A plataforma permite comparações diretas entre construtoras ou sistemas construtivos distintos?",
+          "response": "Não. O BIPc evita comparações que possam gerar interpretações metodologicamente equivocadas. A análise é restrita a projetos equivalentes, com foco na produção do edifício a partir dos materiais e sistemas selecionados."
+        },
+        {
+          "question": "23. Em que se baseiam os dados de emissão de CO2 adotados no BIPc?",
+          "response": "A plataforma aplica o método de Avaliação do Ciclo de Vida (ACV) considerando as etapas desde a extração das matérias-primas até o produto na porta da indústria (\"Berço ao Portão\", ou Cradle-to-Gate), com base em dados primários e fatores de emissão reconhecidos."
+        },
+        {
+          "question": "24. Por que o foco inicial recaiu sobre projetos estruturais?",
+          "response": "Os projetos estruturais concentram mais de 80% do carbono incorporado em habitações típicas do programa MCMV, são totalmente digitalizados e oferecem alto potencial de desmaterialização, o que os torna um ponto de partida metodologicamente robusto."
+        },
+        {
+          "question": "25. O BIPc atua com outros sistemas construtivos?",
+          "response": "Sim. A plataforma incorpora dados relativos a fundações, vedações, revestimentos, coberturas, além de incluir sistemas industrializados, como wood frame e steel frame, e serviços de pavimentação do empreendimento, ampliando a análise do carbono e da energia embutidos ao longo de todo o ciclo construtivo."
+        },
+        {
+          "question": "26. Qual é a contribuição do BIPc para políticas públicas e para a formação acadêmica?",
+          "response": "O BIPc oferece uma base empírica para políticas públicas, financiamento habitacional e programas de incentivo, além de constituir uma ferramenta pedagógica e de pesquisa capaz de aproximar teoria, projeto e desempenho ambiental mensurável."
         }
       ],
       "category": "Cadastro"
