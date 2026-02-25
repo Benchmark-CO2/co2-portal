@@ -6,17 +6,617 @@
         {
           "item": "Aço Reforçado",
           "description": "Aço submetido a processos químicos ou térmicos (como galvanização ou têmpera) para aumentar sua resistência mecânica, durabilidade ou proteção contra corrosão."
+        }, 
+        {
+          "item": "Alvenaria",
+          "description": "Sistema construtivo composto por blocos ou tijolos unidos por argamassa, desempenhando apenas função de vedação não estrutural."
+        },
+        {
+          "item": "Alvenaria Estrutural",
+          "description": "Tipo de alvenaria em blocos ou tijolos unidos por argamassa estrutural, que além de vedar, suporta cargas da edificação. Estas paredes possuem grautes armados, dispensando estruturas adicionais como vigas e pilares."
+        },
+        {
+          "item": "Ambiental, Social e Governança (Environmental, Social and Governance - ESG)",
+          "description": "Conjunto de critérios ambientais, sociais e de governança, a serem considerados, na avaliação de riscos, oportunidades e respectivos impactos, com objetivo de nortear atividades, negócios e investimentos sustentáveis (ABNT PR 2030-1:2024)."
+        },
+        {
+          "item": "Anteprojeto arquitetônico (AP-ARQ)",
+          "description": "Etapa destinada à concepção e à representação das informações técnicas iniciais de detalhamento do projeto arquitetônico da edificação, ou dos espaços urbanos e de seus elementos, instalações e componentes, a ser realizada por profissional habilitado (ABNT NBR 16636-1, 2017)."
+        },
+        {
+          "item": "Área construída bruta",
+          "description": "É a área obtida pela soma das áreas cobertas de todos os pavimentos acessíveis a um edifício. Ela é calculada a partir do perímetro externo das fachadas, delimitado por paredes, pilares ou arestas de projeção das coberturas (em caso de sacadas) dos pavimentos do edifício, seguindo os critérios de área construída coberta estabelecidos na ABNT NBR 12721:2006.  \n*Inclui: subsolo, térreo, andares tipo, cobertura, ático e reservatório coberto. Também inclui sacadas, fosso de elevadores e áreas de escadas.\n* Exclui: beirais e áreas descobertas.\n* Contabiliza a área de ambientes com pé-direito duplo apenas uma vez."
+        },
+        {
+          "item": "Área construída de projeção",
+          "description": "Área real do pavimento térreo, considerada como a área da fundação do tipo radier ou radier estaqueado."
+        },
+        {
+          "item": "Avaliação do Ciclo de Vida (ACV)",
+          "description": "Compilação e avaliação das entradas, saídas e dos impactos ambientais potenciais de um sistema de produto ao longo do seu ciclo de vida (ABNT NBR ISSO 14040)."
         }
       ]
     },
     {
+      "letter": "B",
       "items": [
         {
           "item": "Brita Graduada Simples (BGS)",
           "description": "Brita graduada é composta por mistura obrigatória em usina, de produtos integralmente de britagem de rocha sã, apresentando granulometria contínua e extensa, cuja estabilização é obtida pela ação mecânica do equipamento de compactação."
+        },
+        {
+          "item": "Benchmark",
+          "description": "Ponto de referência em relação ao qual comparações podem ser feitas (ISO 21678)"
+        },
+        {
+          "item": "Benchmarking",
+          "description": "Processo de coletar, analisar e reportar dados de desempenho de edifícios ou outras construções consideradas comparáveis (ISO 21678)"
+        },
+        {
+          "item": "Benchmark Iterativo para Projetos de Baixo Carbono (BIPc)",
+          "description": "Plataforma que permite mensurar a geração de carbono incorporado em empreendimentos habitacionais a partir de dados de projeto e base do SIDAC - Sistema de Informação do Desempenho Ambiental da Construção"
+        },
+        {
+          "item": "Berço-ao-berço / Cradle-to-Cradle",
+          "description": "Abordagem circular da ACV que considera o reuso ou a reciclagem do produto ao final de sua vida útil, promovendo um ciclo fechado. Nesse modelo, considera-se o reaproveitamento das matérias primas/recursos naturais como insumos para novos produtos."
+        },
+        {
+          "item": "Berço-ao-portão / Cradle-to-Gate",
+          "description": "Abordagem linear da ACV que considera na avaliação os impactos ambientais desde a extração das matérias-primas/recursos naturais (“berço”) até o momento em que o produto sai da fábrica (“portão”)."
+        },
+        {
+          "item": "Berço-ao-túmulo / Cradle-to-Grave",
+          "description": "Abordagem linear da ACV que considera o ciclo de vida completo de um produto, ou seja, desde a extração das matérias-primas/recursos naturais até o descarte final do produto (“túmulo”). Inclui todas as etapas: produção, distribuição, uso e fim de vida."
+        },
+        {
+          "item": "Brita Graduada Simples (BGS)",
+          "description": "Brita graduada composta por mistura, em usina, de produtos integralmente de britagem de rocha sã, apresentando granulometria contínua e extensa, cuja estabilização é obtida pela ação mecânica do equipamento de compactação."
         }
-      ],
-      "letter": "B"
+      ]
+    }, 
+    {
+      "letter": "C",
+      "items": [
+        {
+          "item": "Cadernos Técnicos Sinapi (CT)",
+          "description": "Documentos técnicos que detalham critérios, especificações, composições e metodologias utilizadas pelo Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (SINAPI). São utilizados como referência para orçamentação, planejamento e execução de obras públicas no Brasil."
+        },
+        {
+          "item": "Caixa Econômica Federal - CAIXA",
+          "description": "Instituição financeira pública federal brasileira, vinculada ao Ministério da Fazenda, que atua em diversos setores, incluindo habitação, saneamento, infraestrutura e programas sociais. Na construção civil, é referência em normativos, financiamentos e diretrizes técnicas aplicáveis a empreendimentos habitacionais."
+        },
+        {
+          "item": "Captura, utilização e armazenamento de carbono (CCUS)",
+          "description": "Conjunto de tecnologias que visam mitigar emissões de dióxido de carbono (CO₂) na atmosfera. Compreende três etapas principais: (i) captura do CO₂ em fontes emissoras ou diretamente do ar, (ii) utilização do gás em processos industriais ou agrícolas, e (iii) armazenamento em formações geológicas profundas ou em materiais estáveis."
+        },
+        {
+          "item": "Carbono embutido",
+          "description": "Emissões de CO2 associadas à extração, transporte, processamento, uso e disposição dos materiais de construção (Belizário, 2024)."
+        },
+        {
+          "item": "Carbono Operacional",
+          "description": "Emissões de CO2 associadas ao consumo energético (eletricidade e combustíveis) para operação do edifício e ao consumo de água e correspondente geração de efluentes no edifício (Belizário, 2024)."
+        },
+        {
+          "item": "Casa térrea",
+          "description": "Habitação unifamiliar, independente, construída isoladamente em um terreno."
+        },
+        {
+          "item": "Casa geminada ",
+          "description": "Habitação unifamiliar que compartilha uma parede com outra casa, formando uma unidade em um conjunto residencial."
+        },
+        {
+          "item": "Casa sobreposta",
+          "description": "Residência independente construída sobre outra, com entradas e usos separados. Geralmente, fazem parte de um condomínio com áreas comuns, como portaria e lazer."
+        },
+        {
+          "item": "Ciclo de vida",
+          "description": "Estágios consecutivos e encadeados de um sistema de produto, desde a extração de recursos naturais até a disposição final (ABNT NBR ISSO 14040)"
+        },
+        {
+          "item": "Cimento Asfáltico de Petróleo (CAP)",
+          "description": "Ligante derivado do refino do petróleo, de consistência sólida ou semissólida, utilizado principalmente na pavimentação asfáltica. Atua como aglutinante nas misturas asfálticas, conferindo coesão, impermeabilidade e resistência às solicitações do tráfego e às intempéries."
+        },
+        {
+          "item": "Concreto Asfáltico (CA)",
+          "description": "Mistura asfáltica produzida em usina, composta por agregados minerais e CAP, homogeneizada em altas temperaturas e aplicada em obras de pavimentação. É o tipo de revestimento mais utilizado nas obras de pavimentação brasileiras. Nomeclatura mais recente."
+        },
+        {
+          "item": "Concreto asfáltico reciclado em usina a quente",
+          "description": "Mistura realizada em usinas gravimétricas ou contínuas, com características específicas, utilizando-se o material asfáltico fresado, o cimento asfáltico de petróleo, os agregados adicionais e, quando necessário, material de enchimento (fíler), aditivo (para o caso da produção de mistura morna) e agente de reciclagem, misturado, espalhado e compactado a temperaturas usuais para concretos asfálticos a quente ou a temperaturas reduzidas para misturas asfálticas mornas (Warm Mix Asphalt). "
+        },
+        {
+          "item": "Concreto Betuminoso Usinado a Quente (CBUQ)",
+          "description": "Mistura asfáltica produzida em usina, composta por agregados minerais e CAP, homogeneizada em altas temperaturas e aplicada em obras de pavimentação. É o tipo de revestimento mais utilizado nas obras de pavimentação brasileiras. Nomeclatura mais antiga."
+        },
+        {
+          "item": "Conferência das Partes (Conference of the Parties - COP)",
+          "description": "Órgão supremo de um tratado internacional, como a Convenção-Quadro das Nações Unidas sobre a Mudança do Clima (UNFCCC), a mais conhecida. Sua principal função é reunir anualmente os países signatários (as 'Partes') para analisar o progresso, debater medidas e negociar acordos para enfrentar desafios ambientais, como a mudança climática, a perda de biodiversidade e a desertificação. "
+        },
+        {
+          "item": "Curva ABC",
+          "description": "Ferramenta de análise que classifica insumos (ou custos) em categorias A (alta relevância), B (média relevância) e C (baixa relevância), de acordo com sua relevância ou impacto no valor total."
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "items": [
+        {
+          "item": "Declaração Ambiental de Produto (DAP) (Environmental Product Declaration - EPD)",
+          "description": "Documento verificado elaborado com base na ACV que informa, de forma padronizada, os impactos ambientais de um produto."
+        },
+        {
+          "item": "Declaração de Desempenho Ambiental de produto (dDAP)",
+          "description": "Documento emitido e verificado pelo Sidac, elaborado com base na ACV simplificada que informa, de forma padronizada, a emissão de CO₂ e a demanda de energia primária de um produto."
+        },
+        {
+          "item": "Departamento Nacional de Estradas de Rodagem (DNER)",
+          "description": "Órgão federal criado em 1937 e extinto em 2001, responsável pelo planejamento, construção, manutenção e fiscalização das rodovias federais no Brasil. Suas atribuições foram transferidas para o DNIT."
+        },
+        {
+          "item": "Departamento Nacional de Infraestrutura de Transportes (DNIT)",
+          "description": "Autarquia federal vinculada ao Ministério dos Transportes, criada pela Lei nº 10.233/2001. Tem como atribuições a construção, manutenção, restauração e fiscalização da infraestrutura de transportes (rodoviária, ferroviária, aquaviária e portuária), sucedendo parte das funções do extinto DNER."
+        },
+        {
+          "item": "Desempenho ambiental",
+          "description": "Desempenho relacionado a impactos e/ou aspectos ambientais (ISO 15392)"
+        },
+        {
+          "item": "Desmaterialização",
+          "description": "Estratégia de redução do consumo de recursos materiais em sistemas produtivos e construtivos, visando maior eficiência ambiental sem prejuízos de desempenho. Na construção civil e na pavimentação é uma rota de mitigação de emissões de carbono. "
+        },
+        {
+          "item": "Dióxido de carbono (CO₂)",
+          "description": "Gás incolor, inodoro e não inflamável, formado por dois átomos de oxigênio e um de carbono. É o principal gás de efeito estufa (GEE) antropogênico, amplamente utilizado como indicador em estudos de pegada de carbono e em Avaliações de Ciclo de Vida de materiais e sistemas construtivos."
+        },
+        {
+          "item": "Distancia piso-a-piso",
+          "description": "Distância vertical medida entre o piso acabado de um pavimento e o piso acabado do pavimento imediatamente superior, ou, no caso do último pavimento, entre o piso acabado e o teto ou cobertura."
+        }
+       ]
+    },
+    {
+      "letter": "E",
+      "items": [
+        {
+          "item": "Edifício alto",
+          "description": "Construção de apartamentos em condomínio que apresenta acima de dez pavimentos de altura"
+        },
+        {
+          "item": "Edifício baixo",
+          "description": "Construção de apartamentos em condomínio com até quatro pavimentos de altura"
+        },
+        {
+          "item": "Edifício médio",
+          "description": "Construção de apartamentos em condomínio que apresenta entre cinco e dez pavimentos de altura"
+        },
+        {
+          "item": "Emissão antropogênica",
+          "description": "Emissões derivadas das atividades humanas"
+        },
+        {
+          "item": "Emissões de CO₂ (ECO₂)",
+          "description": "Emissões do principal gás de efeito estufa de origem antropogênica, responsável por 76% do forçamento radiativo total e por mais de 90% do forçamento radiativo associado à fabricação de produtos de construção (SILVA et al., 2020 - https://doi.org/10.1007/s11367-020-01762-4)."
+        },
+        {
+          "item": "Energia embutida",
+          "description": "A quantidade total de energia primária consumida ao longo das etapas do ciclo de vida de um produto, sistema ou edificação, incluindo extração de matérias-primas, processamento, fabricação, transporte, construção/instalação e, conforme o escopo definido, manutenção, substituição e fim de vida (ABNT NBR ISO 14040/2025)."
+        },
+        {
+          "item": "Estaca",
+          "description": "Elemento de fundação profunda executado inteiramente por equipamentos ou ferramentas, sem que, em qualquer fase de sua execução, haja trabalho manual em profundidade. Os materiais empregados podem ser: madeira, aço, concreto pré-moldado, concreto moldado in loco, argamassa, calda de cimento, ou qualquer combinação dos anteriores (ABNT, 2022)."
+        },
+        {
+          "item": "Estaca de concreto moldada in loco",
+          "description": "Estaca executada preenchendo-se com concreto, argamassa ou calda de cimento perfurações previamente executadas no terreno, podendo ser total ou parcialmente armada (ABNT, 2022)."
+        },
+        {
+          "item": "Estaca hélice contínua",
+          "description": "Estaca de concreto moldada in loco executada mediante a introdução no terreno, por rotação, de um trado helicoidal contínuo e injeção de concreto pela própria haste central do trado, simultaneamente à sua retirada, sendo a armadura introduzida após a concretagem da estaca (ABNT, 2022)."
+        },
+        {
+          "item": "Estaca pré-moldada ou pré-fabricada de concreto",
+          "description": "Estaca constituída de segmentos de pré-moldado ou pré-fabricado de concreto e introduzida no terreno por golpes de martelo de gravidade, de explosão, hidráulico ou por martelo vibratório. Para fins exclusivamente geotécnicos não há distinção entre estacas pré-moldadas e pré-fabricadas, e para efeitos desta Norma elas são denominadas pré-moldadas (ABNT, 2022)."
+        },
+        {
+          "item": "Estudo preliminar arquitetônico (EP-ARQ)",
+          "description": "Etapa destinada ao dimensionamento preliminar dos conceitos do projeto arquitetônico da edificação e anexos necessários à compreensão da configuração da edificação, podendo incluir alternativas de projetos (ABNT NBR 16636-1, 2017)."
+        }
+       ]
+    },
+    {
+      "letter": "F",
+      "items": [
+        {
+          "item": "Fator de emissão",
+          "description": "Valor que relaciona a quantidade de emissões de gases de efeito estufa geradas por uma atividade, processo ou insumo, normalmente expresso em CO₂ equivalente por unidade funcional."
+        },
+        {
+          "item": "Fator de carbono embutido",
+          "description": "Valor que relaciona a quantidade de emissões de gases de efeito estufa geradas pelo consumo de insumos, materiais, processos ou atividades normalmente expresso em Kg CO₂ por unidade funcional."
+        },
+        {
+          "item": "Fator de energia embutida",
+          "description": "Valor que relaciona a quantidade de energia necessária pelo consumo de insumos, materiais, processos ou atividades normalmente expresso em Kg CO₂ por unidade funcional."
+        },
+        {
+          "item": "Ficha Resumo do Empreendimento (FRE) ",
+          "description": "Reúne as informações do empreendimento imobiliário de forma resumida. Como, por exemplo, identificação do empreendimento, endereço, proponente, construtor, terrenista, área do terreno, construção e unidades, valor de venda, taxas, entre outras informações. Esse documento serve para consolidar informações essenciais sobre o empreendimento, facilitando a análise e o acompanhamento por parte da instituição."
+        },
+        {
+          "item": "Fonte fóssil",
+          "description": "Recursos energéticos não-renováveis, formados muito lentamente a partir da decomposição de matéria orgânica, como plantas e animais. Exemplos incluem carvão mineral, petróleo e gás natural. São finitos e sua queima libera grandes quantidades de CO₂, sendo os maiores contribuintes para o aquecimento global."
+        },
+        {
+          "item": "Fonte renovável",
+          "description": "Fonte de energia que se regenera naturalmente em curto prazo, como solar, eólica, hídrica, biomassa e outras. São consideradas mais sustentáveis por causarem menor impacto ambiental."
+        },
+        {
+          "item": "Fundação profunda",
+          "description": "Elemento de fundação que transmite a carga ao terreno, pela base (resistência de ponta), por sua superfície lateral (resistência de fuste) ou por uma combinação das duas, sendo sua ponta ou base apoiada em uma profundidade superior a oito vezes a sua menor dimensão em planta e no mínimo 3,0 m; quando não for atingido o limite de oito vezes, a denominação é justificada. Neste tipo de fundação incluem-se as estacas e os tubulões (ABNT, 2022)."
+        },
+        {
+          "item": "Fundação rasa",
+          "description": "Inclui as sapatas e os radiers. As sapatas podem ser isoladas, contínuas ou associadas."
+        },
+        {
+          "item": "Fundo de Arrendamento Residencial (FAR)",
+          "description": "Fundo privado de prazo indeterminado, gerido pela Caixa Econômica Federal, focado no financiamento de habitações de interesse social do programa Minha Casa, Minha Vida."
+        },
+        {
+          "item": "Fundo de Garantia do Tempo de Serviço (FGTS)",
+          "description": "Fundo de natureza trabalhista e social, constituído por depósitos mensais realizados pelos empregadores em contas vinculadas aos trabalhadores, regido pela Lei nº 8.036/1990. Na construção civil, o FGTS é uma das principais fontes de financiamento habitacional e de infraestrutura urbana no Brasil."
+        }
+       ]
+    },
+    {
+      "letter": "G",
+      "items": [
+        {
+          "item": "Gases de Efeito Estufa (GEE)",
+          "description": "Gases que contribuem para o aquecimento global, como por exemplo dióxido de carbono (CO₂), metano (CH₄), óxidos de nitrogênio (NOₓ) e outros."
+        },
+        {
+          "item": "Gesso acartonado",
+          "description": "Placa industrializada formada por núcleo de gesso revestido por papel cartão, utilizada em sistemas de vedação, forros e revestimentos internos."
+        },
+        {
+          "item": "Greenwashing",
+          "description": "Falsa promoção de discursos, anúncios e campanhas com características ecologicamente ou ambientalmente responsáveis ou inclusivas, mas que, na prática, não são realizadas pela empresa (SEBRAE, 2022 - https://sebrae.com.br/sites/PortalSebrae/artigos/o-que-e-greenwashing,88eee6c954e24810VgnVCM100000d701210aRCRD). "
+        },
+        {
+          "item": "Grupo de trabalho (GT)",
+          "description": "Equipe de especialistas em determinado assunto. O projeto de mitigação de CO₂ em moradias foi desenvolvido através de sete GTs: Estruturas; Fundações; Pavimentação; Plataforma; Telhados; Vedações, Revestimentos e Contrapiso; Wood e Steel Frame."
+        }
+       ]
+    },
+    {
+      "letter": "H",
+      "items": [
+        {
+          "item": "Habitação autogerida",
+          "description": "Habitação autogerida (também chamada de produção social da moradia por autogestão) é um processo de produção de moradias no qual as próprias famílias ou comunidades responsáveis pelas unidades exercem o controle direto sobre todas as etapas do processo habitacional — desde a escolha do terreno, projeto e gestão dos recursos, até a construção e organização comunitária (UNMP, 2015)."
+        },
+        {
+          "item": "Habitação de Interesse Social (HIS)",
+          "description": "Tipo de imóvel que se enquadra em políticas públicas que visam contribuir para garantir o direito à moradia digna para a população."
+        }
+       ]
+    },
+    {
+      "letter": "I",
+      "items": [
+        {
+          "item": "Indicador de desempenho ambiental",
+          "description": "Indicador calculado a partir da compilação de um determinado conjunto de fluxos elementares (de entrada ou de saída), expresso em relação a uma unidade declarada ou funcional de um determinado sistema de produto, e que reflete um aspecto ambiental considerado prioritário para a cadeia de valor da construção civil."
+        },
+        {
+          "item": "Interface de Programação de Aplicações (Application Programming Interface - APIs)",
+          "description": "Conjunto de definições e protocolos que permitem a comunicação entre diferentes sistemas de software."
+        },
+        {
+          "item": "Inventário do Ciclo de Vida",
+          "description": "Quantificação das entradas e saídas de um sistema de produto ao longo do seu ciclo de vida (ABNT NBR ISO 14040)"
+        }
+       ]
+    },
+    {
+      "letter": "L",
+      "items": [
+        {
+          "item": "Light steel frame",
+          "description": "Subcategoria do steel frame que utiliza perfis leves de aço galvanizado. Com foco em obras residenciais e de pequeno a médio porte, destaca-se pela rapidez e peso reduzido. "
+        },
+        {
+          "item": "Linha de base (baseline)",
+          "description": "A linha de base (ou referência) é o estado em relação ao qual a mudança é medida. Pode ser uma “linha de base atual”, caso em que representa condições observáveis no presente. Também pode ser uma “linha de base futura”, que consiste em um conjunto projetado de condições futuras, excluindo o fator de interesse que impulsiona a mudança. Interpretações alternativas das condições de referência podem dar origem a múltiplas linhas de base (IPCC, 2012)"
+        }
+       ]
+    },
+    {
+      "letter": "M",
+      "items": [
+        {
+          "item": "Madeira Certificada FSC",
+          "description": "Madeira proveniente de manejo florestal responsável com recuperação total da floresta, certificada pelo Forest Stewardship Council (FSC), que assegura critérios ambientais, sociais e econômicos. Do ponto de vista do CO2, o saldo de carbono na atmosfera é zero, de modo semelhante à madeira plantada."
+        },
+       
+        {
+          "item": "Madeira nativa",
+          "description": "Madeira extraída de florestas naturais, como a da Amazônia, sem que tenha sido plantada pelo homem. Como não há recuperação total da floresta, do ponto de vista do CO2, é considerada fonte de carbono, uma vez que parte da biomassa florestal é destruída/perdida durante o processo de extração e não é recuperada dentro do período até a exploração florestal subsequente."
+        },
+       
+        {
+          "item": "Madeira plantada",
+          "description": "Madeira obtida de monoculturas florestais cultivadas especificamente para fins comerciais, como eucalipto e pinus. O plantio é planejado e controlado, o que reduz a pressão sobre florestas nativas e permite o manejo sustentável. Do ponto de vista do CO2, o saldo de carbono na atmosfera é zero, de modo semelhante à madeira certificada FSC."
+        },
+       
+        {
+          "item": "Madeira tratada",
+          "description": "Madeira submetida a processos químicos ou físicos para aumentar sua durabilidade e resistência contra fungos, insetos e intempéries. No caso de tratamento químico, os produtos utilizados são conhecidos como preservantes."
+        },
+       
+        {
+          "item": "Material asfáltico fresado",
+          "description": "Material proveniente do processo de fresagem ou de remoção de camada de revestimento asfáltico. O termo Pavimento Asfáltico Fresado tem origem no inglês Reclaimed Asphalt Pavement (RAP)."
+        },
+       
+        {
+          "item": "MDF (Medium-Density Fiberboard)",
+          "description": "Painel de madeira reconstituída produzido a partir da aglutinação de fibras de madeira com resinas sintéticas, sob alta temperatura e pressão."
+        },
+       
+        {
+          "item": "Modelagem da Informação da Construção (Building Information Modeling -  BIM)",
+          "description": "Uso de uma representação digital compartilhada de um ativo (item, coisa ou entidade que tem valor potencial ou valor real para uma organização), para facilitar os processos de projeto, construção, operação e manutenção para formar uma base confiável para decisões (ABNT NBR ISO 19650-1/2022)"
+        },
+       
+        {
+          "item": "MVD (Model View Definition)",
+          "description": "MVD é um subconjunto do esquema IFC que atua como um filtro para selecionar os dados (gráficos e alfanuméricos) relevantes para um caso de uso específico, como a extração de quantitativos. Sua função é otimizar a troca de informações, garantindo que os dados necessários sejam incluídos no arquivo IFC, enquanto dados irrelevantes são omitidos, o que facilita a compatibilidade e a análise. Para este protocolo, recomenda-se o uso do esquema IFC4x3, uma escolha estratégica para o futuro, que garante o alinhamento com as inovações mais recentes. As MVDs Vista de coordenação IFC 2x3, Coordination View 2.0 ou Reference View também são amplamente suportadas, mas a correta exportação de propriedades e quantitativos é prioritária para a análise. O projetista pode personalizar sua própria MVD, desde que garanta a inclusão de todos os dados e propriedades exigidos por este guia para a correta validação e análise do projeto."
+        }
+       ]
+    },
+    {
+      "letter": "N",
+      "items": [
+        {
+          "item": "ND100/LOD 100 (Conceitual)",
+          "description": "O modelo é representado por símbolos genéricos ou massas que indicam a existência de um elemento. O Level of Development (LOD) ou Nível de Desenvolvimento (ND) refere-se à confiabilidade e à maturidade do elemento. Neste nível, a informação é aproximada, útil para a fase de pré-projeto."
+        },
+        {
+          "item": "ND200/LOD 200 (Geometria Aproximada)",
+          "description": "Os elementos são representados como sistemas ou objetos genéricos com quantidades, formas, tamanhos e localizações aproximadas. Informações não-gráficas podem ser anexadas."
+        },
+        {
+          "item": "ND300/LOD 300 (Geometria Precisa)",
+          "description": "Os elementos são definidos com dimensões exatas e posições precisas. A modelagem é detalhada o suficiente para a produção de documentos de construção."
+        },
+        {
+          "item": "ND350/LOD 350 (Geometria Precisa com Conexões)",
+          "description": "Além do detalhamento do LOD 300, esta fase descreve as relações e interfaces de um elemento com outros componentes, sendo utilizada para documentação de construção."
+        },
+        {
+          "item": "ND400/LOD 400 (Pronto para Fabricação)",
+          "description": "O modelo inclui informações detalhadas para fabricação e montagem, com dados específicos de montagens e conexões."
+        },
+        {
+          "item": "ND500/LOD 500 (As-Built/Operacional)",
+          "description": "O modelo reflete as condições reais do projeto após a construção. Contém dados de verificação de campo e é utilizado para gerenciamento de instalações e manutenção."
+        },
+        {
+          "item": "Nível de Desenvolvimento (ND) (Level of development - LOD)",
+          "description": "Grau de maturidade e confiabilidade de um elemento dentro de um modelo BIM. Define a precisão geométrica, o detalhamento informacional e o nível de utilização esperado do objeto em diferentes fases do projeto (por exemplo LOD 100, 200, 300, 400, 500). Quanto maior o LOD, maior a exatidão das dimensões, a completude dos atributos e a aptidão do elemento para suportar decisões de projeto, orçamentação, construção e operação."
+        }
+       ]
+    },
+    {
+      "letter": "O",
+      "items": [
+        {
+          "item": "OSB (Oriented Strand Board)",
+          "description": "Painel de tiras de madeira orientadas e prensadas com resinas, usado como elemento de vedação de sistemas construtivos industrializados, como o wood frame, no qual também atua no contraventamento da estrutura."
+        }
+      ]
+    },
+    {
+      "letter": "P",
+      "items": [
+        {
+          "item": "Pavimento asfáltico",
+          "description": "Estrutura de pavimentação composta por revestimento de misturas asfálticas aplicadas sobre uma base granular ou cimentada, destinada a resistir aos esforços de tráfego e fornecer condições adequadas de rolamento. É o tipo de pavimento mais utilizado nas rodovias brasileiras."
+        },
+        {
+          "item": "Pavimento em paralelepípedo",
+          "description": "É um tipo de pavimento constituído por blocos de pedra natural (geralmente granito ou basalto) talhados em forma de paralelepípedo e assentados sobre uma camada de regularização (comumente areia ou pó de pedra), apoiada em base ou sub-base granular."
+        },
+        {
+          "item": "Pavimento intertravado",
+          "description": "Sistema de revestimento de pavimentos executado com blocos intertravados de concreto (pavers), assentados sobre camada de areia e travados mecanicamente pelo próprio arranjo das peças. É normalmente utilizado em vias urbanas, calçadas, estacionamentos e áreas de tráfego leve a médio."
+        },
+        {
+          "item": "Pavimento rígido",
+          "description": "Estrutura de pavimentação caracterizada pelo revestimento em concreto de cimento Portland. Apresenta, no geral, maior rigidez e capacidade estrutural, sendo indicado para rodovias de tráfego intenso, áreas industriais e pistas aeroportuárias."
+        },
+        {
+          "item": "Pavimento tipo",
+          "description": "Andar de um edifício cuja planta arquitetônica e estrutural se repete em relação aos demais pavimentos, servindo como referência para cálculos de área, estimativas de custo, análise estrutural e planejamento construtivo."
+        },
+        {
+          "item": "PD&I – Pesquisa, Desenvolvimento e Inovação ",
+          "description": "FALTA"
+        },
+        {
+          "item": "Pé-direito",
+          "description": "Distância vertical medida entre o piso acabado de um pavimento e o teto ou cobertura."
+        },
+        {
+          "item": "Placa cimentícia",
+          "description": "Placa industrializada composta por cimento Portland, agregados e fibras de reforço. Utilizada como elemento de fechamento ou revestimento, apresenta elevada durabilidade e resistência à umidade."
+        },
+        {
+          "item": "Placa cimentícia autoclavada",
+          "description": "Tipo de placa cimentícia que difere da placa cimentícia tradicional por ser submetido a cura em autoclave sob alta pressão e temperatura. Apresenta elevada durabilidade, estabilidade dimensional e resistência à umidade, sendo empregado em sistemas construtivos industrializados, fachadas, divisórias e áreas molhadas."
+        },
+        {
+          "item": "Plano de Execução BIM (BEP)",
+          "description": "Documento que define como o BIM será aplicado em um projeto ou empreendimento, estabelecendo objetivos, responsabilidades, fluxos de trabalho, softwares e padrões de modelagem."
+        },
+        {
+          "item": "Potencial de aquecimento global (PAG) (Global warming potential)",
+          "description": "O GWP é o índice que compara o impacto climático integrado ao longo do tempo de uma emissão de 1 kg de um gás de efeito estufa com o impacto de 1 kg de CO₂ (IPPCC, 2021)."
+        },
+        {
+          "item": "Pré-Misturado a Frio (PMF)",
+          "description": "Mistura executada a temperatura ambiente em usina apropriada, composta de agregado mineral e emulsão asfáltica, espalhada e compactada a frio. Conforme a faixa granulométrica adotada, pode ser densa, semi-densa ou aberta."
+        },
+        {
+          "item": "Produto Mínimo Viável (MVP)",
+          "description": "FALTA"
+        },
+        {
+          "item": "Programa Brasileiro da Qualidade e Produtividade do Habitat (PBQP-H)",
+          "description": "O PBQP-H, instituído pela Portaria nº134 de 18/12/1998, é designado como uma ferramenta do governo federal para promover a modernização e a melhoria contínua na qualidade das habitações, especialmente as de interesse social, integrando o setor da construção civil e o poder público. "
+        },
+        {
+          "item": "Programa Minha Casa Minha Vida (MCMV ou PMCMV)",
+          "description": "Iniciativa habitacional do governo federal que oferece subsídios e taxas de juros reduzidas para a aquisição de moradias populares, tanto em áreas urbanas (para famílias com renda até R$ 8mil)  quanto rurais (famílias com renda até R$ 96mil)"
+        },
+        {
+          "item": "Projeto executivo arquitetônico (PE-ARQ)",
+          "description": "Etapa destinada à concepção e à representação final das informações técnicas dos projetos arquitetônicos, realizada por profissional habilitado, e de seus elementos, instalações e componentes, completas, defnitivas, necessárias e suficientes à execução dos serviços e de obras correspondentes (ABNT NBR 16636-1, 2017)."
+        }
+      ]
+    },
+    {
+      "letter": "R",
+      "items": [
+        {
+          "item": "Radier",
+          "description": "Elemento de fundação rasa dotado de rigidez para receber e distribuir mais do que 70% das cargas da estrutura (ABNT, 2022); ou fundação superficial associada que recebe todos os pilares da obra (radier geral) ou que recebe apenas parte dos pilares da obra (radier parcial) (Velloso; Lopes, 2010)."
+        },
+        {
+          "item": "Radier estaqueado",
+          "description": "Fundação mista que combina o radier com a estaca."
+        },
+        {
+          "item": "Rede de distribuição de conteúdo (Content Delivery Network - CDN)",
+          "description": "FALTA"
+        },
+        {
+          "item": "Regularização e compactação de subleito",
+          "description": "Operação destinada a conformar o leito estradal, transversal e longitudinalmente, obedecendo às larguras e cotas constantes das notas de serviço de regularização de terraplenagem do projeto."
+        },
+        {
+          "item": "RESTful (Representational state transfer)",
+          "description": "FALTA"
+        },
+        {
+          "item": "Rota de mitigação",
+          "description": "Conjunto de estratégias, tecnologias ou processos adotados para reduzir ou neutralizar emissões de gases de efeito estufa em determinada atividade, setor, produto ou processo. "
+        }
+      ]
+    },
+    {
+      "letter": "S",
+      "items": [
+        {
+          "item": "Sapata corrida",
+          "description": "Sapata sujeita à ação de uma carga distribuída linearmente ou de três ou mais pilares ao longo de um mesmo alinhamento, desde que representem menos de 70% das cargas da estrutura (ABNT, 2022)."
+        },
+        {
+          "item": "Sapata",
+          "description": "Elemento de fundação rasa, de concreto armado, dimensionado de modo que as tensões de tração nele resultantes sejam resistidas pelo emprego de armadura especialmente disposta para esse fim (ABNT, 2022)."
+        },
+        {
+          "item": "Sapata associada",
+          "description": "Sapata comum a dois pilares; a denominação se aplica também a sapata comum a mais do que dois pilares, quando não alinhados e desde que representem menos de 70% das cargas da estrutura (ABNT, 2022)."
+        },
+        {
+          "item": "Sapata isolada",
+          "description": "Sapata que transmite ao solo as ações de um único pilar (Bastos, 2023)."
+        },
+        {
+          "item": "Sistema de Custos Referenciais de Obras (SICRO)",
+          "description": "Sistema do DNIT que fornece um conjunto de valores referenciais de insumos e serviços, incluindo custos de equipamentos, mão de obra e materiais, para a elaboração de orçamentos e análise de preços em obras de infraestrutura de transportes."
+        },
+        {
+          "item": "Sistema construtivo industrializado",
+          "description": "Método construtivo baseado em componentes pré-fabricados ou pré-montados, visando maior padronização e racionalização de processos, rapidez de execução, redução de resíduos e melhor desempenho."
+        },
+        {
+          "item": "Sistema de Informação do Desempenho Ambiental da Construção (Sidac)",
+          "description": "Plataforma pública do governo brasileiro que reúne e disponibiliza indicadores ambientais, como emissão de CO₂ e consumo de energia, de produtos e processos usados na construção civil (https://sidac.org.br/)."
+        },
+        {
+          "item": "Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (SINAPI)",
+          "description": "Principal fonte de referência brasileira de custos para obras e serviços de engenharia, por determinação do Decreto 7.983/2013. É mantido por parceria entre a Caixa Econômica Federal e o Instituto Brasileiro de Geografia e Estatística (IBGE)."
+        },
+        {
+          "item": "Sistemas de Vedação Vertical Externa (SVVE)",
+          "description": "Conjunto de componentes (paredes, esquadrias, revestimentos) que delimitam e fecham os ambientes de uma construção, atuando como barreiras físicas contra fatores externos, como chuva, vento, ruído e poeira."
+        },
+        {
+          "item": "Sistemas de Vedação Vertical Interna (SVVI)",
+          "description": "Conjunto de componentes (paredes, esquadrias, revestimentos) que delimitam e dividem os ambientes internos de uma construção, compartimentando os espaços internos."
+        },
+        {
+          "item": "Sobrado",
+          "description": "Edificação de dois ou mais andares, comumente encontrada em áreas urbanas. No programa Minha Casa, Minha Vida, é permitido construir ou adquirir sobrados em lotes com recuos laterais ou geminados, desde que respeitadas as normas de urbanismo e acessibilidade."
+        },
+        {
+          "item": "Solo-brita",
+          "description": "Mistura artificial em usina de solo com agregado pétreo britado que apresenta grande estabilidade e durabilidade para resistir às cargas do tráfego e ação dos agentes climáticos, quando adequadamente compactada."
+        },
+        {
+          "item": "Solo-cimento",
+          "description": "Material proveniente da mistura de solo (com ou sem adição de material granular), cimento e água, em proporções previamente determinadas por processo próprio de dosagem, de forma que o teor selecionado promova aumento de rigidez no material, melhorando suas características de resistência à tração, deformabilidade elástica, fadiga e durabilidade."
+        },
+        {
+          "item": "Solos de comportamento laterítico",
+          "description": "São materiais que, quando devidamente compactados, adquirem ou mantêm boa resistência, apresentando menor suscetibilidade à erosão e maior estabilidade em relação aos solos não lateríticos."
+        },
+        {
+          "item": "SQL (Structured Query Language)",
+          "description": ""
+        },
+        {
+          "item": "Steel frame",
+          "description": "Sistema construtivo industrializado composto por uma estrutura de perfis de aço galvanizado com fechamento em placas cimentícias ou gesso acartonado. Esse sistema destaca-se por oferecer maior velocidade na construção, quando comparado aos sistemas de alvenaria. "
+        }
+      ]
+    },
+    {
+      "letter": "T",
+      "items": [
+        {
+          "item": "Terraplenagem",
+          "description": "Conjunto de operações de engenharia que visam modificar a topografia natural do terreno para adequá-lo ao projeto de uma obra. Inclui atividades de escavação, transporte, compactação e disposição de solo ou rocha, resultando em cortes e aterros."
+        }
+      ]
+    },
+    {
+      "letter": "U",
+      "items": [
+        {
+          "item": "Unidade Funcional (UF)",
+          "description": "Desempenho quantificado de um sistema de produto para utilização como unidade de referência (ABNT NBR ISO 14040)."
+        },
+        {
+          "item": "Unidade Habitacional",
+          "description": "Espaço projetado para atender às necessidades de moradia de uma família ou indivíduo, podendo ser casa ou apartamento."
+        }
+      ]
+    },
+    {
+      "letter": "W",
+      "items": [
+        {
+          "item": "Wood frame",
+          "description": "Sistema construtivo industrializado com estrutura de madeira, geralmente formada por montantes, vigas e chapas (como OSB). Nesse sistema construtivo destaca-se a leveza da estrutura e alta velocidade de construção. "
+        }
+      ]
     }
   ],
   "active": true,
