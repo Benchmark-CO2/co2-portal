@@ -53,7 +53,7 @@ export default function PublicHeader() {
       /> */}
         <li>
           <Link
-            to="https://bipc.org.br/benchmark"
+            to="https://app.bipc.org.br/benchmark"
             activeProps={currentRoute === '/benchmark' ? activeProps : ''}
             onClick={() => {
               setIsMenuOpen(false);
@@ -131,7 +131,7 @@ export default function PublicHeader() {
         {isMobile && (
             <li>
             <Link
-              to="https://bipc.org.br/sign-up"
+              to="https://app.bipc.org.br/sign-up"
             >
               <UserPlus size={18} />
               <span>Cadastre-se</span>
@@ -140,7 +140,7 @@ export default function PublicHeader() {
         )}
         <li>
           <Link
-            to="https://bipc.org.br/login"
+            to="https://app.bipc.org.br/login"
             className={!isMobile ? 'gap-2' : ''}
           >
             {isMobile ? <LogIn size={18} /> : <User size={18} />}
@@ -156,7 +156,7 @@ export default function PublicHeader() {
       <div className={cn("flex items-center justify-between px-8 py-1.5", {
         'px-6 py-0 h-15': isMobile  
       })}>
-        <Link to={"https://bipc.org.br/benchmark"} className="p-0">
+        <Link to={"https://app.bipc.org.br/benchmark"} className="p-0">
           <img
             src={'/images/assets/logo.svg'}
             alt="Logo"
@@ -222,7 +222,7 @@ export default function PublicHeader() {
               isMenuOpen ? "translate-x-0" : "-translate-x-full"
             )}
           >
-            <Link to={"https://bipc.org.br/benchmark"} className="p-4">
+            <Link to={"https://app.bipc.org.br/benchmark"} className="p-4">
               <img
                 src={'/images/assets/logo_full.svg'}
                 alt="Logo"
