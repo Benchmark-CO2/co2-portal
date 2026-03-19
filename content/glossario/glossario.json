@@ -6,7 +6,7 @@
         {
           "item": "Aço Reforçado",
           "description": "Aço submetido a processos químicos ou térmicos (como galvanização ou têmpera) para aumentar sua resistência mecânica, durabilidade ou proteção contra corrosão."
-        }, 
+        },
         {
           "item": "Alvenaria",
           "description": "Sistema construtivo composto por blocos ou tijolos unidos por argamassa, desempenhando apenas função de vedação não estrutural."
@@ -73,7 +73,7 @@
           "description": "Brita graduada composta por mistura, em usina, de produtos integralmente de britagem de rocha sã, apresentando granulometria contínua e extensa, cuja estabilização é obtida pela ação mecânica do equipamento de compactação."
         }
       ]
-    }, 
+    },
     {
       "letter": "C",
       "items": [
@@ -174,7 +174,7 @@
           "item": "Distancia piso-a-piso",
           "description": "Distância vertical medida entre o piso acabado de um pavimento e o piso acabado do pavimento imediatamente superior, ou, no caso do último pavimento, entre o piso acabado e o teto ou cobertura."
         }
-       ]
+      ]
     },
     {
       "letter": "E",
@@ -223,7 +223,7 @@
           "item": "Estudo preliminar arquitetônico (EP-ARQ)",
           "description": "Etapa destinada ao dimensionamento preliminar dos conceitos do projeto arquitetônico da edificação e anexos necessários à compreensão da configuração da edificação, podendo incluir alternativas de projetos (ABNT NBR 16636-1, 2017)."
         }
-       ]
+      ]
     },
     {
       "letter": "F",
@@ -268,7 +268,7 @@
           "item": "Fundo de Garantia do Tempo de Serviço (FGTS)",
           "description": "Fundo de natureza trabalhista e social, constituído por depósitos mensais realizados pelos empregadores em contas vinculadas aos trabalhadores, regido pela Lei nº 8.036/1990. Na construção civil, o FGTS é uma das principais fontes de financiamento habitacional e de infraestrutura urbana no Brasil."
         }
-       ]
+      ]
     },
     {
       "letter": "G",
@@ -289,7 +289,7 @@
           "item": "Grupo de trabalho (GT)",
           "description": "Equipe de especialistas em determinado assunto. O projeto de mitigação de CO₂ em moradias foi desenvolvido através de sete GTs: Estruturas; Fundações; Pavimentação; Plataforma; Telhados; Vedações, Revestimentos e Contrapiso; Wood e Steel Frame."
         }
-       ]
+      ]
     },
     {
       "letter": "H",
@@ -302,7 +302,7 @@
           "item": "Habitação de Interesse Social (HIS)",
           "description": "Tipo de imóvel que se enquadra em políticas públicas que visam contribuir para garantir o direito à moradia digna para a população."
         }
-       ]
+      ]
     },
     {
       "letter": "I",
@@ -319,7 +319,7 @@
           "item": "Inventário do Ciclo de Vida",
           "description": "Quantificação das entradas e saídas de um sistema de produto ao longo do seu ciclo de vida (ABNT NBR ISO 14040)"
         }
-       ]
+      ]
     },
     {
       "letter": "L",
@@ -332,7 +332,7 @@
           "item": "Linha de base (baseline)",
           "description": "A linha de base (ou referência) é o estado em relação ao qual a mudança é medida. Pode ser uma “linha de base atual”, caso em que representa condições observáveis no presente. Também pode ser uma “linha de base futura”, que consiste em um conjunto projetado de condições futuras, excluindo o fator de interesse que impulsiona a mudança. Interpretações alternativas das condições de referência podem dar origem a múltiplas linhas de base (IPCC, 2012)"
         }
-       ]
+      ]
     },
     {
       "letter": "M",
@@ -341,42 +341,35 @@
           "item": "Madeira Certificada FSC",
           "description": "Madeira proveniente de manejo florestal responsável com recuperação total da floresta, certificada pelo Forest Stewardship Council (FSC), que assegura critérios ambientais, sociais e econômicos. Do ponto de vista do CO2, o saldo de carbono na atmosfera é zero, de modo semelhante à madeira plantada."
         },
-       
         {
           "item": "Madeira nativa",
           "description": "Madeira extraída de florestas naturais, como a da Amazônia, sem que tenha sido plantada pelo homem. Como não há recuperação total da floresta, do ponto de vista do CO2, é considerada fonte de carbono, uma vez que parte da biomassa florestal é destruída/perdida durante o processo de extração e não é recuperada dentro do período até a exploração florestal subsequente."
         },
-       
         {
           "item": "Madeira plantada",
           "description": "Madeira obtida de monoculturas florestais cultivadas especificamente para fins comerciais, como eucalipto e pinus. O plantio é planejado e controlado, o que reduz a pressão sobre florestas nativas e permite o manejo sustentável. Do ponto de vista do CO2, o saldo de carbono na atmosfera é zero, de modo semelhante à madeira certificada FSC."
         },
-       
         {
           "item": "Madeira tratada",
           "description": "Madeira submetida a processos químicos ou físicos para aumentar sua durabilidade e resistência contra fungos, insetos e intempéries. No caso de tratamento químico, os produtos utilizados são conhecidos como preservantes."
         },
-       
         {
           "item": "Material asfáltico fresado",
           "description": "Material proveniente do processo de fresagem ou de remoção de camada de revestimento asfáltico. O termo Pavimento Asfáltico Fresado tem origem no inglês Reclaimed Asphalt Pavement (RAP)."
         },
-       
         {
           "item": "MDF (Medium-Density Fiberboard)",
           "description": "Painel de madeira reconstituída produzido a partir da aglutinação de fibras de madeira com resinas sintéticas, sob alta temperatura e pressão."
         },
-       
         {
           "item": "Modelagem da Informação da Construção (Building Information Modeling -  BIM)",
           "description": "Uso de uma representação digital compartilhada de um ativo (item, coisa ou entidade que tem valor potencial ou valor real para uma organização), para facilitar os processos de projeto, construção, operação e manutenção para formar uma base confiável para decisões (ABNT NBR ISO 19650-1/2022)"
         },
-       
         {
           "item": "MVD (Model View Definition)",
           "description": "MVD é um subconjunto do esquema IFC que atua como um filtro para selecionar os dados (gráficos e alfanuméricos) relevantes para um caso de uso específico, como a extração de quantitativos. Sua função é otimizar a troca de informações, garantindo que os dados necessários sejam incluídos no arquivo IFC, enquanto dados irrelevantes são omitidos, o que facilita a compatibilidade e a análise. Para este protocolo, recomenda-se o uso do esquema IFC4x3, uma escolha estratégica para o futuro, que garante o alinhamento com as inovações mais recentes. As MVDs Vista de coordenação IFC 2x3, Coordination View 2.0 ou Reference View também são amplamente suportadas, mas a correta exportação de propriedades e quantitativos é prioritária para a análise. O projetista pode personalizar sua própria MVD, desde que garanta a inclusão de todos os dados e propriedades exigidos por este guia para a correta validação e análise do projeto."
         }
-       ]
+      ]
     },
     {
       "letter": "N",
@@ -409,7 +402,7 @@
           "item": "Nível de Desenvolvimento (ND) (Level of development - LOD)",
           "description": "Grau de maturidade e confiabilidade de um elemento dentro de um modelo BIM. Define a precisão geométrica, o detalhamento informacional e o nível de utilização esperado do objeto em diferentes fases do projeto (por exemplo LOD 100, 200, 300, 400, 500). Quanto maior o LOD, maior a exatidão das dimensões, a completude dos atributos e a aptidão do elemento para suportar decisões de projeto, orçamentação, construção e operação."
         }
-       ]
+      ]
     },
     {
       "letter": "O",
@@ -510,7 +503,7 @@
         },
         {
           "item": "RESTful (Representational state transfer)",
-          "description": "FALTA"
+          "description": "teste para mudar o glossário"
         },
         {
           "item": "Rota de mitigação",
@@ -579,7 +572,7 @@
         },
         {
           "item": "SQL (Structured Query Language)",
-          "description": ""
+          "description": "falta"
         },
         {
           "item": "Steel frame",
