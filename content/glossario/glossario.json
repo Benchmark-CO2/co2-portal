@@ -81,12 +81,12 @@
           "description": "Abordagem linear da ACV que considera o ciclo de vida completo de um produto, ou seja, desde a extração das matérias-primas/recursos naturais até o descarte final do produto (“túmulo”). Inclui todas as etapas: produção, distribuição, uso e fim de vida (Baseado na EN 15978:2011; EN 15804:2019)."
         },
         {
-          "item": "Brita Graduada Simples (BGS)",
-          "description": "Brita graduada é a camada de sub-base ou base composta por mistura, em usina, de produtos integralmente de britagem de rocha sã, apresentando granulometria contínua e extensa, cuja estabilização é obtida pela ação mecânica do equipamento de compactação (DER SP ET-DE-P00/008 (2024))."
-        },
-        {
           "item": "Bica Corrida (BC)",
           "description": "Camada de sub-base ou base composta por produtos resultantes de britagem primária de rocha sã, que em uma condição granulométrica mínima assegura estabilidade à camada, quando executada por meio das operações de espalhamento, homogeneização, umedecimento e compactação (DER-SP ET-DE-P00/010 (2024))."
+        },
+        {
+          "item": "Brita Graduada Simples (BGS)",
+          "description": "Brita graduada é a camada de sub-base ou base composta por mistura, em usina, de produtos integralmente de britagem de rocha sã, apresentando granulometria contínua e extensa, cuja estabilização é obtida pela ação mecânica do equipamento de compactação (DER SP ET-DE-P00/008 (2024))."
         }
       ]
     },
@@ -102,16 +102,12 @@
           "description": "Instituição financeira pública federal brasileira, vinculada ao Ministério da Fazenda, que atua em diversos setores, incluindo habitação, saneamento, infraestrutura e programas sociais. Na construção civil, é referência em normativos, financiamentos e diretrizes técnicas aplicáveis a empreendimentos habitacionais."
         },
         {
-          "item": "Captura, utilização e armazenamento de carbono (CCUS)",
-          "description": "Conjunto de tecnologias que visam mitigar emissões de dióxido de carbono (CO₂) na atmosfera. Compreende três etapas principais: (i) captura do CO₂ em fontes emissoras ou diretamente do ar, (ii) utilização do gás em processos industriais ou agrícolas, e (iii) armazenamento em formações geológicas profundas ou em materiais estáveis."
-        },
-        {
           "item": "Carbono embutido",
-          "description": "Emissões de CO2 associadas à extração, transporte, processamento, uso e disposição dos materiais de construção (Belizário, 2024)."
+          "description": "Emissões de CO₂ associadas a extração, transporte, processamento, uso e disposição dos materiais de construção (Belizário, 2024)."
         },
         {
-          "item": "Carbono Operacional",
-          "description": "Emissões de CO2 associadas ao consumo energético (eletricidade e combustíveis) para operação do edifício e ao consumo de água e correspondente geração de efluentes no edifício (Belizário, 2024)."
+          "item": "Carbono operacional",
+          "description": "Emissões de CO₂ associadas ao consumo energético (eletricidade e combustíveis) para operação do edifício e ao consumo de água e correspondente geração de efluentes no edifício (Belizário, 2024)."
         },
         {
           "item": "Casa térrea",
@@ -127,27 +123,23 @@
         },
         {
           "item": "Ciclo de vida",
-          "description": "Estágios consecutivos e encadeados de um sistema de produto, desde a extração de recursos naturais até a disposição final (ABNT NBR ISSO 14040)"
+          "description": "Estágios consecutivos e encadeados de um sistema de produto, desde a extração de recursos naturais até a disposição final (ABNT NBR ISO 14040)"
         },
         {
           "item": "Cimento Asfáltico de Petróleo (CAP)",
-          "description": "Ligante derivado do refino do petróleo, de consistência sólida ou semissólida, utilizado principalmente na pavimentação asfáltica. Atua como aglutinante nas misturas asfálticas, conferindo coesão, impermeabilidade e resistência às solicitações do tráfego e às intempéries."
+          "description": "Ligante derivado do refino do petróleo, de consistência sólida ou semissólida, utilizado principalmente na pavimentação asfáltica. Atua como aglutinante nas misturas asfálticas, conferindo coesão, impermeabilidade e resistência às solicitações do tráfego e às intempéries (Bernucci et al., 2022, Pavimentação asfáltica - Formação básica para engenheiros)."
         },
         {
           "item": "Concreto Asfáltico (CA)",
-          "description": "Mistura asfáltica produzida em usina, composta por agregados minerais e CAP, homogeneizada em altas temperaturas e aplicada em obras de pavimentação. É o tipo de revestimento mais utilizado nas obras de pavimentação brasileiras. Nomeclatura mais recente."
+          "description": "Mistura asfáltica densa, isto é, com distribuição granulométrica contínua, produzida, espalhada e compactada a quente, constituída de CAP, agregados pétreos, fíler e, quando necessário, material de enchimento e/ou melhorador de adesividade. É o tipo de revestimento mais utilizado nas obras de pavimentação brasileiras (NORMA DNIT 031/2024 – ES)."
         },
         {
           "item": "Concreto asfáltico reciclado em usina a quente",
-          "description": "Mistura realizada em usinas gravimétricas ou contínuas, com características específicas, utilizando-se o material asfáltico fresado, o cimento asfáltico de petróleo, os agregados adicionais e, quando necessário, material de enchimento (fíler), aditivo (para o caso da produção de mistura morna) e agente de reciclagem, misturado, espalhado e compactado a temperaturas usuais para concretos asfálticos a quente ou a temperaturas reduzidas para misturas asfálticas mornas (Warm Mix Asphalt). "
-        },
-        {
-          "item": "Concreto Betuminoso Usinado a Quente (CBUQ)",
-          "description": "Mistura asfáltica produzida em usina, composta por agregados minerais e CAP, homogeneizada em altas temperaturas e aplicada em obras de pavimentação. É o tipo de revestimento mais utilizado nas obras de pavimentação brasileiras. Nomeclatura mais antiga."
+          "description": "Mistura realizada em usinas gravimétricas ou contínuas, com características específicas, utilizando-se o material asfáltico fresado, o cimento asfáltico de petróleo, os agregados adicionais e, quando necessário, material de enchimento (fíler), aditivo (para o caso da produção de mistura morna) e agente de reciclagem, misturado, espalhado e compactado a temperaturas usuais para concretos asfálticos a quente ou a temperaturas reduzidas para misturas asfálticas mornas (NORMA DNIT 033/2021 – ES)."
         },
         {
           "item": "Conferência das Partes (Conference of the Parties - COP)",
-          "description": "Órgão supremo de um tratado internacional, como a Convenção-Quadro das Nações Unidas sobre a Mudança do Clima (UNFCCC), a mais conhecida. Sua principal função é reunir anualmente os países signatários (as 'Partes') para analisar o progresso, debater medidas e negociar acordos para enfrentar desafios ambientais, como a mudança climática, a perda de biodiversidade e a desertificação. "
+          "description": "Órgão supremo de um tratado internacional, como a Convenção-Quadro das Nações Unidas sobre a Mudança do Clima (UNFCCC), a mais conhecida. Sua principal função é reunir anualmente os países signatários (as \"Partes\") para analisar o progresso, debater medidas e negociar acordos para enfrentar desafios ambientais, como a mudança climática, a perda de biodiversidade e a desertificação. "
         },
         {
           "item": "Curva ABC",
