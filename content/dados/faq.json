@@ -3,7 +3,7 @@
     {
       "questions": [
         {
-          "question": "1. O que é a plataforma BIPc?",
+          "question": "1. O que é a plataforma BIPC?",
           "response": "O BIPc (Benchmark Iterativo de Projetos de Baixo Carbono) é uma plataforma digital desenvolvida sob coordenação da Universidade de São Paulo (USP), com suporte financeiro da Caixa, para estimar, analisar e comparar o carbono e a energia embutidos em projetos de edificações, em especial os empreendimentos habitacionais. A ferramenta abriga uma base de dados de projetos alimentada ininterruptamente por empresas construtoras e projetistas do mercado da construção, que podem calcular a intensidade de carbono e energia de seus empreendimentos cadastrados. Podem também, a partir do consumo de materiais e de fatores de emissão definidos, obter referências comparativas (benchmark) com outros projetos de mesma natureza."
         },
         {
