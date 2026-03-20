@@ -12,8 +12,8 @@
           "description": "Sistema construtivo composto por blocos ou tijolos unidos por argamassa, desempenhando apenas função de vedação não estrutural."
         },
         {
-          "item": "Alvenaria Estrutural",
-          "description": "Tipo de alvenaria em blocos ou tijolos unidos por argamassa estrutural, que além de vedar, suporta cargas da edificação. Estas paredes possuem grautes armados, dispensando estruturas adicionais como vigas e pilares."
+          "item": "Alvenaria estrutural",
+          "description": "Tipo de alvenaria em blocos ou tijolos unidos por argamassa estrutural que, além de vedar, suporta cargas da edificação. Estas paredes possuem grautes armados, dispensando estruturas adicionais, como vigas e pilares."
         },
         {
           "item": "Ambiental, Social e Governança (Environmental, Social and Governance - ESG)",
