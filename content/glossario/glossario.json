@@ -32,6 +32,22 @@
           "description": "Área real do pavimento térreo, considerada como a área da fundação do tipo radier ou radier estaqueado nas estimativas feitas no cenário Estudo Preliminar."
         },
         {
+          "item": "Área do sistema viário",
+          "description": "Área composta por vias de acesso, estacionamentos, bicicletário, ciclovias e passeios somente relacionado ao incidente."
+        },
+        {
+          "description": "Poligonal do terreno, ou seja, tudo o que está dentro da poligonal e é considerado incidente.",
+          "item": "Área do terreno"
+        },
+        {
+          "description": "Soma das áreas cobertas e descobertas reais, situadas nos diversos pavimentos da edificação, calculadas a partir do projeto arquitetônico aprovado e com auxílio do quadro I do Anexo A da Norma ABNT NBR 12721, 2006.",
+          "item": "Área real global"
+        },
+        {
+          "description": "Formato de arquivo aberto e padronizado para troca de informações em modelos BIM, permitindo a interoperabilidade entre diferentes softwares.",
+          "item": "Arquivo IFC"
+        },
+        {
           "item": "Avaliação do Ciclo de Vida (ACV)",
           "description": "Compilação e avaliação das entradas, saídas e impactos ambientais potenciais de um sistema de produto ao longo do seu ciclo de vida (ABNT NBR ISSO 14040)"
         }
@@ -41,36 +57,36 @@
       "letter": "B",
       "items": [
         {
-          "item": "Brita Graduada Simples (BGS)",
-          "description": "Brita graduada é composta por mistura obrigatória em usina, de produtos integralmente de britagem de rocha sã, apresentando granulometria contínua e extensa, cuja estabilização é obtida pela ação mecânica do equipamento de compactação."
-        },
-        {
           "item": "Benchmark",
-          "description": "Ponto de referência em relação ao qual comparações podem ser feitas (ISO 21678)"
+          "description": "Ponto de referência em relação ao qual comparações podem ser feitas (ISO 21678)."
         },
         {
           "item": "Benchmarking",
-          "description": "Processo de coletar, analisar e reportar dados de desempenho de edifícios ou outras construções consideradas comparáveis (ISO 21678)"
+          "description": "Processo de coletar, analisar e reportar dados de desempenho de edifícios ou outras construções consideradas comparáveis (ISO 21678)."
         },
         {
           "item": "Benchmark Iterativo para Projetos de Baixo Carbono (BIPc)",
-          "description": "Plataforma que permite mensurar a geração de carbono incorporado em empreendimentos habitacionais a partir de dados de projeto e base do SIDAC - Sistema de Informação do Desempenho Ambiental da Construção"
+          "description": "Plataforma que permite mensurar a geração de carbono incorporado em empreendimentos habitacionais a partir de dados de projeto e base do SIDAC - Sistema de Informação do Desempenho Ambiental da Construção."
         },
         {
           "item": "Berço-ao-berço / Cradle-to-Cradle",
-          "description": "Abordagem circular da ACV que considera o reuso ou a reciclagem do produto ao final de sua vida útil, promovendo um ciclo fechado. Nesse modelo, considera-se o reaproveitamento das matérias primas/recursos naturais como insumos para novos produtos."
+          "description": "Abordagem circular da ACV que considera o reuso ou a reciclagem do produto ao final de sua vida útil, promovendo um ciclo fechado. Nesse modelo, considera-se o reaproveitamento das matérias-primas/recursos naturais como insumos para novos produtos (Baseado na EN 15978:2011; EN 15804:2019)."
         },
         {
           "item": "Berço-ao-portão / Cradle-to-Gate",
-          "description": "Abordagem linear da ACV que considera na avaliação os impactos ambientais desde a extração das matérias-primas/recursos naturais (“berço”) até o momento em que o produto sai da fábrica (“portão”)."
+          "description": "Abordagem linear da ACV que considera na avaliação os impactos ambientais desde a extração das matérias-primas/recursos naturais (“berço”) até o momento em que o produto sai da fábrica (“portão”) (Baseado na EN 15978:2011; EN 15804:2019)."
         },
         {
           "item": "Berço-ao-túmulo / Cradle-to-Grave",
-          "description": "Abordagem linear da ACV que considera o ciclo de vida completo de um produto, ou seja, desde a extração das matérias-primas/recursos naturais até o descarte final do produto (“túmulo”). Inclui todas as etapas: produção, distribuição, uso e fim de vida."
+          "description": "Abordagem linear da ACV que considera o ciclo de vida completo de um produto, ou seja, desde a extração das matérias-primas/recursos naturais até o descarte final do produto (“túmulo”). Inclui todas as etapas: produção, distribuição, uso e fim de vida (Baseado na EN 15978:2011; EN 15804:2019)."
         },
         {
           "item": "Brita Graduada Simples (BGS)",
-          "description": "Brita graduada composta por mistura, em usina, de produtos integralmente de britagem de rocha sã, apresentando granulometria contínua e extensa, cuja estabilização é obtida pela ação mecânica do equipamento de compactação."
+          "description": "Brita graduada é a camada de sub-base ou base composta por mistura, em usina, de produtos integralmente de britagem de rocha sã, apresentando granulometria contínua e extensa, cuja estabilização é obtida pela ação mecânica do equipamento de compactação (DER SP ET-DE-P00/008 (2024))."
+        },
+        {
+          "item": "Bica Corrida (BC)",
+          "description": "Camada de sub-base ou base composta por produtos resultantes de britagem primária de rocha sã, que em uma condição granulométrica mínima assegura estabilidade à camada, quando executada por meio das operações de espalhamento, homogeneização, umedecimento e compactação (DER-SP ET-DE-P00/010 (2024))."
         }
       ]
     },
