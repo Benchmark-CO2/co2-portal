@@ -181,19 +181,19 @@
       "items": [
         {
           "item": "Edifício alto",
-          "description": "Construção de apartamentos em condomínio que apresenta acima de dez pavimentos de altura"
+          "description": "Construção de apartamentos em condomínio que apresenta acima de dez pavimentos de altura."
         },
         {
           "item": "Edifício baixo",
-          "description": "Construção de apartamentos em condomínio com até quatro pavimentos de altura"
+          "description": "Construção de apartamentos em condomínio com até quatro pavimentos de altura."
         },
         {
           "item": "Edifício médio",
-          "description": "Construção de apartamentos em condomínio que apresenta entre cinco e dez pavimentos de altura"
+          "description": "Construção de apartamentos em condomínio que apresenta entre cinco e dez pavimentos de altura."
         },
         {
           "item": "Emissão antropogênica",
-          "description": "Emissões derivadas das atividades humanas"
+          "description": "Emissões derivadas das atividades humanas."
         },
         {
           "item": "Emissões de CO₂ (ECO₂)",
@@ -205,11 +205,11 @@
         },
         {
           "item": "Estaca",
-          "description": "Elemento de fundação profunda executado inteiramente por equipamentos ou ferramentas, sem que, em qualquer fase de sua execução, haja trabalho manual em profundidade. Os materiais empregados podem ser: madeira, aço, concreto pré-moldado, concreto moldado in loco, argamassa, calda de cimento, ou qualquer combinação dos anteriores (ABNT, 2022)."
+          "description": "Elemento de fundação profunda executado inteiramente por equipamentos ou ferramentas, sem que, em qualquer fase de sua execução, haja trabalho manual em profundidade. Os materiais empregados podem ser: madeira, aço, concreto pré-moldado, concreto moldado in loco, argamassa, calda de cimento ou qualquer combinação dos anteriores (ABNT, 2022)."
         },
         {
           "item": "Estaca de concreto moldada in loco",
-          "description": "Estaca executada preenchendo-se com concreto, argamassa ou calda de cimento perfurações previamente executadas no terreno, podendo ser total ou parcialmente armada (ABNT, 2022)."
+          "description": "Estaca executada preenchendo-se com concreto, argamassa ou calda de cimento perfurações feitas previamente no terreno, podendo ser total ou parcialmente armada (ABNT, 2022)."
         },
         {
           "item": "Estaca hélice contínua",
