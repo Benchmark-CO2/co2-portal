@@ -152,34 +152,26 @@
       "items": [
         {
           "item": "Declaração Ambiental de Produto (DAP) (Environmental Product Declaration - EPD)",
-          "description": "Documento verificado elaborado com base na ACV que informa, de forma padronizada, os impactos ambientais de um produto."
+          "description": "Documento verificado elaborado com base na ACV que informa, de forma padronizada, os impactos ambientais de um produto (ISO 14025)."
         },
         {
           "item": "Declaração de Desempenho Ambiental de produto (dDAP)",
           "description": "Documento emitido e verificado pelo Sidac, elaborado com base na ACV simplificada que informa, de forma padronizada, a emissão de CO₂ e a demanda de energia primária de um produto."
         },
         {
-          "item": "Departamento Nacional de Estradas de Rodagem (DNER)",
-          "description": "Órgão federal criado em 1937 e extinto em 2001, responsável pelo planejamento, construção, manutenção e fiscalização das rodovias federais no Brasil. Suas atribuições foram transferidas para o DNIT."
-        },
-        {
-          "item": "Departamento Nacional de Infraestrutura de Transportes (DNIT)",
-          "description": "Autarquia federal vinculada ao Ministério dos Transportes, criada pela Lei nº 10.233/2001. Tem como atribuições a construção, manutenção, restauração e fiscalização da infraestrutura de transportes (rodoviária, ferroviária, aquaviária e portuária), sucedendo parte das funções do extinto DNER."
-        },
-        {
           "item": "Desempenho ambiental",
-          "description": "Desempenho relacionado a impactos e/ou aspectos ambientais (ISO 15392)"
+          "description": "Desempenho relacionado a impactos e/ou aspectos ambientais (ISO 15392)."
         },
         {
           "item": "Desmaterialização",
-          "description": "Estratégia de redução do consumo de recursos materiais em sistemas produtivos e construtivos, visando maior eficiência ambiental sem prejuízos de desempenho. Na construção civil e na pavimentação é uma rota de mitigação de emissões de carbono. "
+          "description": "Estratégia de redução do consumo de recursos materiais em sistemas produtivos e construtivos, visando maior eficiência ambiental sem prejuízos de desempenho. Na construção civil e na pavimentação é uma rota de mitigação de emissões de carbono."
         },
         {
           "item": "Dióxido de carbono (CO₂)",
           "description": "Gás incolor, inodoro e não inflamável, formado por dois átomos de oxigênio e um de carbono. É o principal gás de efeito estufa (GEE) antropogênico, amplamente utilizado como indicador em estudos de pegada de carbono e em Avaliações de Ciclo de Vida de materiais e sistemas construtivos."
         },
         {
-          "item": "Distancia piso-a-piso",
+          "item": "Distância piso-a-piso",
           "description": "Distância vertical medida entre o piso acabado de um pavimento e o piso acabado do pavimento imediatamente superior, ou, no caso do último pavimento, entre o piso acabado e o teto ou cobertura."
         }
       ]
