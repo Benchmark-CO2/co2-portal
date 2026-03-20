@@ -17,7 +17,7 @@
         },
         {
           "item": "Ambiental, Social e Governança (Environmental, Social and Governance - ESG)",
-          "description": "Conjunto de critérios ambientais, sociais e de governança, a serem considerados, na avaliação de riscos, oportunidades e respectivos impactos, com objetivo de nortear atividades, negócios e investimentos sustentáveis (ABNT PR 2030-1:2024)."
+          "description": "Conjunto de critérios ambientais, sociais e de governança a serem considerados na avaliação de riscos, oportunidades e respectivos impactos, com objetivo de nortear atividades, negócios e investimentos sustentáveis (ABNT PR 2030-1:2024)."
         },
         {
           "item": "Anteprojeto arquitetônico (AP-ARQ)",
@@ -25,15 +25,15 @@
         },
         {
           "item": "Área construída bruta",
-          "description": "É a área obtida pela soma das áreas cobertas de todos os pavimentos acessíveis a um edifício. Ela é calculada a partir do perímetro externo das fachadas, delimitado por paredes, pilares ou arestas de projeção das coberturas (em caso de sacadas) dos pavimentos do edifício, seguindo os critérios de área construída coberta estabelecidos na ABNT NBR 12721:2006.  \n*Inclui: subsolo, térreo, andares tipo, cobertura, ático e reservatório coberto. Também inclui sacadas, fosso de elevadores e áreas de escadas.\n* Exclui: beirais e áreas descobertas.\n* Contabiliza a área de ambientes com pé-direito duplo apenas uma vez."
+          "description": "Área obtida pela soma das áreas cobertas de todos os pavimentos acessíveis a um edifício. Ela é calculada a partir do perímetro externo das fachadas, delimitado por paredes, pilares ou arestas de projeção das coberturas (em caso de sacadas) dos pavimentos do edifício, seguindo os critérios de área construída coberta estabelecidos na ABNT NBR 12721:2006.  *Inclui: subsolo, térreo, andares-tipo, cobertura, ático e reservatório coberto. Também inclui sacadas, fosso de elevadores e áreas de escadas. * Exclui: beirais e áreas descobertas. * Contabiliza a área de ambientes com pé-direito duplo apenas uma vez."
         },
         {
           "item": "Área construída de projeção",
-          "description": "Área real do pavimento térreo, considerada como a área da fundação do tipo radier ou radier estaqueado."
+          "description": "Área real do pavimento térreo, considerada como a área da fundação do tipo radier ou radier estaqueado nas estimativas feitas no cenário Estudo Preliminar."
         },
         {
           "item": "Avaliação do Ciclo de Vida (ACV)",
-          "description": "Compilação e avaliação das entradas, saídas e dos impactos ambientais potenciais de um sistema de produto ao longo do seu ciclo de vida (ABNT NBR ISSO 14040)."
+          "description": "Compilação e avaliação das entradas, saídas e impactos ambientais potenciais de um sistema de produto ao longo do seu ciclo de vida (ABNT NBR ISSO 14040)"
         }
       ]
     },
