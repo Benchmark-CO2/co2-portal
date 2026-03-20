@@ -233,12 +233,12 @@
           "description": "Valor que relaciona a quantidade de emissões de gases de efeito estufa geradas por uma atividade, processo ou insumo, normalmente expresso em CO₂ equivalente por unidade funcional."
         },
         {
-          "item": "Fator de carbono embutido",
+          "item": "Fator de carbono embutido (FCE)",
           "description": "Valor que relaciona a quantidade de emissões de gases de efeito estufa geradas pelo consumo de insumos, materiais, processos ou atividades normalmente expresso em Kg CO₂ por unidade funcional."
         },
         {
-          "item": "Fator de energia embutida",
-          "description": "Valor que relaciona a quantidade de energia necessária pelo consumo de insumos, materiais, processos ou atividades normalmente expresso em Kg CO₂ por unidade funcional."
+          "item": "Fator de energia embutida (FEE)",
+          "description": "Valor que relaciona a quantidade de energia necessária para a produção de insumos, materiais, processos ou atividades normalmente expresso em Kg CO₂ por unidade funcional."
         },
         {
           "item": "Ficha Resumo do Empreendimento (FRE) ",
