@@ -441,6 +441,10 @@
           "description": "Distância vertical medida entre o piso acabado de um pavimento e o teto ou cobertura."
         },
         {
+          "description": "Indicador que quantifica o total de gases de efeito estufa emitidos direta ou indiretamente por uma atividade, produto ou organização, expressa em CO₂ equivalente.",
+          "item": "Pegada de carbono"
+        },
+        {
           "item": "Placa cimentícia",
           "description": "Placa industrializada composta por cimento Portland, agregados e fibras de reforço. Utilizada como elemento de fechamento ou revestimento, apresenta elevada durabilidade e resistência à umidade."
         },
@@ -475,10 +479,6 @@
         {
           "item": "Projeto executivo arquitetônico (PE-ARQ)",
           "description": "Etapa destinada à concepção e à representação final das informações técnicas dos projetos arquitetônicos, realizada por profissional habilitado, e de seus elementos, instalações e componentes, completas, definitivas, necessárias e suficientes à execução dos serviços e de obras correspondentes (ABNT NBR 16636-1, 2017)."
-        },
-        {
-          "description": "Indicador que quantifica o total de gases de efeito estufa emitidos direta ou indiretamente por uma atividade, produto ou organização, expressa em CO₂ equivalente.",
-          "item": "Pegada de carbono"
         }
       ]
     },
