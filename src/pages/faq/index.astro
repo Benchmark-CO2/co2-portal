@@ -9,7 +9,7 @@ const onlyQuestions = questions.flatMap(category => category.data.meta?.flatMap(
 
 <Layout>
   <div class="w-2/3 flex flex-col items-start mx-auto">
-    <h1 class="text-3xl font-bold text-primary text-">Perguntas Frequentes</h1>
+    
     <FaqList client:load items={onlyQuestions} />
   </div>
 </Layout>

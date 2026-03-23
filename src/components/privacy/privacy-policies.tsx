@@ -1,7 +1,8 @@
 import type { PrivacyFile } from '@/types/privacy';
 import { cn } from 'lib/utils';
 import React from "react";
-function renderHTML(text: string) {
+
+export function renderHTML(text: string) {
   const parts = text.split(/(<b>.*?<\/b>)/g);
   return parts.map((part, i) => {
     if (part.match(/<b>(.*?)<\/b>/)) {

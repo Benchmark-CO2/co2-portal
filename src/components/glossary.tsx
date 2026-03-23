@@ -1,4 +1,6 @@
+import { Suspense, useDeferredValue, useRef, useState } from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
+import { Input } from './ui/input';
 
 type GlossaryProps = {
   items: Record<string, {
@@ -8,6 +10,29 @@ type GlossaryProps = {
 };
 const alfabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 export default function Glossary({ items }: GlossaryProps) {
+  const [searchTerm, setSearchTerm] = useState('');
+  const deferredTerm = useDeferredValue(searchTerm);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const [filteredSections, setFilteredSections] = useState(alfabet.map(el => el));
+
+  const handleChangeText = (e: React.ChangeEvent<HTMLInputElement>) => {
+
+    if (!e.target.value) {
+      setSearchTerm('');
+      setFilteredSections(alfabet.map(el => el));
+      return;
+    }
+    setSearchTerm(e.target.value);
+
+    if (timerRef.current) {
+      clearTimeout(timerRef.current);
+    }
+
+    timerRef.current = setTimeout(() => {
+      itemsThatContainsSearchedTerm();
+    }, 500);
+  };
 
   const handleClickLetter = (letter: string) => {
     const acordionElement = document.getElementById(`letter-${letter}`);
@@ -15,20 +40,48 @@ export default function Glossary({ items }: GlossaryProps) {
     if (acordionElement) {
       acordionElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
-  }
+  };
+
+  const itemsThatContainsSearchedTerm = () => {
+    const term = deferredTerm.toLowerCase();
+
+    const foundedItems = alfabet.filter(letter => items[letter]?.some(item => item.item.toLowerCase().includes(term) || item.description.toLowerCase().includes(term)));
+    setFilteredSections(foundedItems);
+  };
+
+  const escapeRegExp = (value: string) => {
+    return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  };
+  const highlightText = (text: string, term: string) => {
+    const query = term.trim();
+    if (!query) return text;
+
+    const regex = new RegExp(`(${escapeRegExp(query)})`, 'gi');
+
+    return text.split(regex).map((part, index) => (
+      part.toLowerCase() === query.toLowerCase()
+        ? <mark key={`${part}-${index}`} className="bg-yellow-200 text-inherit px-0.5 rounded">{part}</mark>
+        : <span key={`${part}-${index}`}>{part}</span>
+    ));
+  };
 
   return (
     <div>
       <div className='fixed flex justify-center items-center top-12 h-30 w-full gap-4'>
-        <div className='h-full w-full absolute backdrop-blur-sm  -left-10'></div>  
-        <div className='absolute z-10 w-full'>
-          <h1 className="text-3xl font-bold text-primary">Glossário</h1>
-          <div className='flex gap-3 text-secondary text-xl cursor-pointer w-full flex-wrap mt-2'>
-            {alfabet.map((letter) => (
-              <div key={letter} onClick={() => handleClickLetter(letter)}>
-                <h2>{letter}</h2>
-              </div>
-            ))}
+        <div className='h-full w-full absolute backdrop-blur-sm  -left-10'></div>
+        <div className='absolute left-0 z-10 w-1/2 flex justify-between'>
+          <div>
+            <h1 className="text-3xl font-bold text-primary">Glossário</h1>
+            <div className='flex gap-3 text-secondary text-xl cursor-pointer w-full flex-wrap mt-2'>
+              {alfabet.map((letter) => (
+                <div key={letter} onClick={() => handleClickLetter(letter)}>
+                  <h2>{letter}</h2>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className='w-1/4'>
+            <Input placeholder='Buscar termo...' className='w-full mt-4' onChange={handleChangeText} value={deferredTerm} />
           </div>
         </div>
       </div>
@@ -37,33 +90,34 @@ export default function Glossary({ items }: GlossaryProps) {
           key={'all'}
           type="multiple"
           className="w-full mt-4"
-          defaultValue={alfabet.map(el => `item-${el}`)}
-          // defaultValue={`item-${activeLetter}`}
+          value={filteredSections.map(el => `item-${el}`)}
         >
-          {
-            alfabet.map((letter) => (
-              <AccordionItem value={`item-${letter}`} className="mb-4 border-b pb-4" key={letter} id={`letter-${letter}`}>
-                <AccordionTrigger className='text-2xl font-bold text-primary'>{letter}</AccordionTrigger>
-                <AccordionContent className="flex flex-col gap-6 text-balance mt-4">
-                  {items[letter] && items[letter].map((item, index) => (
-                    <div key={index}>
-                      <h3 className='text-base font-bold mb-2 text-primary'>{item.item}</h3>
-                      <p>{item.description}</p>
-                    </div>
-                  ))
-                  }
-                  {
-                    !items[letter] && (
-                      <p className='mt-4'>Nenhum termo encontrado para a letra "{letter}".</p>
-                    )
-                  }
-                </AccordionContent>
-              </AccordionItem>
-            ))
-          }
+          <Suspense fallback={<p>Procurando...</p>}>
+            {
+              alfabet.map((letter) => (
+                <AccordionItem value={`item-${letter}`} className="mb-4 border-b pb-4" key={letter} id={`letter-${letter}`}>
+                  <AccordionTrigger className='text-2xl font-bold text-primary'>{letter}</AccordionTrigger>
+                  <AccordionContent className="flex flex-col gap-6 text-balance mt-4">
+                    {items[letter] && items[letter].map((item, index) => (
+                      <div key={index}>
+                        <h3 className='text-base font-bold mb-2 text-primary'>{highlightText(item.item, deferredTerm)}</h3>
+                        <p>{highlightText(item.description, deferredTerm)}</p>
+                      </div>
+                    ))
+                    }
+                    {
+                      !items[letter] && (
+                        <p className='mt-4'>Nenhum termo encontrado para a letra "{letter}".</p>
+                      )
+                    }
+                  </AccordionContent>
+                </AccordionItem>
+              ))
+            }
+          </Suspense>
         </Accordion>
 
-        
+
       </div>
     </div>
   );
