@@ -1,4 +1,3 @@
-import React from 'react'
 const stackeholders = [
   {
     name: "FDTE",
@@ -106,43 +105,46 @@ export const TeamSection = ({
   people,
   title,
 }: {
-  people: Array<{ name: string; role: string; photo?: string }>;
+  people: Array<{ name: string; role: string; photo?: string, group: string }>;
   title: string;
 }) => {
+    const groupedByGroup = people.reduce((acc, member) => {
+    if (!acc[member.group]) {
+      acc[member.group] = [];
+    }
+    acc[member.group].push(member);
+    return acc;
+  }, {} as Record<string, typeof people>);
+
   return (
     <section className="w-full mt-20 flex flex-col items-start gap-6 md:gap-10">
       <h1 className="text-primary font-semibold text-xl md:text-2xl">
         {title}
       </h1>
-      <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8 lg:gap-10 justify-items-center">
-        {people.map(
-          (member: { name: string; role: string; photo?: string }) => (
-            <div
-              key={member.name}
-              className="flex flex-col items-center gap-3 md:gap-4 w-full max-w-[200px]"
-            >
-              {member.photo ? (
-                <img
-                  src={member.photo}
-                  alt={member.name}
-                  className="w-32 h-32 md:w-40 md:h-40 aspect-square rounded-full object-cover flex-shrink-0"
-                  width={100}
-                  height={20}
-                />
-              ) : null}
-
-              <div className="w-full px-2">
-                <h2 className="text-sm md:text-base font-semibold text-center text-primary break-words line-clamp-2">
-                  {member.name}
-                </h2>
-                <p className="text-xs sm:text-sm text-primary text-center line-clamp-2">
-                  {member.role}
-                </p>
-              </div>
+      {Object.entries(groupedByGroup).map(([group, members]) => (
+          <div key={group} className="flex flex-col items-start gap-3 md:gap-4 w-full">
+            <h2 className="text-xl font-semibold text-center text-primary break-words line-clamp-2 self-start">
+              {group}
+            </h2>
+            <div className='grid gap-3 grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 w-full transition-all'>
+              {members.map((member) => (
+                <div key={member.name} className="w-max px-2 flex gap-1">
+                  <h2 className="text-sm md:text-base font-semibold text-center text-accent-foreground break-words line-clamp-2">
+                    {member.name}
+                  </h2>
+                  {member.group === 'Coordenação' && (
+                    <>
+                      <span>-</span>
+                      <p className="text-xs sm:text-sm text-primary text-center line-clamp-2 ml-1">
+                      {member.role}
+                      </p>
+                    </>
+                  )}
+                </div>
+            ))}
             </div>
-          )
-        )}
-      </div>
+        </div>
+      ))}
     </section>
   );
 };

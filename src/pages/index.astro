@@ -1,11 +1,11 @@
 ---
-import Carousel from '../components/Carousel.tsx';
-import Layout from '../layouts/Layout.astro';
-import {TopSection,
+import { getCollection } from 'astro:content';
+import {
 StackeholderSection,
 TeamSection,
-} from '../components/index'
-import { getCollection } from 'astro:content';
+TopSection,
+} from '../components/index';
+import Layout from '../layouts/Layout.astro';
 
 
 const teamEntries = await getCollection('team');
@@ -15,13 +15,14 @@ const activeTeamData = teamEntries.find(entry => entry.data.active !== false)?.d
 const team = activeTeamData?.team?.map(member => ({
 	name: member.name,
 	role: member.role,
-	photo: member.image
+	photo: member.image,
+	group: member.group
 })) || [];
 
 const advisoryCommittee = activeTeamData?.advisoryCommittee?.map(member => ({
 	name: member.name,
 	role: member.role,
-	photo: member.image || member.photo
+	photo: member.image || member.photo,
 })) || [];
 ---
 
@@ -31,7 +32,7 @@ const advisoryCommittee = activeTeamData?.advisoryCommittee?.map(member => ({
 			<TopSection />
 			<StackeholderSection />
 			<TeamSection people={team} title="Quem Somos?" />
-			<TeamSection people={advisoryCommittee} title="Comitê Consultivo" />
+			<!-- <TeamSection people={advisoryCommittee} title="Comitê Consultivo" /> -->
 		</div>
 	</div>
 </Layout>

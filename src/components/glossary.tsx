@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
 
 type GlossaryProps = {
@@ -9,34 +8,37 @@ type GlossaryProps = {
 };
 const alfabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 export default function Glossary({ items }: GlossaryProps) {
-  const [activeLetter, setActiveLetter] = useState<string | null>(alfabet[0]);
 
   const handleClickLetter = (letter: string) => {
     const acordionElement = document.getElementById(`letter-${letter}`);
 
     if (acordionElement) {
       acordionElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      acordionElement.getElementsByTagName('button')[0].click();
     }
-    setActiveLetter(letter);
   }
 
   return (
     <div>
-      <div className='flex gap-3 text-secondary mt-4 text-xl cursor-pointer w-full flex-wrap'>
-        {alfabet.map((letter) => (
-          <div key={letter} onClick={() => handleClickLetter(letter)}>
-            <h2>{letter}</h2>
+      <div className='fixed flex justify-center items-center top-12 h-30 w-full gap-4'>
+        <div className='h-full w-full absolute backdrop-blur-sm  -left-10'></div>  
+        <div className='absolute z-10 w-full'>
+          <h1 className="text-3xl font-bold text-primary">Glossário</h1>
+          <div className='flex gap-3 text-secondary text-xl cursor-pointer w-full flex-wrap mt-2'>
+            {alfabet.map((letter) => (
+              <div key={letter} onClick={() => handleClickLetter(letter)}>
+                <h2>{letter}</h2>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
-      <div className='mt-10 w-full'>
+      <div className='mt-20 w-full'>
         <Accordion
           key={'all'}
-          type="single"
-          collapsible
+          type="multiple"
           className="w-full mt-4"
-          defaultValue={`item-${activeLetter}`}
+          defaultValue={alfabet.map(el => `item-${el}`)}
+          // defaultValue={`item-${activeLetter}`}
         >
           {
             alfabet.map((letter) => (
@@ -51,7 +53,7 @@ export default function Glossary({ items }: GlossaryProps) {
                   ))
                   }
                   {
-                    activeLetter && !items[letter] && (
+                    !items[letter] && (
                       <p className='mt-4'>Nenhum termo encontrado para a letra "{letter}".</p>
                     )
                   }

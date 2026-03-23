@@ -55,7 +55,8 @@ const team = defineCollection({
 			z.object({
 				name: z.string(),
 				role: z.string(),
-				image: z.string()
+				image: z.string(),
+				group: z.string().optional()
 			})
 		),
 		advisoryCommittee: z.array(

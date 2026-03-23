@@ -77,9 +77,9 @@ const PrivacyPolicy: React.FC<{privacy: PrivacyFile}> = ({privacy}) => {
                   }
                   {
                     section.content && section.content.split('\n\n').map(el => (
-                      <p className="mb-4 flex flex-col">
+                      <p className="mb-4 flex flex-col" key={el}>
                         {el.split('\n').map(el => (
-                          <span key={el}>
+                          <span key={el+'-span'}>
                             {renderHTML(el)}
                           </span>
                         ))}
