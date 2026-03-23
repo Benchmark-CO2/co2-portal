@@ -418,27 +418,23 @@
       "items": [
         {
           "item": "Pavimento asfáltico",
-          "description": "Estrutura de pavimentação composta por revestimento de misturas asfálticas aplicadas sobre uma base granular ou cimentada, destinada a resistir aos esforços de tráfego e fornecer condições adequadas de rolamento. É o tipo de pavimento mais utilizado nas rodovias brasileiras."
+          "description": "Estrutura de pavimentação composta por revestimento de misturas asfálticas aplicadas sobre uma base granular ou cimentada, destinada a resistir aos esforços de tráfego e fornecer condições adequadas de rolamento. É o tipo de pavimento mais utilizado nas rodovias brasileiras (Bernucci et al. (2022) Pavimentação asfáltica Formação básica para engenheiros)."
         },
         {
           "item": "Pavimento em paralelepípedo",
-          "description": "É um tipo de pavimento constituído por blocos de pedra natural (geralmente granito ou basalto) talhados em forma de paralelepípedo e assentados sobre uma camada de regularização (comumente areia ou pó de pedra), apoiada em base ou sub-base granular."
+          "description": "É um tipo de pavimento constituído por blocos de pedra natural (geralmente granito ou basalto), talhados em forma de paralelepípedo e assentados sobre uma camada de regularização (comumente areia ou pó de pedra), apoiada em base ou sub-base granular (DNIT, 2006 - Manual de Pavimentação)."
         },
         {
           "item": "Pavimento intertravado",
-          "description": "Sistema de revestimento de pavimentos executado com blocos intertravados de concreto (pavers), assentados sobre camada de areia e travados mecanicamente pelo próprio arranjo das peças. É normalmente utilizado em vias urbanas, calçadas, estacionamentos e áreas de tráfego leve a médio."
+          "description": "Sistema de revestimento de pavimentos executado com blocos intertravados de concreto (pavers), assentados sobre camada de areia e travados mecanicamente pelo próprio arranjo das peças. É normalmente utilizado em vias urbanas, calçadas, estacionamentos e áreas de tráfego leve a médio (ABNT NBR 15953/2011)."
         },
         {
           "item": "Pavimento rígido",
-          "description": "Estrutura de pavimentação caracterizada pelo revestimento em concreto de cimento Portland. Apresenta, no geral, maior rigidez e capacidade estrutural, sendo indicado para rodovias de tráfego intenso, áreas industriais e pistas aeroportuárias."
+          "description": "Estrutura de pavimentação caracterizada pelo revestimento em concreto de cimento Portland. Apresenta, no geral, maior rigidez e capacidade estrutural, sendo indicado para rodovias de tráfego intenso, áreas industriais e pistas aeroportuárias (DNIT, 2006 - Manual de Pavimentação)."
         },
         {
           "item": "Pavimento tipo",
           "description": "Andar de um edifício cuja planta arquitetônica e estrutural se repete em relação aos demais pavimentos, servindo como referência para cálculos de área, estimativas de custo, análise estrutural e planejamento construtivo."
-        },
-        {
-          "item": "PD&I – Pesquisa, Desenvolvimento e Inovação ",
-          "description": "FALTA"
         },
         {
           "item": "Pé-direito",
@@ -462,7 +458,7 @@
         },
         {
           "item": "Pré-Misturado a Frio (PMF)",
-          "description": "Mistura executada a temperatura ambiente em usina apropriada, composta de agregado mineral e emulsão asfáltica, espalhada e compactada a frio. Conforme a faixa granulométrica adotada, pode ser densa, semi-densa ou aberta."
+          "description": "Mistura executada a temperatura ambiente em usina apropriada, composta de agregado mineral e emulsão asfáltica, espalhada e compactada a frio. Conforme a faixa granulométrica adotada, pode ser densa, semi-densa ou aberta (DER-SP ET-DE-P00/025 (2006))."
         },
         {
           "item": "Produto Mínimo Viável (MVP)",
@@ -470,15 +466,19 @@
         },
         {
           "item": "Programa Brasileiro da Qualidade e Produtividade do Habitat (PBQP-H)",
-          "description": "O PBQP-H, instituído pela Portaria nº134 de 18/12/1998, é designado como uma ferramenta do governo federal para promover a modernização e a melhoria contínua na qualidade das habitações, especialmente as de interesse social, integrando o setor da construção civil e o poder público. "
+          "description": "O PBQP-H, instituído pela Portaria nº134 de 18/12/1998, é designado como uma ferramenta do governo federal para promover a modernização e a melhoria contínua na qualidade das habitações, especialmente as de interesse social, integrando o setor da construção civil e o poder público."
         },
         {
           "item": "Programa Minha Casa Minha Vida (MCMV ou PMCMV)",
-          "description": "Iniciativa habitacional do governo federal que oferece subsídios e taxas de juros reduzidas para a aquisição de moradias populares, tanto em áreas urbanas (para famílias com renda até R$ 8mil)  quanto rurais (famílias com renda até R$ 96mil)"
+          "description": "Iniciativa habitacional do governo federal que oferece subsídios e taxas de juros reduzidas para a aquisição de moradias populares, tanto em áreas urbanas (para famílias com renda até R$ 8mil)  quanto rurais (famílias com renda até R$ 96mil)."
         },
         {
           "item": "Projeto executivo arquitetônico (PE-ARQ)",
-          "description": "Etapa destinada à concepção e à representação final das informações técnicas dos projetos arquitetônicos, realizada por profissional habilitado, e de seus elementos, instalações e componentes, completas, defnitivas, necessárias e suficientes à execução dos serviços e de obras correspondentes (ABNT NBR 16636-1, 2017)."
+          "description": "Etapa destinada à concepção e à representação final das informações técnicas dos projetos arquitetônicos, realizada por profissional habilitado, e de seus elementos, instalações e componentes, completas, definitivas, necessárias e suficientes à execução dos serviços e de obras correspondentes (ABNT NBR 16636-1, 2017)."
+        },
+        {
+          "description": "Indicador que quantifica o total de gases de efeito estufa emitidos direta ou indiretamente por uma atividade, produto ou organização, expressa em CO₂ equivalente.",
+          "item": "Pegada de carbono"
         }
       ]
     },
