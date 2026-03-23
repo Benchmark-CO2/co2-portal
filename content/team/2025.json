@@ -40,6 +40,60 @@
       "group": "Gestão operacional"
     },
     {
+      "name": "Cassio Oliveira",
+      "role": "Pesquisador",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Cassio+Oliveira.png",
+      "group": "Pesquisadores"
+    },
+    {
+      "name": "Abram Belk",
+      "role": "",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Abram+Belk.png",
+      "group": "Comitê consultivo"
+    },
+    {
+      "name": "Ana Cecília Sestak",
+      "role": "",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Ana+Sestak.png",
+      "group": "Comitê consultivo"
+
+    },
+    {
+      "name": "Carlos Massucato",
+      "role": "",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Carlos+Massucato.png",
+      "group": "Comitê consultivo"
+
+    },
+    {
+      "name": "Clarice Degani",
+      "role": "",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Clarisse+Degani.png",
+      "group": "Comitê consultivo"
+
+    },
+    {
+      "name": "Felipe Althoff",
+      "role": "",
+      "image": "",
+      "group": "Comitê consultivo"
+
+    },
+    {
+      "name": "Ricardo França",
+      "role": "",
+      "image": "",
+      "group": "Comitê consultivo"
+
+    },
+    {
+      "name": "Valter Frigieri Jr.",
+      "role": "",
+      "image": "",
+      "group": "Comitê consultivo"
+
+    },
+    {
       "name": "Gabriela Lopes Barroso",
       "role": "Gestão da Rotina",
       "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Gabriela+Barroso.png",

@@ -35,10 +35,11 @@ export default function Glossary({ items }: GlossaryProps) {
   };
 
   const handleClickLetter = (letter: string) => {
-    const acordionElement = document.getElementById(`letter-${letter}`);
+    const letterIndex = alfabet.indexOf(letter);
+    const acordionElement = document.getElementById(`letter-${alfabet[letterIndex]}`);
 
     if (acordionElement) {
-      acordionElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      acordionElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }
   };
 
@@ -65,11 +66,19 @@ export default function Glossary({ items }: GlossaryProps) {
     ));
   };
 
+  const handleClickSection = (letter: string) => {
+    if(filteredSections.includes(letter)) {
+      setFilteredSections(old => old.filter(el => el !== letter));
+    } else {
+      setFilteredSections(old => [...old, letter]);
+    }
+  };
+
   return (
     <div>
-      <div className='fixed flex justify-center items-center top-12 h-30 w-full gap-4'>
-        <div className='h-full w-full absolute backdrop-blur-sm  -left-10'></div>
-        <div className='absolute left-0 z-10 w-1/2 flex justify-between'>
+      <div className='fixed flex justify-center items-center top-12 h-30 w-full gap-4 max-md:h-50 max-md:top-10 max-md:pt-10'>
+        <div className='h-full w-5/6 absolute backdrop-blur-sm -left-10'></div>
+        <div className='absolute left-0 z-10 w-2/3 flex justify-between max-md:flex-col'>
           <div>
             <h1 className="text-3xl font-bold text-primary">Glossário</h1>
             <div className='flex gap-3 text-secondary text-xl cursor-pointer w-full flex-wrap mt-2'>
@@ -80,12 +89,12 @@ export default function Glossary({ items }: GlossaryProps) {
               ))}
             </div>
           </div>
-          <div className='w-1/4'>
-            <Input placeholder='Buscar termo...' className='w-full mt-4' onChange={handleChangeText} value={deferredTerm} />
+          <div className='md:max-w-[350px] w-1/2 ml-auto max-md:w-full'>
+            <Input placeholder='Buscar termo...' className='w-full mt-4 bg-white' onChange={handleChangeText} value={deferredTerm} />
           </div>
         </div>
       </div>
-      <div className='mt-20 w-full'>
+      <div className='mt-20 w-full max-md:mt-45'>
         <Accordion
           key={'all'}
           type="multiple"
@@ -96,7 +105,7 @@ export default function Glossary({ items }: GlossaryProps) {
             {
               alfabet.map((letter) => (
                 <AccordionItem value={`item-${letter}`} className="mb-4 border-b pb-4" key={letter} id={`letter-${letter}`}>
-                  <AccordionTrigger className='text-2xl font-bold text-primary'>{letter}</AccordionTrigger>
+                  <AccordionTrigger className='text-2xl font-bold text-primary' onClick={() => handleClickSection(letter)}>{letter}</AccordionTrigger>
                   <AccordionContent className="flex flex-col gap-6 text-balance mt-4">
                     {items[letter] && items[letter].map((item, index) => (
                       <div key={index}>

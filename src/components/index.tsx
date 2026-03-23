@@ -108,7 +108,7 @@ export const TeamSection = ({
   people: Array<{ name: string; role: string; photo?: string, group: string }>;
   title: string;
 }) => {
-    const groupedByGroup = people.reduce((acc, member) => {
+  const groupedByGroup = people.reduce((acc, member) => {
     if (!acc[member.group]) {
       acc[member.group] = [];
     }
@@ -116,6 +116,7 @@ export const TeamSection = ({
     return acc;
   }, {} as Record<string, typeof people>);
 
+  
   return (
     <section className="w-full mt-20 flex flex-col items-start gap-6 md:gap-10">
       <h1 className="text-primary font-semibold text-xl md:text-2xl">
@@ -126,7 +127,7 @@ export const TeamSection = ({
             <h2 className="text-xl font-semibold text-center text-primary break-words line-clamp-2 self-start">
               {group}
             </h2>
-            <div className='grid gap-3 grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 w-full transition-all'>
+            <div className='grid gap-3 grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 w-full transition-all'>
               {members.map((member) => (
                 <div key={member.name} className="w-max px-2 flex gap-1">
                   <h2 className="text-sm md:text-base font-semibold text-center text-accent-foreground break-words line-clamp-2">

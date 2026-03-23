@@ -47,9 +47,9 @@ export default function FaqList({ items }: FaqListProps) {
   
   return (
     <>
-      <div className='w-1/2 flex justify-between'>
+      <div className='w-full flex justify-between max-md:flex-col max-md:gap-4 max-md:w-full'>
         <h1 className="text-3xl font-bold text-primary">Perguntas Frequentes</h1>
-        <Input className='w-1/3 ml-auto' placeholder='Buscar...' onChange={handleChangeText} />
+        <Input className='md:max-w-[350px] w-1/2 ml-auto max-md:w-full' placeholder='Buscar...' onChange={handleChangeText} />
       </div>
       <Accordion
         type="multiple"
