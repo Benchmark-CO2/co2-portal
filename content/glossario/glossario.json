@@ -499,15 +499,15 @@
         },
         {
           "item": "Regularização e compactação de subleito",
-          "description": "Operação destinada a conformar o leito estradal, transversal e longitudinalmente, obedecendo às larguras e cotas constantes das notas de serviço de regularização de terraplenagem do projeto."
+          "description": "Operação destinada a conformar o leito estradal, transversal e longitudinalmente, obedecendo às larguras e cotas constantes das notas de serviço de regularização de terraplenagem do projeto (NORMA DNIT 137/2010- ES)."
         },
         {
           "item": "RESTful (Representational state transfer)",
-          "description": "teste para mudar o glossário"
+          "description": "FALTA"
         },
         {
           "item": "Rota de mitigação",
-          "description": "Conjunto de estratégias, tecnologias ou processos adotados para reduzir ou neutralizar emissões de gases de efeito estufa em determinada atividade, setor, produto ou processo. "
+          "description": "Conjunto de estratégias, tecnologias ou processos adotados para reduzir ou neutralizar emissões de gases de efeito estufa em determinada atividade, setor, produto ou processo."
         }
       ]
     },
