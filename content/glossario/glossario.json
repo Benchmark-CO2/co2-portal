@@ -400,7 +400,7 @@
         },
         {
           "item": "Nível de Desenvolvimento (ND) (Level of development - LOD)",
-          "description": "Grau de maturidade e confiabilidade de um elemento dentro de um modelo BIM. Define a precisão geométrica, o detalhamento informacional e o nível de utilização esperado do objeto em diferentes fases do projeto (por exemplo LOD 100, 200, 300, 400, 500). Quanto maior o LOD, maior a exatidão das dimensões, a completude dos atributos e a aptidão do elemento para suportar decisões de projeto, orçamentação, construção e operação."
+          "description": "Grau de maturidade e confiabilidade de um elemento dentro de um modelo BIM. Define a precisão geométrica, o detalhamento informacional e o nível de utilização esperado do objeto em diferentes fases do projeto (por exemplo LOD 100, 200, 300, 400, 500). Quanto maior o LOD, maior a exatidão das dimensões, a completude dos atributos e a aptidão do elemento para suportar decisões de projeto, orçamentação, construção e operação."
         }
       ]
     },
