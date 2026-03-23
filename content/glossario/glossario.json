@@ -325,12 +325,12 @@
       "letter": "L",
       "items": [
         {
-          "item": "Light steel frame",
-          "description": "Subcategoria do steel frame que utiliza perfis leves de aço galvanizado. Com foco em obras residenciais e de pequeno a médio porte, destaca-se pela rapidez e peso reduzido. "
+          "item": "Light Steel Frame",
+          "description": "Subcategoria do steel frame que utiliza perfis leves de aço galvanizado. Com foco em obras residenciais e de pequeno a médio porte, destaca-se pela rapidez e peso reduzido."
         },
         {
           "item": "Linha de base (baseline)",
-          "description": "A linha de base (ou referência) é o estado em relação ao qual a mudança é medida. Pode ser uma “linha de base atual”, caso em que representa condições observáveis no presente. Também pode ser uma “linha de base futura”, que consiste em um conjunto projetado de condições futuras, excluindo o fator de interesse que impulsiona a mudança. Interpretações alternativas das condições de referência podem dar origem a múltiplas linhas de base (IPCC, 2012)"
+          "description": "A linha de base (ou referência) é o estado em relação ao qual a mudança é medida. Pode ser uma “linha de base atual”, caso em que representa condições observáveis no presente. Também pode ser uma “linha de base futura”, que consiste em um conjunto projetado de condições futuras, excluindo o fator de interesse que impulsiona a mudança. Interpretações alternativas das condições de referência podem dar origem a múltiplas linhas de base (IPCC, 2012)."
         }
       ]
     },
@@ -355,15 +355,15 @@
         },
         {
           "item": "Material asfáltico fresado",
-          "description": "Material proveniente do processo de fresagem ou de remoção de camada de revestimento asfáltico. O termo Pavimento Asfáltico Fresado tem origem no inglês Reclaimed Asphalt Pavement (RAP)."
+          "description": "Material proveniente do processo de fresagem ou de remoção de camada de revestimento asfáltico. O termo Pavimento Asfáltico Fresado tem origem no inglês Reclaimed Asphalt Pavement (RAP) (NORMA DNIT 033/2021 – ES)."
         },
         {
           "item": "MDF (Medium-Density Fiberboard)",
-          "description": "Painel de madeira reconstituída produzido a partir da aglutinação de fibras de madeira com resinas sintéticas, sob alta temperatura e pressão."
+          "description": "Painel de madeira reconstituída, produzido a partir da aglutinação de fibras de madeira com resinas sintéticas sob alta temperatura e pressão."
         },
         {
           "item": "Modelagem da Informação da Construção (Building Information Modeling -  BIM)",
-          "description": "Uso de uma representação digital compartilhada de um ativo (item, coisa ou entidade que tem valor potencial ou valor real para uma organização), para facilitar os processos de projeto, construção, operação e manutenção para formar uma base confiável para decisões (ABNT NBR ISO 19650-1/2022)"
+          "description": "Uso de uma representação digital compartilhada de um ativo (item, coisa ou entidade que tem valor potencial ou valor real para uma organização), para facilitar os processos de projeto, construção, operação e manutenção para formar uma base confiável para decisões (ABNT NBR ISO 19650-1/2022)."
         },
         {
           "item": "MVD (Model View Definition)",
