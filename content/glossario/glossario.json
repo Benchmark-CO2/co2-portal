@@ -515,10 +515,6 @@
       "letter": "S",
       "items": [
         {
-          "item": "Sapata corrida",
-          "description": "Sapata sujeita à ação de uma carga distribuída linearmente ou de três ou mais pilares ao longo de um mesmo alinhamento, desde que representem menos de 70% das cargas da estrutura (ABNT, 2022)."
-        },
-        {
           "item": "Sapata",
           "description": "Elemento de fundação rasa, de concreto armado, dimensionado de modo que as tensões de tração nele resultantes sejam resistidas pelo emprego de armadura especialmente disposta para esse fim (ABNT, 2022)."
         },
@@ -527,16 +523,28 @@
           "description": "Sapata comum a dois pilares; a denominação se aplica também a sapata comum a mais do que dois pilares, quando não alinhados e desde que representem menos de 70% das cargas da estrutura (ABNT, 2022)."
         },
         {
+          "item": "Sapata corrida",
+          "description": "Sapata sujeita à ação de uma carga distribuída linearmente ou de três ou mais pilares ao longo de um mesmo alinhamento, desde que representem menos de 70% das cargas da estrutura (ABNT, 2022)."
+        },
+        {
           "item": "Sapata isolada",
           "description": "Sapata que transmite ao solo as ações de um único pilar (Bastos, 2023)."
         },
         {
-          "item": "Sistema de Custos Referenciais de Obras (SICRO)",
-          "description": "Sistema do DNIT que fornece um conjunto de valores referenciais de insumos e serviços, incluindo custos de equipamentos, mão de obra e materiais, para a elaboração de orçamentos e análise de preços em obras de infraestrutura de transportes."
+          "item": "Sistema alvenaria estrutural",
+          "description": "Sistema estrutural composto por laje de concreto armado e paredes de alvenaria assentadas com argamassa estrutural, com reforços localizados em graute armado."
         },
         {
           "item": "Sistema construtivo industrializado",
           "description": "Método construtivo baseado em componentes pré-fabricados ou pré-montados, visando maior padronização e racionalização de processos, rapidez de execução, redução de resíduos e melhor desempenho."
+        },
+        {
+          "item": "Sistemas construtivos",
+          "description": "No contexto da Plataforma BIPc, compreendem os sistemas paredes de concreto moldado in loco (PC), alvenaria estrutural (AE) e viga-pilar (VP)."
+        },
+        {
+          "item": "Sistema de Custos Referenciais de Obras (SICRO)",
+          "description": "Sistema do DNIT que fornece um conjunto de valores referenciais de insumos e serviços, incluindo custos de equipamentos, mão de obra e materiais, para a elaboração de orçamentos e análise de preços em obras de infraestrutura de transportes."
         },
         {
           "item": "Sistema de Informação do Desempenho Ambiental da Construção (Sidac)",
@@ -555,28 +563,36 @@
           "description": "Conjunto de componentes (paredes, esquadrias, revestimentos) que delimitam e dividem os ambientes internos de uma construção, compartimentando os espaços internos."
         },
         {
+          "item": "Sistema viga-pilar-laje",
+          "description": "Sistema estrutural em concreto armado composto por vigas, pilares e lajes, normalmente moldados no local."
+        },
+        {
           "item": "Sobrado",
           "description": "Edificação de dois ou mais andares, comumente encontrada em áreas urbanas. No programa Minha Casa, Minha Vida, é permitido construir ou adquirir sobrados em lotes com recuos laterais ou geminados, desde que respeitadas as normas de urbanismo e acessibilidade."
         },
         {
+          "item": "Sistema parede de concreto",
+          "description": "Sistema estrutural em concreto armado composto por paredes e lajes de concreto armado moldados no local."
+        },
+        {
           "item": "Solo-brita",
-          "description": "Mistura artificial em usina de solo com agregado pétreo britado que apresenta grande estabilidade e durabilidade para resistir às cargas do tráfego e ação dos agentes climáticos, quando adequadamente compactada."
+          "description": "Mistura artificial em usina de solo com agregado pétreo britado que apresenta grande estabilidade e durabilidade para resistir às cargas do tráfego e ação dos agentes climáticos, quando adequadamente compactada (DER-SP ET-DE-P00/006 (2024))."
         },
         {
           "item": "Solo-cimento",
-          "description": "Material proveniente da mistura de solo (com ou sem adição de material granular), cimento e água, em proporções previamente determinadas por processo próprio de dosagem, de forma que o teor selecionado promova aumento de rigidez no material, melhorando suas características de resistência à tração, deformabilidade elástica, fadiga e durabilidade."
+          "description": "Material proveniente da mistura de solo (com ou sem adição de material granular), cimento e água, em proporções previamente determinadas por processo próprio de dosagem, de forma que o teor selecionado promova aumento de rigidez no material, melhorando suas características de resistência à tração, deformabilidade elástica, fadiga e durabilidade (NORMA DNIT 143/2025 – ES)."
         },
         {
           "item": "Solos de comportamento laterítico",
-          "description": "São materiais que, quando devidamente compactados, adquirem ou mantêm boa resistência, apresentando menor suscetibilidade à erosão e maior estabilidade em relação aos solos não lateríticos."
+          "description": "São materiais que, quando devidamente compactados, adquirem ou mantêm boa resistência, apresentando menor suscetibilidade à erosão e maior estabilidade em relação aos solos não lateríticos (BERNUCCI; BALDUZZI. Considerações sobre o dimensionamento de pavimentos utilizando solos lateríticos para rodovias de baixo volume de tráfego. 1995)."
         },
         {
           "item": "SQL (Structured Query Language)",
-          "description": "falta"
+          "description": "FALTA"
         },
         {
           "item": "Steel frame",
-          "description": "Sistema construtivo industrializado composto por uma estrutura de perfis de aço galvanizado com fechamento em placas cimentícias ou gesso acartonado. Esse sistema destaca-se por oferecer maior velocidade na construção, quando comparado aos sistemas de alvenaria. "
+          "description": "Sistema construtivo industrializado composto por uma estrutura de perfis de aço galvanizado com fechamento em placas cimentícias ou gesso acartonado. Esse sistema destaca-se por oferecer maior velocidade na construção, quando comparado aos sistemas de alvenaria."
         }
       ]
     },
