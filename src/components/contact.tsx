@@ -129,7 +129,33 @@ function Contact() {
                     required
                   />
                 </label>
-                <label htmlFor="accept-input" className="flex items-start gap-2 mb-4">
+                <div className="p-5 bg-yellow-50 dark:bg-yellow-950/20 rounded-lg border-2 border-yellow-400 dark:border-yellow-600 mb-4">
+                <div className="flex items-start gap-3 mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6 text-yellow-600 dark:text-yellow-500 flex-shrink-0 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                    />
+                  </svg>
+                  <div>
+                    <h4 className="font-semibold text-yellow-900 dark:text-yellow-100 mb-2">
+                      Importante: Confirmação de Dados
+                    </h4>
+                    <p className="text-sm text-yellow-800 dark:text-yellow-200 leading-relaxed">
+                      Eu declaro estar ciente de que os dados informados no formulário de contato somente poderão ser usados para permitir a Caixa de seleção que não seja resposta a demanda.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-3 bg-white dark:bg-gray-900/50 rounded-md border border-yellow-300 dark:border-yellow-700">
+                 <label htmlFor="accept-input" className="flex items-start gap-2 mb-4">
                   <Checkbox
                     id="accept-input"
                     checked={acceptTerms}
@@ -137,9 +163,12 @@ function Contact() {
                     className="w-4 h-4"
                   />
                   <span className="text-sm text-muted-foreground">
-                    Eu declaro estar ciente de que os dados informados no formulário de contato somente poderão ser usados para permitir a Caixa de seleção que não seja resposta a demanda
+                    Li e concordo com as informações acima e confirmo que os dados fornecidos são verdadeiros.
                   </span>
                 </label>
+                </div>
+              </div>
+                
                 <Button type="submit" variant={"default"} className="w-full" disabled={!acceptTerms || !allFieldsFilled}>
                   Enviar
                 </Button>
