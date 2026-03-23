@@ -135,7 +135,7 @@ export const TeamSection = ({
                   {member.group === 'Coordenação' && (
                     <>
                       <span>-</span>
-                      <p className="text-xs sm:text-sm text-primary text-center line-clamp-2 ml-1">
+                      <p className="text-xs sm:text-sm text-primary text-center self-center ml-1">
                       {member.role}
                       </p>
                     </>
