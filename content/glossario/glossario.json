@@ -601,7 +601,15 @@
       "items": [
         {
           "item": "Terraplenagem",
-          "description": "Conjunto de operações de engenharia que visam modificar a topografia natural do terreno para adequá-lo ao projeto de uma obra. Inclui atividades de escavação, transporte, compactação e disposição de solo ou rocha, resultando em cortes e aterros."
+          "description": "Conjunto de operações de engenharia que visam modificar a topografia natural do terreno para adequá-lo ao projeto de uma obra. Inclui atividades de escavação, transporte, compactação e disposição de solo ou rocha, resultando em cortes e aterros (IBGE, 2025)."
+        },
+        {
+          "item": "Tecnologia construtiva",
+          "description": "FALTA"
+        },
+        {
+          "description": "Compreende os tipos casas térreas (CT), sobrados (SO), casas sobrepostas (CS), prédios baixos (PB, 4 pavimentos), prédios médios (PM, 5 a 9 pavimentos) e prédios altos (PA, 10 ou mais pavimentos).",
+          "item": "Tipo de edificação"
         }
       ]
     },
