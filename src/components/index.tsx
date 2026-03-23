@@ -105,7 +105,7 @@ export const TeamSection = ({
   people,
   title,
 }: {
-  people: Array<{ name: string; role: string; photo?: string, group: string }>;
+  people: Array<{ name: string; role: string; group: string }>;
   title: string;
 }) => {
   const groupedByGroup = people.reduce((acc, member) => {

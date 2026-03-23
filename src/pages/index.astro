@@ -15,15 +15,9 @@ const activeTeamData = teamEntries.find(entry => entry.data.active !== false)?.d
 const team = activeTeamData?.team?.map(member => ({
 	name: member.name,
 	role: member.role,
-	photo: member.image,
 	group: member.group
 })) || [];
 
-const advisoryCommittee = activeTeamData?.advisoryCommittee?.map(member => ({
-	name: member.name,
-	role: member.role,
-	photo: member.image || member.photo,
-})) || [];
 ---
 
 <Layout class="bg-background">
