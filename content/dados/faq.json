@@ -83,7 +83,7 @@
           "response": "Os dados podem ser inseridos por meio de modelos BIM em formato IFC ou manualmente, permitindo flexibilidade e compatibilidade com diferentes níveis de maturidade digital dos projetos analisados."
         },
         {
-          "question": "21. Que tipos de análise o BIPc permite do ponto de vista técnico?",
+          "question": "21. Que tipos de análise o BIPc permite fazer do ponto de vista técnico?",
           "response": "O BIPc possibilita análises diferenciadas, de acordo com as tecnologias construtivas, de projeto por pavimento, por elemento construtivo e por material, além de comparações entre cenários, o que favorece estudos sobre desmaterialização, eficiência estrutural e impacto ambiental relativo."
         },
         {
@@ -92,19 +92,15 @@
         },
         {
           "question": "23. Em que se baseiam os dados de emissão de CO2 adotados no BIPc?",
-          "response": "A plataforma aplica o método de Avaliação do Ciclo de Vida (ACV) considerando as etapas desde a extração das matérias-primas até o produto na porta da indústria (\"Berço ao Portão\", ou Cradle-to-Gate), com base em dados primários e fatores de emissão reconhecidos."
+          "response": "A plataforma aplica o método de Avaliação do Ciclo de Vida (ACV) considerando as etapas desde a extração das matérias-primas até o produto na porta da indústria (\"Berço ao Portão\", ou Cradle-to-Gate), com base em dados primários e fatores de emissão reconhecidos."
         },
         {
           "question": "24. Por que o foco inicial recaiu sobre projetos estruturais?",
           "response": "Os projetos estruturais concentram mais de 80% do carbono incorporado em habitações típicas do programa MCMV, são totalmente digitalizados e oferecem alto potencial de desmaterialização, o que os torna um ponto de partida metodologicamente robusto."
         },
         {
-          "question": "25. O BIPc atua com outros sistemas construtivos?",
-          "response": "Sim. A plataforma incorpora dados relativos a fundações, vedações, revestimentos, coberturas, além de incluir sistemas industrializados, como wood frame e steel frame, e serviços de pavimentação do empreendimento, ampliando a análise do carbono e da energia embutidos ao longo de todo o ciclo construtivo."
-        },
-        {
-          "question": "26. Qual é a contribuição do BIPc para políticas públicas e para a formação acadêmica?",
-          "response": "O BIPc oferece uma base empírica para políticas públicas, financiamento habitacional e programas de incentivo, além de constituir uma ferramenta pedagógica e de pesquisa capaz de aproximar teoria, projeto e desempenho ambiental mensurável."
+          "question": "25. Qual é a contribuição do BIPc para políticas públicas e para a formação acadêmica?",
+          "response": "O BIPc oferece uma base empírica para políticas públicas, financiamento habitacional e programas de incentivo, além de constituir uma ferramenta pedagógica e de pesquisa capaz de aproximar teoria, projeto e desempenho ambiental mensurável."
         }
       ],
       "category": "Cadastro"
