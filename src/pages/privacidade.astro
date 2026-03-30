@@ -4,9 +4,9 @@ import PrivacyPageContent from '../components/privacidade';
 import Layout from '../layouts/Layout.astro';
 
 const privacy = await getCollection("privacy")
-const privacyItem = privacy[0]?.data || {};
+const privacyItems = privacy.map((el => el.data)) || [];
 ---
 
 <Layout>
-  <PrivacyPageContent client:load privacy={privacyItem} />
+  <PrivacyPageContent client:load privacyItems={privacyItems} />
 </Layout>
