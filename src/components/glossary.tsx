@@ -1,6 +1,7 @@
 import { Suspense, useDeferredValue, useRef, useState } from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
 import { Input } from './ui/input';
+import { Label } from './ui/label';
 
 type GlossaryProps = {
   items: Record<string, {
@@ -67,7 +68,7 @@ export default function Glossary({ items }: GlossaryProps) {
   };
 
   const handleClickSection = (letter: string) => {
-    if(filteredSections.includes(letter)) {
+    if (filteredSections.includes(letter)) {
       setFilteredSections(old => old.filter(el => el !== letter));
     } else {
       setFilteredSections(old => [...old, letter]);
@@ -78,7 +79,7 @@ export default function Glossary({ items }: GlossaryProps) {
     <div>
       <div className='fixed flex justify-center items-center top-12 h-30 w-full gap-4 max-md:h-50 max-md:top-10 max-md:pt-10'>
         <div className='h-full w-5/6 absolute backdrop-blur-sm -left-10'></div>
-        <div className='absolute left-0 z-10 w-2/3 flex justify-between max-md:flex-col'>
+        <div className='absolute left-0 top-10 z-10 w-2/3 flex justify-center flex-col'>
           <div>
             <h1 className="text-3xl font-bold text-primary">Glossário</h1>
             <div className='flex gap-3 text-secondary text-xl cursor-pointer w-full flex-wrap mt-2'>
@@ -89,12 +90,14 @@ export default function Glossary({ items }: GlossaryProps) {
               ))}
             </div>
           </div>
-          <div className='md:max-w-[350px] w-1/2 ml-auto max-md:w-full'>
-            <Input placeholder='Buscar termo...' className='w-full mt-4 bg-white' onChange={handleChangeText} value={deferredTerm} />
+
+          <div className='mt-4 z-10 mb-2'>
+            <Label htmlFor='search' className='text-secondary text-sm'>Buscar </Label>
+            <Input id='search' placeholder='Buscar termo...' className='w-full mt-4 bg-white' onChange={handleChangeText} value={deferredTerm} />
           </div>
         </div>
       </div>
-      <div className='mt-20 w-full max-md:mt-45'>
+      <div className='mt-45 w-full max-md:mt-45'>
         <Accordion
           key={'all'}
           type="multiple"
