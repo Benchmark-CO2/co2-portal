@@ -1,0 +1,217 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import ImageCarousel from "../../components/ImageCarousel";
+import { SITE_DESCRIPTION } from "../../consts";
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <BaseHead title="Lançamento BIPC" description={SITE_DESCRIPTION} />
+  </head>
+  <body class="bg-background text-foreground font-roboto-flex!">
+    <Header />
+    <main class="py-20 px-36 lg:max-w-2/3 mx-auto">
+      <div
+        class="border-l-4 border-[#E65235] pl-2 text-xl font-bold mb-8 text-[#E65235]"
+      >
+        Notícias
+      </div>
+      <h1 class="text-3xl font-semibold mb-4">CAIXA lança Plataforma BIPc</h1>
+      <p class="font-semibold text-2xl">
+        Ferramenta desenvolvida pela USP vai medir carbono incorporado nos
+        projetos das edificações
+      </p>
+      <p class="mt-6 text-sm italic text-[#71717A]">
+        Comunicação BIPc - Publicado em 23/02/2026
+      </p>
+
+      <section class="flex gap-2 w-full mt-5">
+        <div class="flex flex-col justify-between w-1/2 max-h-[350px]">
+          <p>
+            A CAIXA lançou no dia 3 de novembro de 2025, em São Paulo (SP), o
+            Benchmark Iterativo para Projetos de Baixo Carbono (BIPc), ou
+            Plataforma BIPc, que vai medir a geração de carbono incorporado em
+            empreendimentos habitacionais financiados pela instituição. O
+            projeto, que está sendo desenvolvido em parceria com a Universidade
+            de São Paulo (USP), busca promover a melhoria nos projetos
+            estruturais e estimular as empresas a reduzirem as emissões de CO₂
+            na construção civil.
+          </p>
+          <p>
+            Com a ferramenta, projetistas e construtoras podem comparar o
+            desempenho estimado de seu projeto com o de outros já executados a
+            partir da integração do projeto à ferramenta de cálculo, compatível
+            com a metodologia BIM, obtendo estimativas instantâneas sobre o
+            impacto ambiental de cada decisão. Desta forma, na interpretação dos
+            seus projetos na plataforma, projetistas e construtoras conseguem
+            entender se a edificação está acima da média (alto impacto), na
+            média (estado atual do setor) ou abaixo da média (baixo carbono) e
+            entender as possíveis estratégias para mitigação.
+          </p>
+          <p>
+            O lançamento do BIPc ocorreu durante o evento “Habitação de baixo
+            carbono: experiências globais e soluções locais”, em São Paulo (SP),
+            promovido pela CAIXA. O evento reuniu líderes institucionais,
+            especialistas da Áustria e da França, representantes dos setores
+            público e privado e da academia, que discutiram soluções inovadoras
+            para habitação de baixo carbono e sustentabilidade urbana.
+          </p>
+        </div>
+        <div class="w-1/2 flex flex-col items-center gap-4">
+          <img
+            src="/images/lancamento/carlos.jpg"
+            alt="Carlos Vieira"
+            class="md:max-h-[400px] rounded-md"
+          />
+          <div>
+            <p class="text-sm italic text-primary font-bold">
+              Carlos Antônio Vieira Fernandes
+            </p>
+            <p class="text-primary italic font-[11px]!">
+              Presidente da Caixa Econômica Federal
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full mt-5">
+        <p>
+          A CAIXA foi representada por seu presidente, Carlos Vieira, a
+          vice-presidente de Habitação da instituição, Inês Magalhães, e o
+          vice-presidente de Sustentabilidade e Cidadania Digital em exercício,
+          Jean Benevides. Toda a equipe técnica do BIPc também compareceu,
+          liderada pelo professor Vanderley John, que realizou, junto com o
+          professor Lucas Melchiori Pereira, uma palestra explicando a
+          importância da plataforma e suas funcionalidades. Representantes
+          do Sidac – Sistema de Informação do Desempenho Ambiental da
+          Construção, que fornece a base de dados da plataforma, e conselheiros
+          do CBCS também acompanharam a programação.
+        </p>
+        <div>
+          <img
+            src="/images/lancamento/representantes.jpg"
+            alt="Representantes do evento"
+            class="rounded-md w-full object-cover my-5 max-h-[515px]"
+          />
+          <p class="text-primary italic text-center text-sm">
+            Representantes da CAIXA e da equipe técnica da Plataforma BIPc
+          </p>
+        </div>
+      </section>
+
+      <section class="mt-5 flex flex-col gap-5">
+        <h2 class="font-semibold text-2xl">Reconhecimento aos parceiros</h2>
+        <p>
+          Abram Belk da TQS e o representante da empresa Alto QI Informática,
+          Alexandre Miranda, receberam no evento certificados de reconhecimento
+          pelo apoio no desenvolvimento de soluções de interoperabilidade
+          tecnológicas da Plataforma BIPc.
+        </p>
+        <p>
+          As construtoras Guelssi e Jurado Construtora e Incorporadora, MRV
+          Engenharia e Participações, Vibra Residencial, Construtora Tenda e
+          Prix Construtora, - por meio de seus representantes também foram
+          reconhecidas por terem sido as empresas que mais apoiaram o projeto
+          fornecendo dados e alinhando-se  aos compromissos climáticos nacionais
+          e internacionais e fortalecendo o papell do Brasil na transição para
+          uma economia de baixo carbono.
+        </p>
+      </section>
+
+      <section>
+        <ImageCarousel
+          images={[
+            { src: "/images/lancamento/car3.jpg", alt: "Vibra", caption: "Vibra - Representante" },
+            { src: "/images/lancamento/car4.jpg", alt: "Prix", caption: "Prix - Representantes" },
+            { src: "/images/lancamento/car6.jpg", alt: "Abram Belk e TQS", caption: "Abram Belk - TQS Representante" },
+            { src: "/images/lancamento/car7.jpg", alt: "Guelssi", caption: "Guelssi - Representante" },
+            { src: "/images/lancamento/car5.jpg", alt: "MRV ", caption: "MRV - Representante" },
+            { src: "/images/lancamento/car2.jpg", alt: "Tenda Construtora", caption: "Tenda Construtora - Representante" },
+            { src: "/images/lancamento/car1.jpg", alt: "AltoQI", caption: "AltoQI - Representante" },
+          ]}
+          client:load
+        />
+      </section>
+
+      <section class="mt-5 flex flex-col gap-5">
+        <h2 class="font-semibold text-2xl">Sobre a plataforma</h2>
+        <p>
+          O BIPc tem como foco inicial os projetos estruturais de
+          empreendimentos imobiliários, em especial os vinculados ao programa
+          Minha Casa Minha Vida, que têm a padronização como uma de suas
+          características, o que oferece uma oportunidade singular de reduzir as
+          emissões de CO₂, aumentar a qualidade das habitações e estimular a
+          inovação tecnológica no setor. “A economia de baixo carbono também é
+          fator de lucratividade para as empresas, é fator de melhoria social e
+          a CAIXA tem esse compromisso de promover e dar instrumentos para que
+          isso vire realidade”, enfatizou o presidente, Carlos Vieira.
+        </p>
+        <p>
+          A ferramenta permite analisar o impacto dos empreendimentos por
+          tipologia construtiva, por número de pavimentos ou por elemento
+          construtivo e comparar diferentes simulações de projeto, identificando
+          quais elementos, como vigas e pilares, e materiais, por exemplo,
+          concreto ou cimento, são os maiores responsáveis pelas emissões e como
+          o projeto pode ser melhorado. As comparações são realizadas em relação
+          às melhores práticas de mercado. O sistema conta ainda com uma área
+          aberta para que a sociedade possa consultar a linha de base de carbono
+          de diferentes tipologias construtivas.
+        </p>
+      </section>
+
+      <section class="flex justify-between items-center gap-5">
+        <div>
+          <img src="/images/lancamento/vanderley.jpg" alt="Plataforma BIPc" class="rounded-md w-full object-cover my-5 max-h-[515px]" />
+          <p class="text-primary italic text-center text-sm! font-semibold">Vanderlei Moacyr John</p>
+          <p class="text-primary italic text-center text-[11px]!">
+            Prof. Dr. Escola Politécnica da USP
+          </p>
+        </div>
+        <div class="w-full">
+          <div class="border-l-4 border-[#E65235] pl-2">
+            <p class="text-[#E65235] text-2xl max-w-[370px]">
+              “A estrutura dos edifícios representa mais de 50% do CO₂ incorporado nas edificações. No caso de paredes estruturais, chega a mais de 80%”
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-5 flex flex-col gap-5">
+        <p>
+          O professor Vanderley John destaca que materiais como cimento, aço e vidro carregam consigo uma pegada de carbono significativa para o canteiro de obras, pois já emitiram carbono durante a sua produção. Para além da medição, a plataforma estabelece o benchmark, criando uma referência comparativa nacional sobre o carbono incorporado nas edificações, transformando dados em indicadores de desempenho. 
+        </p>
+        <p>
+          O objetivo da CAIXA, a partir dessa solução, é subsidiar as políticas habitacionais do banco com informações relacionadas à sustentabilidade de empreendimentos, estimular o mercado a adotar métodos sustentáveis, melhorando o projeto estrutural e reduzindo o consumo de materiais para a redução direta de CO₂ e dos custos de produção.  
+        </p>
+      </section>
+
+      <section class="flex mt-5 gap-5">
+        <div class="flex flex-col gap-5 w-1/2">
+          <h2 class="font-semibold text-2xl">Uma plataforma em permanente evolução</h2>
+          <p>
+            A Plataforma BIPc está em pleno desenvolvimento. Inicialmente, foi aberta apenas à equipe técnica da CAIXA para avaliação de funcionalidades e adequação aos objetivos do banco. Em uma segunda etapa, o acesso foi estendido às empresas de construção e projetistas, para inclusão e avaliação de seus empreendimentos, que já somam mais de 270 projetos cadastrados. 
+          </p>
+          <p>
+            É importante destacar que a plataforma é iterativa, ou seja, ela evolui à medida que novos projetos são inseridos  pelos construtores e os dados armazenados são refinados. Embora esse processo seja automatizado, profissionais que atuam na área podem dar sua contribuições para a melhoria da ferramenta, já que o objetivo é tornar sustentável todo o processo da construção civil.
+          </p>
+          <p>
+            A plataforma conta com uma capacitação aos profissionais e empresas que desejam acompanhar o desempenho de seus empreendimentos em relação às emissões de carbono e consumo de energia incorporados. Para isso, basta acessar https://bipc.org.br/about, cadastrar o projeto e fazer as simulações disponíveis. 
+          </p>
+        </div>
+        <div>
+          <video
+            controls
+            class="rounded-md w-full object-cover my-5 max-h-[515px]"
+          >
+            <source src="/images/lancamento/bipc.mp4" type="video/mp4" />
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
