@@ -1,20 +1,10 @@
 ---
-import BaseHead from "../../components/BaseHead.astro";
-import Header from "../../components/Header.astro";
+import Layout from '@/layouts/Layout.astro';
 import ImageCarousel from "../../components/ImageCarousel";
-import { SITE_DESCRIPTION } from "../../consts";
 ---
 
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <BaseHead title="Lançamento BIPC" description={SITE_DESCRIPTION} />
-  </head>
-  <body class="bg-background text-foreground font-roboto-flex!">
-    <Header />
-    <main class="py-20 px-36 lg:max-w-2/3 mx-auto">
+<Layout>
+  <main class="py-20 px-6 lg:px-12 max-w-[1280px] mx-auto">
       <div
         class="border-l-4 border-[#E65235] pl-2 text-xl font-bold mb-8 text-[#E65235]"
       >
@@ -29,8 +19,8 @@ import { SITE_DESCRIPTION } from "../../consts";
         Comunicação BIPc - Publicado em 23/02/2026
       </p>
 
-      <section class="flex gap-2 w-full mt-5">
-        <div class="flex flex-col justify-between w-1/2 max-h-[350px]">
+      <section class="flex flex-col md:flex-row gap-8 w-full mt-5">
+        <div class="flex flex-col justify-between w-full md:max-h-[400px]">
           <p>
             A CAIXA lançou no dia 3 de novembro de 2025, em São Paulo (SP), o
             Benchmark Iterativo para Projetos de Baixo Carbono (BIPc), ou
@@ -61,7 +51,7 @@ import { SITE_DESCRIPTION } from "../../consts";
             para habitação de baixo carbono e sustentabilidade urbana.
           </p>
         </div>
-        <div class="w-1/2 flex flex-col items-center gap-4">
+        <div class="w-full flex flex-col gap-4 text-center md:text-left">
           <img
             src="/images/lancamento/carlos.jpg"
             alt="Carlos Vieira"
@@ -163,8 +153,8 @@ import { SITE_DESCRIPTION } from "../../consts";
         </p>
       </section>
 
-      <section class="flex justify-between items-center gap-5">
-        <div>
+      <section class="flex flex-col md:flex-row gap-8">
+        <div class="w-full">
           <img src="/images/lancamento/vanderley.jpg" alt="Plataforma BIPc" class="rounded-md w-full object-cover my-5 max-h-[515px]" />
           <p class="text-primary italic text-center text-sm! font-semibold">Vanderlei Moacyr John</p>
           <p class="text-primary italic text-center text-[11px]!">
@@ -189,14 +179,14 @@ import { SITE_DESCRIPTION } from "../../consts";
         </p>
       </section>
 
-      <section class="flex mt-5 gap-5">
-        <div class="flex flex-col gap-5 w-1/2">
+      <section class="flex flex-col md:flex-row gap-5 mt-5">
+        <div class="flex flex-col gap-5 flex-1 text-start">
           <h2 class="font-semibold text-2xl">Uma plataforma em permanente evolução</h2>
           <p>
-            A Plataforma BIPc está em pleno desenvolvimento. Inicialmente, foi aberta apenas à equipe técnica da CAIXA para avaliação de funcionalidades e adequação aos objetivos do banco. Em uma segunda etapa, o acesso foi estendido às empresas de construção e projetistas, para inclusão e avaliação de seus empreendimentos, que já somam mais de 270 projetos cadastrados. 
+            A Plataforma BIPc está em pleno desenvolvimento. Inicialmente, foi aberta apenas à equipe técnica da CAIXA para avaliação de funcionalidades e adequação aos objetivos do banco. Em uma segunda etapa, o acesso foi estendido às empresas de construção e projetistas, para inclusão e avaliação de seus empreendimentos, que já somam mais de 270 projetos cadastrados. 
           </p>
           <p>
-            É importante destacar que a plataforma é iterativa, ou seja, ela evolui à medida que novos projetos são inseridos  pelos construtores e os dados armazenados são refinados. Embora esse processo seja automatizado, profissionais que atuam na área podem dar sua contribuições para a melhoria da ferramenta, já que o objetivo é tornar sustentável todo o processo da construção civil.
+            É importante destacar que a plataforma é iterativa, ou seja, ela evolui à medida que novos projetos são inseridos pelos construtores e os dados armazenados são refinados. Embora esse processo seja automatizado, profissionais que atuam na área podem dar sua contribuições para a melhoria da ferramenta, já que o objetivo é tornar sustentável todo o processo da construção civil.
           </p>
           <p>
             A plataforma conta com uma capacitação aos profissionais e empresas que desejam acompanhar o desempenho de seus empreendimentos em relação às emissões de carbono e consumo de energia incorporados. Para isso, basta acessar https://bipc.org.br/about, cadastrar o projeto e fazer as simulações disponíveis. 
@@ -213,5 +203,4 @@ import { SITE_DESCRIPTION } from "../../consts";
         </div>
       </section>
     </main>
-  </body>
-</html>
+</Layout>

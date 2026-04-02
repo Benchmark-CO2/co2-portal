@@ -4,9 +4,9 @@ import PublicHeader from './public-header/public-header.tsx';
 ---
 
 <header
-  class="bg-accent fixed top-0 w-full z-50 backdrop-blur-md dark:bg-background/60 border-b shadow-sm"
+  class="bg-accent fixed top-0 left-0 w-full z-50 backdrop-blur-md dark:bg-background/60 border-b shadow-sm"
 >
-  <script is:client="load">
+  <script client:load>
     document.addEventListener('DOMContentLoaded', () => {
       const menuButton = document.querySelector('#menu-button');
       const menuContainer = document.querySelector('#menu-container');
@@ -22,5 +22,5 @@ import PublicHeader from './public-header/public-header.tsx';
       });
     });
   </script>
-  <PublicHeader client:only="react" />
+  <PublicHeader client:load />
 </header>

@@ -78,7 +78,7 @@ export default function Glossary({ items }: GlossaryProps) {
   return (
     <div>
       <div className='fixed flex justify-center items-center top-12 h-30 w-full gap-4 max-md:h-50 max-md:top-10 max-md:pt-10'>
-        <div className='h-full w-5/6 absolute backdrop-blur-sm -left-10'></div>
+        <div className='h-64 w-5/6 absolute backdrop-blur-md -left-10'></div>
         <div className='absolute left-0 top-10 z-10 w-2/3 flex justify-center flex-col'>
           <div>
             <h1 className="text-3xl font-bold text-primary">Glossário</h1>

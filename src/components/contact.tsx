@@ -25,10 +25,10 @@ function Contact() {
 
   const allFieldsFilled = name && email && message;
   return (
-    <div className='h-2/3 w-full flex justify-center items-center'>
-      <div className="w-full flex justify-center">
+    <div className='min-h-screen w-full flex justify-center items-center py-12'>
+      <div className="w-full flex justify-center px-6">
         {/* Constrain overall content width and add horizontal padding */}
-        <div className="w-full max-w-6xl px-6 lg:px-12 py-12 flex flex-col lg:flex-row items-stretch gap-8">
+        <div className="w-full max-w-6xl px-6 lg:px-12 flex flex-col lg:flex-row items-stretch gap-8">
           {/* Left column: Logo + social icons */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start">
             <img
