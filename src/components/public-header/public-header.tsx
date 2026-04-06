@@ -99,7 +99,7 @@ export default function PublicHeader() {
           })}
         />
         <Link
-          to="https://app.bipc.org.br/benchmark"
+          to="https://bipc.org.br/benchmark"
           onClick={handleCloseMenu}
           className="flex items-center gap-2 hover:text-gray-300 transition-colors"
         >
@@ -107,7 +107,7 @@ export default function PublicHeader() {
           <span className="text-sm">Benchmark</span>
         </Link>
 
-        <Link to="https://app.bipc.org.br/login" onClick={handleCloseMenu} className="flex items-center gap-2 text-accent hover:bg-zinc-700/30 rounded-md transition-colors justify-start w-full bg-zinc-700/30 pl-2">
+        <Link to="https://bipc.org.br/login" onClick={handleCloseMenu} className="flex items-center gap-2 text-accent hover:bg-zinc-700/30 rounded-md transition-colors justify-start w-full bg-zinc-700/30 pl-2">
           <div className='flex gap-3 py-2 items-center w-full justify-start'>
             <LogIn size={18} />
             <span>Login</span>
