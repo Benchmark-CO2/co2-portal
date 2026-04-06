@@ -8,16 +8,16 @@ import {
   Headset,
   Info,
   List,
+  LogIn,
   Menu,
   Newspaper,
-  User,
   X
 } from "lucide-react";
 import { useState } from "react";
 import { cn } from "../../../lib/utils";
 import { useIsMobile } from "../../hooks/useIsMobile";
+import { BetaWarning } from '../beta-warning/beta-warning';
 import { SidebarHoverPopover, type PopoverItem } from "../layout/sidebar-hover-popover";
-import { Button } from "../ui/button";
 import Divider from "../ui/divider";
 import { Link } from "../ui/link";
 
@@ -93,6 +93,11 @@ export default function PublicHeader() {
           })}
         />
 
+        <Divider
+          className={cn("h-px w-full my-2", {
+            hidden: !isMobile,
+          })}
+        />
         <Link
           to="https://app.bipc.org.br/benchmark"
           onClick={handleCloseMenu}
@@ -102,15 +107,11 @@ export default function PublicHeader() {
           <span className="text-sm">Benchmark</span>
         </Link>
 
-        <Link to="https://app.bipc.org.br/login" onClick={handleCloseMenu}>
-          <Button
-            variant="secondary"
-            size="sm"
-            className="flex items-center gap-2 text-accent"
-          >
-            <User size={16} />
-            <span>Entrar</span>
-          </Button>
+        <Link to="https://app.bipc.org.br/login" onClick={handleCloseMenu} className="flex items-center gap-2 text-accent hover:bg-zinc-700/30 rounded-md transition-colors justify-start w-full bg-zinc-700/30 pl-2">
+          <div className='flex gap-3 py-2 items-center w-full justify-start'>
+            <LogIn size={18} />
+            <span>Login</span>
+          </div>
         </Link>
       </>
     );
@@ -118,7 +119,7 @@ export default function PublicHeader() {
 
 
   return (
-    <nav className="bg-sidebar text-white relative w-full ">
+     <nav className="bg-sidebar text-white relative w-full">
       <div className={cn("flex items-center justify-between px-8 py-1.5", {
         'px-6 py-0 h-15': isMobile  
       })}>
@@ -133,7 +134,7 @@ export default function PublicHeader() {
         </Link>
         {/* Desktop Navigation */}
         {!isMobile && (
-          <div className="flex gap-6 items-center py-0 ml-auto w-full">
+          <div className="flex gap-6 items-center py-0 ml-auto w-full xl:max-w-4xl">
             <NavLinks />
           </div>
         )}
@@ -151,18 +152,57 @@ export default function PublicHeader() {
       </div>
 
       {/* Mobile Navigation Menu */}
+      {/* {
+        isMobile && (
+          <div
+            onClick={() => {
+              toggleMenu();
+              localStorage.setItem("sidebarStatus", "closed");
+            }}
+            className={cn(
+              "fixed inset-0 bg-black/50 backdrop-blur-xl transition-opacity duration-300 z-40 opacity-100 w-full h-[100vh]!",
+              isMenuOpen
+                ? "opacity-100"
+                : "opacity-0 pointer-events-none"
+            )}
+          />
+
+        )
+      } */}
       {isMobile && (
-        <div
-          className={cn(
-            "fixed top-full left-0 right-0 bg-sidebar border-t border-gray-600 transition-all duration-300 ease-in-out z-50",
-            {
-              "opacity-100 visible": isMenuOpen,
-              "opacity-0 invisible": !isMenuOpen,
-            }
-          )}
-        >
-          <div className="flex flex-col gap-2 p-4">
-            <NavLinks />
+        <div>
+          <div
+            onClick={() => {
+              toggleMenu();
+              localStorage.setItem("sidebarStatus", "closed");
+            }}
+            className={cn(
+              "fixed  top-0 left-0 h-screen bg-black/50 backdrop-blur-sm transition-opacity duration-300 z-40 opacity-100 w-full",
+              isMenuOpen
+                ? "opacity-100"
+                : "opacity-0 pointer-events-none"
+            )}
+          />
+          <div
+            className={cn(
+              "fixed top-0 left-0 h-screen w-80 bg-sidebar text-white p-6 transition-transform duration-300 z-50 flex flex-col",
+              isMenuOpen ? "translate-x-0" : "-translate-x-full"
+            )}
+          >
+            <Link to={"https://app.bipc.org.br/benchmark"} className="p-4">
+              <img
+                src={'/images/assets/logo_full.svg'}
+                alt="Logo"
+                className={cn("h-full mx-auto mt-2", {
+                  "h-[70px]": isMobile,
+                })}
+              />
+            </Link>
+            <BetaWarning  />
+
+            <div className="flex flex-col gap-5 flex-1 justify-end">
+              <NavLinks />
+            </div>
           </div>
         </div>
       )}

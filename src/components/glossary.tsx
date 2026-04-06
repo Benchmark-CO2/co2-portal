@@ -77,9 +77,9 @@ export default function Glossary({ items }: GlossaryProps) {
 
   return (
     <div>
-      <div className='fixed flex justify-center items-center top-12 h-30 w-full gap-4 max-md:h-50 max-md:top-10 max-md:pt-10'>
-        <div className='h-64 w-5/6 absolute backdrop-blur-md -left-10'></div>
-        <div className='absolute left-0 top-10 z-10 w-2/3 flex justify-center flex-col'>
+      <div className='sticky flex justify-center items-center top-7 h-30 w-full gap-4 max-md:h-58'>
+        <div className='h-64 w-screen max-sm:w-full absolute backdrop-blur-xl'></div>
+        <div className='absolute left-0 top-10 z-10 w-2/3 max-sm:w-5/6 flex justify-center flex-col'>
           <div>
             <h1 className="text-3xl font-bold text-primary">Glossário</h1>
             <div className='flex gap-3 text-secondary text-xl cursor-pointer w-full flex-wrap mt-2'>
@@ -97,7 +97,7 @@ export default function Glossary({ items }: GlossaryProps) {
           </div>
         </div>
       </div>
-      <div className='mt-45 w-full max-md:mt-45'>
+      <div className='mt-45 w-full max-md:mt-52'>
         <Accordion
           key={'all'}
           type="multiple"
