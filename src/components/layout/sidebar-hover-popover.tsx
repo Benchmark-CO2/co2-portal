@@ -145,7 +145,7 @@ export function SidebarHoverPopover({
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
-      <PopoverTrigger className={cn("cursor-pointer w-full", triggerClassName)}>
+      <PopoverTrigger className={cn("cursor-pointer border-0 ", triggerClassName)} onMouseEnter={handleOpen} onMouseLeave={handleClose}>
         {trigger}
       </PopoverTrigger>
       <PopoverContent

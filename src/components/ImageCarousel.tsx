@@ -49,7 +49,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-1/2 object-cover rounded-md mx-auto"
+                    className="w-1/2 max-md:w-full object-cover rounded-md mx-auto"
                   />
 
                 </div>
