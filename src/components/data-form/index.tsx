@@ -35,12 +35,12 @@ const DataForm = () => {
 
     const formBody = new URLSearchParams({
       'form-name': 'formulario-de-dados',
-      who: whoOptions.find(o => o.id === selectedOption)?.label || '',
-      reason: reasonOptions.find(o => o.id === selectedReason)?.label || '',
-      name,
-      email,
-      phone,
-      additionalInfo,
+      'Quem é você? (titular/solicitante)': whoOptions.find(o => o.id === selectedOption)?.label || '',
+      'Motivo do contato': reasonOptions.find(o => o.id === selectedReason)?.label || '',
+      'Nome': name,
+      'E-mail': email,
+      'Telefone': phone,
+      'Informações adicionais': additionalInfo,
     });
 
     try {
