@@ -66,7 +66,7 @@ const DataForm = () => {
     }
   };
   return (
-    <div className='w-full'>
+    <div className='w-1/2 mx-auto'>
       <h1 className='text-2xl font-semibold text-primary'>
         Formulário de Dados
       </h1>
