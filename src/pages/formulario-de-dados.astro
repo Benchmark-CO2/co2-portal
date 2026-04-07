@@ -7,15 +7,15 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout class="bg-background">
 	<form name="formulario-de-dados" data-netlify="true" hidden>
-		<input name="Quem é você? (titular/solicitante)" />
-		<input name="Motivo do contato" />
-		<input name="Nome" />
-		<input name="E-mail" />
-		<input name="Telefone" />
-		<input name="Informações adicionais" />
+		<input name="quem" />
+		<input name="motivo" />
+		<input name="nome" />
+		<input name="email" />
+		<input name="telefone" />
+		<input name="informacoes_adicionais" />
 	</form>
 	<div class="w-full flex justify-center">
-		<div class="w-fullpx-6 lg:px-12 py-10 flex flex-col">
+		<div class="w-full px-6 lg:px-12 py-10 flex flex-col">
 			<DataForm client:load />
 		</div>
 	</div>
