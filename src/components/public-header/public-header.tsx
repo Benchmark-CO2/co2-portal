@@ -103,7 +103,7 @@ export default function PublicHeader() {
           })}
         />
         <Link
-          to="https://bipc.org.br/benchmark"
+          to="https://app.bipc.org.br/benchmark"
           onClick={handleCloseMenu}
           className="flex items-center gap-2 hover:text-gray-300 transition-colors"
         >
@@ -116,7 +116,7 @@ export default function PublicHeader() {
           })}
         />
         {isMobile && (
-          <Link to="https://bipc.org.br/signup" onClick={handleCloseMenu} className="flex items-center gap-2 text-accent rounded-md transition-colors justify-start w-full pl-2">
+          <Link to="https://app.bipc.org.br/sign-up" onClick={handleCloseMenu} className="flex items-center gap-2 text-accent rounded-md transition-colors justify-start w-full pl-2">
             <div className='flex gap-3 py-0 items-center w-full justify-start'>
               <UserPlus size={18} />
               <span>Cadastre-se</span>
@@ -124,7 +124,7 @@ export default function PublicHeader() {
           </Link>
         )}
         {isMobile && (
-          <Link to="https://bipc.org.br/login" onClick={handleCloseMenu} className="flex items-center gap-2 text-accent hover:bg-zinc-700/30 rounded-md transition-colors justify-start w-full bg-zinc-700/30 pl-2">
+          <Link to="https://app.bipc.org.br/login" onClick={handleCloseMenu} className="flex items-center gap-2 text-accent hover:bg-zinc-700/30 rounded-md transition-colors justify-start w-full bg-zinc-700/30 pl-2">
             <div className='flex gap-3 py-2 items-center w-full justify-start'>
               <LogIn size={18} />
               <span>Login</span>
@@ -133,7 +133,7 @@ export default function PublicHeader() {
         )}
         {
           !isMobile && (
-            <Link to="https://bipc.org.br/login" onClick={handleCloseMenu} className="flex items-center gap-2 text-accent hover:bg-zinc-700/30 rounded-md transition-colors justify-start w-full bg-zinc-700/30 pl-2">
+            <Link to="https://app.bipc.org.br/login" onClick={handleCloseMenu} className="flex items-center gap-2 text-accent hover:bg-zinc-700/30 rounded-md transition-colors justify-start w-full bg-zinc-700/30 pl-2">
               <Button variant="bipc" size="sm" className="w-full justify-center">
                 <UserCircle size={18} />
                 <span>Entrar</span>
