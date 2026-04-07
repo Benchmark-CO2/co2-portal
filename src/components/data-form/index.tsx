@@ -1,5 +1,4 @@
 import { phoneMask } from '@/utils/msks';
-import { actions } from 'astro:actions';
 import { useState } from 'react';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
@@ -31,31 +30,38 @@ const DataForm = () => {
   const [phone, setPhone] = useState('');
   const [additionalInfo, setAdditionalInfo] = useState('');
 
-  const formatBody = (data: Record<string, string>) => {
-    const selectedWhoOption = whoOptions.find(option => option.id === selectedOption)?.label || '';
-    const selectedReasonOption = reasonOptions.find(option => option.id === selectedReason)?.label || '';
-    return {
-      subject: `Formulário de Dados - ${data.name}`,
-      message: `
-        Quem é você? ${selectedWhoOption}
-        Motivo do contato: ${selectedReasonOption}
-        Nome: ${data.name}
-        E-mail: ${data.email}
-        Telefone: ${data.phone}
-        Informações adicionais: ${data.additionalInfo}
-      `
-    };
-  };
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const formData = new FormData(e.target as HTMLFormElement);
-    const data = Object.fromEntries(formData.entries()) as Record<string, string>;
-    const body = formatBody(data);
 
-    const {data: response} = await actions.sendMail(body)
-    if(response?.message) {
-      console.log('Formulário enviado com sucesso:', response);
-    } else {
+    const formBody = new URLSearchParams({
+      'form-name': 'formulario-de-dados',
+      who: whoOptions.find(o => o.id === selectedOption)?.label || '',
+      reason: reasonOptions.find(o => o.id === selectedReason)?.label || '',
+      name,
+      email,
+      phone,
+      additionalInfo,
+    });
+
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: formBody.toString(),
+      });
+
+      if (response.ok) {
+        alert('Formulário enviado com sucesso!');
+        setName('');
+        setEmail('');
+        setPhone('');
+        setAdditionalInfo('');
+        setSelectedOption('one');
+        setSelectedReason('reason-1');
+      } else {
+        alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.');
+      }
+    } catch {
       alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.');
     }
   };
@@ -64,7 +70,7 @@ const DataForm = () => {
       <h1 className='text-2xl font-semibold text-primary'>
         Formulário de Dados
       </h1>
-      <form className='w-full flex flex-col gap-2 mt-6 max-w-full md:max-w-lg' data-netlify="true" name='formulario-de-dados' method='POST'>
+      <form className='w-full flex flex-col gap-2 mt-6 max-w-full md:max-w-lg' onSubmit={handleSubmit}>
         <div className='flex flex-col gap-2'>
           <Label className='mt-4 text-sm'>Quem é você? (titular/solicitante) *</Label>
           <RadioGroup className='flex flex-col gap-2 mb-4 w-fit' value={selectedOption} onValueChange={(value) => setSelectedOption(value)}>
