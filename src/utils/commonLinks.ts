@@ -34,7 +34,7 @@ export const commonLinks = {
     external: "https://termsofuse.example.com" as const,
   },
   dataForm: {
-    internal: "/formulario-de-dados" as const,
+    internal: "/exercer-meus-direitos" as const,
     external: "https://dataform.example.com" as const,
   },
 } as const;
