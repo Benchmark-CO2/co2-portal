@@ -11,16 +11,42 @@ function Contact() {
   const [message, setMessage] = useState("");
   const [acceptTerms, setAcceptTerms] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
-    const mailtoLink = `mailto:contato@bipc.org.br?subject=${encodeURIComponent(
-      subject || "Contato via site"
-    )}&body=${encodeURIComponent(
-      `Nome: ${name}\nE-mail: ${email}\n\nMensagem:\n${message}`
-    )}`;
+    const formBody = new URLSearchParams({
+      'form-name': 'formulario-contato',
+      'nome': name,
+      'email': email,
+      'assunto': subject,
+      'mensagem': message,
+    });
 
-    window.location.href = mailtoLink;
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: formBody.toString(),
+      });
+
+      if (response.ok) {
+        alert('Mensagem enviada com sucesso!');
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+        setAcceptTerms(false);
+      } else {
+        alert('Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente ou entre em contato por meio do email contato@bipc.org.br.');
+      }
+    } catch {
+      alert('Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente ou entre em contato por meio do email contato@bipc.org.br.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const allFieldsFilled = name && email && message;
@@ -169,8 +195,8 @@ function Contact() {
                 </div>
               </div>
                 
-                <Button type="submit" variant={"default"} className="w-full" disabled={!acceptTerms || !allFieldsFilled}>
-                  Enviar
+                <Button type="submit" variant={"default"} className="w-full" disabled={!acceptTerms || !allFieldsFilled || isSubmitting}>
+                  {isSubmitting ? 'Enviando...' : 'Enviar'}
                 </Button>
               </form>
             </div>

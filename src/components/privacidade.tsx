@@ -7,7 +7,7 @@ export default function PrivacyPageContent({ privacyItems }: { privacyItems: Pri
     <>
         {
           privacyItems.map((privacy: PrivacyFile) => (
-            <div className="container mx-auto p-6 max-w-4xl">
+            <div className="container mx-auto p-6 max-w-4xl max-md:px-2" key={privacy.title}>
               <div className="space-y-2 mb-8">
                 <h1 className="text-3xl font-bold tracking-tight text-primary">
                   {privacy.title}

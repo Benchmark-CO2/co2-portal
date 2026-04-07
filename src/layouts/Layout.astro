@@ -6,7 +6,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 ---
 
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" translate="no">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,9 +15,8 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
   <body class="bg-background! text-foreground! h-screen flex flex-col w-full overflow-hidden">
     <Header />
     <Training isAuthenticated={false} client:load />
-    <div id="main-scroll-container" class="mt-16 p-6 flex-1 overflow-y-auto">
+    <div id="main-scroll-container" class="mt-16 p-6 flex-1 overflow-y-auto overflow-x-hidden">
       <slot />
     </div>
-    <!-- <Footer /> -->
   </body>
 </html>

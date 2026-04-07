@@ -146,10 +146,9 @@ export default function Glossary({ items }: GlossaryProps) {
   };
 
   return (
-    <div>
-      <div className='fixed flex justify-center items-center top-7 h-30 bg-white w-full gap-4 max-md:h-40' id='glossary-header'>
-        <div className='absolute left-0 top-10 z-10 w-2/3 max-sm:w-5/6 flex justify-center flex-col'>
-          <div>
+    <div className='w-full overflow-x-hidden'>
+      <div className='fixed flex justify-center items-center left-0 top-7 h-30 bg-white w-full gap-4 max-md:h-50' id='glossary-header'>
+        <div className='absolute left-0 top-10 z-10 w-2/3 max-sm:w-11/12 flex justify-center flex-col px-4'>
             <div className='flex justify-between w-full items-center flex-wrap '>
               <h1 className="text-3xl font-bold text-primary">Glossário</h1>
               <div className='w-full md:w-1/2'>
@@ -188,12 +187,9 @@ export default function Glossary({ items }: GlossaryProps) {
                 </div>
               ))}
             </div>
-          </div>
-
-          
         </div>
       </div>
-      <div className='mt-25 w-full max-md:mt-25'>
+      <div className='mt-25 max-md:mt-45'>
         <Accordion
           id='glossary-accordion'
           key={'all'}
@@ -206,7 +202,7 @@ export default function Glossary({ items }: GlossaryProps) {
               alfabet.map((letter) => (
                 <AccordionItem value={`item-${letter}`} className="mb-4 border-b pb-4" key={letter} id={`letter-${letter}`}>
                   <AccordionTrigger className='text-2xl font-bold text-primary' onClick={(e) => e.preventDefault()}>{letter}</AccordionTrigger>
-                  <AccordionContent className="flex flex-col gap-6 text-balance mt-4">
+                  <AccordionContent className="flex flex-col gap-6 text-balance break-words mt-4">
                     {items[letter] && items[letter].map((item, index) => (
                       <div key={index}>
                         <h3 className='text-base font-bold mb-2 text-primary'>{highlightText(item.item, committedTerm)}</h3>

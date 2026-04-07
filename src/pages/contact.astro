@@ -5,5 +5,11 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
+    <form name="formulario-contato" data-netlify="true" hidden>
+        <input name="nome" />
+        <input name="email" />
+        <input name="assunto" />
+        <textarea name="mensagem"></textarea>
+    </form>
     <ContactPageContent client:load />
 </Layout>

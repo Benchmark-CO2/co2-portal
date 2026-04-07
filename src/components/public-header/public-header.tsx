@@ -7,11 +7,11 @@ import {
   Fingerprint,
   GlobeLock,
   Headset,
-  List,
   LogIn,
   Menu,
   Newspaper,
   Rss,
+  ShieldCheck,
   UserCircle,
   UserPlus,
   X
@@ -38,7 +38,7 @@ const saibaMaisItems: PopoverItem[] = [
 const transparenciaItems: PopoverItem[] = [
   { label: "Privacidade dos dados", icon: Fingerprint, linkKey: "privacy" },
   { label: "Termos de uso", icon: FileText, linkKey: "terms" },
-  { label: "Exercer meus direitos", icon: List, linkKey: "dataForm" },
+  { label: "Exercer meus direitos", icon: ShieldCheck, linkKey: "dataForm" },
 ];
 
 export default function PublicHeader() {
