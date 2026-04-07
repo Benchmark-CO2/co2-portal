@@ -1,0 +1,14 @@
+---
+import DataForm from '@/components/data-form';
+import Layout from '../layouts/Layout.astro';
+
+
+---
+
+<Layout class="bg-background">
+	<div class="w-full flex justify-center">
+		<div class="w-fullpx-6 lg:px-12 py-10 flex flex-col">
+			<DataForm client:load />
+		</div>
+	</div>
+</Layout>
