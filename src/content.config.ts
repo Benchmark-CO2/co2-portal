@@ -188,7 +188,7 @@ const terms = defineCollection({
 });	
 
 const documents = defineCollection({
-	loader: glob({ base: './src/content/documents', pattern: '**/*.{md,mdx}' }),
+	loader: glob({ base: './content/documents', pattern: '**/*.{md,mdx}' }),
 	schema: z.object({
 		title: z.string(),
 		description: z.string(),
