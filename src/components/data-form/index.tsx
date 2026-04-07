@@ -59,10 +59,10 @@ const DataForm = () => {
         setSelectedOption('one');
         setSelectedReason('reason-1');
       } else {
-        alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.');
+        alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente ou entre em contato por meio do email contato@bipc.org.br.');
       }
     } catch {
-      alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.');
+      alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente ou entre em contato por meio do email contato@bipc.org.br.');
     }
   };
   return (

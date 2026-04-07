@@ -13,6 +13,7 @@
     "@astrojs/react": "^4.2.3",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.3.0",
+    "@netlify/plugin-emails": "^1.1.1",
     "@radix-ui/react-accordion": "^1.2.12",
     "@tailwindcss/vite": "^4.1.3",
     "@types/react": "^19.1.0",
