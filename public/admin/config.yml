@@ -118,7 +118,7 @@ collections:
         }
   - name: "documents"
     label: "Documentos"
-    folder: "content/documents"
+    folder: content/documents
     create: true
     slug: "{{slug}}"
     format: "frontmatter"
