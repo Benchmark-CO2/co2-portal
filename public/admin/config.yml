@@ -136,3 +136,15 @@ collections:
             },
           ]
         }
+  - name: "documents"
+    label: "Documentos"
+    folder: "src/content/documents"
+    create: true
+    slug: "{{slug}}"
+    format: "frontmatter"
+    extension: "md"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descrição", name: "description", widget: "text" }
+      - { label: "Data de Publicação", name: "pubDate", widget: "datetime" }
+      - { label: "Arquivo para Download", name: "fileUrl", widget: "file", media_library: { config: { multiple: false } } }

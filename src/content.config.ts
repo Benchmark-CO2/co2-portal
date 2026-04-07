@@ -187,4 +187,14 @@ const terms = defineCollection({
 	}),
 });	
 
-export const collections = { blog, articles, notices, team, glossary, faq, privacy, terms };
+const documents = defineCollection({
+	loader: glob({ base: './src/content/documents', pattern: '**/*.{md,mdx}' }),
+	schema: z.object({
+		title: z.string(),
+		description: z.string(),
+		pubDate: z.coerce.date(),
+		fileUrl: z.string(),
+	}),
+});
+
+export const collections = { blog, articles, notices, team, glossary, faq, privacy, terms, documents };

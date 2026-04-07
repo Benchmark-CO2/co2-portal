@@ -18,8 +18,8 @@ export const commonLinks = {
   //   external: "/lancamento" as const,
   // },
   repository: {
-    internal: "/" as const,
-    external: "https://github.com" as const,
+    internal: "/repositorio" as const,
+    external: "https://bipc.org.br/repositorio" as const,
   },
   contact: {
     internal: "/contact" as const,

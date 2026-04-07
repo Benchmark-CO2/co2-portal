@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+import DocumentList from '../components/document-list/index.tsx';
+import Layout from '../layouts/Layout.astro';
+
+const documents = await getCollection('documents');
+const orders = documents.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
+
+---
+
+<Layout class="bg-background">
+	<div class="w-full flex justify-center">
+		<div class="w-full max-w-7xl px-6 lg:px-12 py-10 flex flex-col">
+      <h1 class="text-3xl text-primary font-semibold">Repositório de arquivos</h1>
+      <DocumentList items={orders.map(order => ({
+        title: order.data.title,
+        description: order.data.description,
+        fileUrl: order.data.fileUrl,
+        pubDate: order.data.pubDate
+      }))} client:load />
+		</div>
+	</div>
+</Layout>
