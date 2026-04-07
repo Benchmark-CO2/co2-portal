@@ -64,7 +64,7 @@ const DataForm = () => {
       <h1 className='text-2xl font-semibold text-primary'>
         Formulário de Dados
       </h1>
-      <form className='w-full flex flex-col gap-2 mt-6 max-w-full md:max-w-lg' netlify name='formulario-de-dados'>
+      <form className='w-full flex flex-col gap-2 mt-6 max-w-full md:max-w-lg' data-netlify="true" name='formulario-de-dados'>
         <div className='flex flex-col gap-2'>
           <Label className='mt-4 text-sm'>Quem é você? (titular/solicitante) *</Label>
           <RadioGroup className='flex flex-col gap-2 mb-4 w-fit' value={selectedOption} onValueChange={(value) => setSelectedOption(value)}>
