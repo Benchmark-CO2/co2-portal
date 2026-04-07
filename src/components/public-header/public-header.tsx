@@ -38,7 +38,7 @@ const saibaMaisItems: PopoverItem[] = [
 const transparenciaItems: PopoverItem[] = [
   { label: "Privacidade dos dados", icon: Fingerprint, linkKey: "privacy" },
   { label: "Termos de uso", icon: FileText, linkKey: "terms" },
-  { label: "Formulário de dados", icon: List, linkKey: "dataForm" },
+  { label: "Exercer meus direitos", icon: List, linkKey: "dataForm" },
 ];
 
 export default function PublicHeader() {
