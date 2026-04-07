@@ -123,7 +123,7 @@ function Contact() {
                     Mensagem
                   </span>
                   <Textarea
-                    className="w-full min-h-[160px]"
+                    className="w-full min-h-[120px]"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     required
@@ -150,7 +150,7 @@ function Contact() {
                       Importante: Confirmação de Dados
                     </h4>
                     <p className="text-sm text-yellow-800 dark:text-yellow-200 leading-relaxed">
-                      Eu declaro estar ciente de que os dados informados no formulário de contato somente poderão ser usados para permitir a Caixa de seleção que não seja resposta a demanda.
+                      Declaro estar ciente de que os dados informados no formulário de contato serão utilizados exclusivamente para que a equipe BIPc possa contatá-lo em relação à mensagem enviada.
                     </p>
                   </div>
                 </div>
