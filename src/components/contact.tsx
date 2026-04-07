@@ -26,9 +26,9 @@ function Contact() {
   const allFieldsFilled = name && email && message;
   return (
     <div className='h-full w-full flex justify-center items-center'>
-      <div className="w-full flex justify-center px-6">
+      <div className="w-full flex justify-center p-6 h-full max-md:flex-wrap">
         {/* Constrain overall content width and add horizontal padding */}
-        <div className="w-11/12 px-6 lg:px-12 flex flex-col lg:flex-row items-stretch gap-8">
+        <div className="w-11/12 p-6 lg:px-12 flex flex-col lg:flex-row items-stretch max-md:justify-center gap-8">
           {/* Left column: Logo + social icons */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start">
             <img
@@ -73,13 +73,13 @@ function Contact() {
           </div>
 
           {/* Right column: form. On large screens show a subtle vertical divider to the left */}
-          <div className="w-full lg:w-1/2 flex items-center">
+          <div className="w-full lg:w-1/2 flex items-center max-md:mb-6">
             <div className="w-full lg:pl-12 lg:border-l lg:border-gray-200">
               <h1 className="text-3xl md:text-4xl text-primary font-bold mb-8">
                 Fale conosco
               </h1>
 
-              <form className="w-full max-w-2xl" onSubmit={handleSubmit}>
+              <form className="w-full lg:max-w-2xl pb-6" onSubmit={handleSubmit}>
                 <label className="block mb-4">
                   <span className="text-sm text-muted-foreground block mb-1">
                     Nome
