@@ -66,11 +66,11 @@ const DataForm = () => {
     }
   };
   return (
-    <div className='w-1/2 mx-auto'>
+    <div className='w-1/3 mx-auto'>
       <h1 className='text-2xl font-semibold text-primary'>
-        Formulário de Dados
+        Exercer meus direitos
       </h1>
-      <form className='w-full flex flex-col gap-2 mt-6 max-w-full md:max-w-lg' onSubmit={handleSubmit}>
+      <form className='w-full flex flex-col gap-2 mt-6 max-w-full' onSubmit={handleSubmit}>
         <div className='flex flex-col gap-2'>
           <Label className='mt-4 text-sm'>Quem é você? (titular/solicitante) *</Label>
           <RadioGroup className='flex flex-col gap-2 mb-4 w-fit' value={selectedOption} onValueChange={(value) => setSelectedOption(value)}>
@@ -97,13 +97,13 @@ const DataForm = () => {
           Algumas informações adicionais são necessárias permitir a identificação do registro das suas informações nas nossas bases de dados, e conseguir atender sua solicitação.
         </p>
         <Label htmlFor='name'>Nome</Label>
-        <Input id='name' name='name' placeholder='Digite seu nome' className='mb-4 mt-1' value={name} onChange={(e) => setName(e.target.value)} autoComplete='none' />
+        <Input id='name' name='name' placeholder='Digite seu nome' className='mb-4 mt-1 w-full' value={name} onChange={(e) => setName(e.target.value)} autoComplete='none' />
         <Label htmlFor='email'>E-mail</Label>
-        <Input id='email' name='email' placeholder='Digite seu e-mail' className='mb-4 mt-1' value={email} onChange={(e) => setEmail(e.target.value)} autoComplete='none' />
+        <Input id='email' name='email' placeholder='Digite seu e-mail' className='mb-4 mt-1 w-full' value={email} onChange={(e) => setEmail(e.target.value)} autoComplete='none' />
         <Label htmlFor='phone'>Telefone</Label>
-        <Input id='phone' name='phone' placeholder='Digite seu telefone' className='mb-4 mt-1' value={phone} onChange={(e) => setPhone(phoneMask(e.target.value))} autoComplete='none' />
+        <Input id='phone' name='phone' placeholder='Digite seu telefone' className='mb-4 mt-1 w-full' value={phone} onChange={(e) => setPhone(phoneMask(e.target.value))} autoComplete='none' />
         <Label htmlFor='additionalInfo'>Informações adicionais</Label>
-        <Textarea id='additionalInfo' name='additionalInfo' placeholder='Digite informações adicionais' className='mb-4 mt-1' value={additionalInfo} onChange={(e) => setAdditionalInfo(e.target.value)} />
+        <Textarea id='additionalInfo' name='additionalInfo' placeholder='Digite informações adicionais' className='mb-4 mt-1 w-full' value={additionalInfo} onChange={(e) => setAdditionalInfo(e.target.value)} />
         <Button type="submit" className='w-full'>Enviar</Button>
       </form>
     </div >
