@@ -1,4 +1,5 @@
 import { phoneMask } from '@/utils/msks';
+import { actions } from 'astro:actions';
 import { useState } from 'react';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
@@ -51,20 +52,19 @@ const DataForm = () => {
     const data = Object.fromEntries(formData.entries()) as Record<string, string>;
     const body = formatBody(data);
 
-    // await fetch('https://bipc.org.br/v1/form-data', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify({ body }),
-    // });
+    const {data: response} = await actions.sendMail(body)
+    if(response?.message) {
+      console.log('Formulário enviado com sucesso:', response);
+    } else {
+      alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.');
+    }
   };
   return (
     <div className='w-full'>
       <h1 className='text-2xl font-semibold text-primary'>
         Formulário de Dados
       </h1>
-      <form onSubmit={handleSubmit} className='w-full flex flex-col gap-2 mt-6 max-w-full md:max-w-lg'>
+      <form className='w-full flex flex-col gap-2 mt-6 max-w-full md:max-w-lg' netlify name='formulario-de-dados'>
         <div className='flex flex-col gap-2'>
           <Label className='mt-4 text-sm'>Quem é você? (titular/solicitante) *</Label>
           <RadioGroup className='flex flex-col gap-2 mb-4 w-fit' value={selectedOption} onValueChange={(value) => setSelectedOption(value)}>
