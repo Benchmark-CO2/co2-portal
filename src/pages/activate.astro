@@ -1,0 +1,11 @@
+---
+import { Redirect } from '../components/redirect';
+import Layout from '../layouts/Layout.astro';
+const currentYear = new Date().getFullYear();
+const currentMonth = new Date().getMonth() + 1;
+
+---
+
+<Layout>
+	<Redirect client:load />
+</Layout>
