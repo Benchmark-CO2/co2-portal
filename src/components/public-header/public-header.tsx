@@ -58,15 +58,15 @@ export default function PublicHeader() {
           onClick={handleCloseMenu}
           className="flex items-center gap-2 hover:text-gray-300 transition-colors"
         >
-          <BipcIcon size={18} />
+          <BipcIcon size={16} />
           <span className="text-sm whitespace-nowrap">Sobre o BIPc</span>
         </Link>
 
         <SidebarHoverPopover
-          triggerClassName="flex items-center gap-2 hover:text-gray-300 transition-colors"
+          triggerClassName="flex items-center gap-2 hover:text-gray-300 transition-colors focus-visible:outline-none"
           trigger={
             <>
-              <Rss size={18} />
+              <Rss size={16} />
               <span className="text-sm whitespace-nowrap">Saiba mais</span>
             </>
           }
@@ -77,10 +77,10 @@ export default function PublicHeader() {
         />
 
         <SidebarHoverPopover
-          triggerClassName="flex items-center gap-2 hover:text-gray-300 transition-colors"
+          triggerClassName="flex items-center gap-2 hover:text-gray-300 transition-colors focus-visible:outline-none"
           trigger={
             <>
-              <GlobeLock size={18} />
+              <GlobeLock size={16} />
               <span className="text-sm">Transparência</span>
             </>
           }
@@ -107,7 +107,7 @@ export default function PublicHeader() {
           onClick={handleCloseMenu}
           className="flex items-center gap-2 hover:text-gray-300 transition-colors"
         >
-          <BarChart3 size={18} />
+          <BarChart3 size={16} />
           <span className="text-sm">Benchmark</span>
         </Link>
         <Divider
@@ -119,7 +119,7 @@ export default function PublicHeader() {
           <Link to="https://app.bipc.org.br/sign-up" onClick={handleCloseMenu} className="flex items-center gap-2 text-accent rounded-md transition-colors justify-start w-full pl-2">
             <div className='flex gap-3 py-0 items-center w-full justify-start'>
               <UserPlus size={18} />
-              <span>Cadastre-se</span>
+              <span className='text-sm'>Cadastre-se</span>
             </div>
           </Link>
         )}
@@ -127,16 +127,17 @@ export default function PublicHeader() {
           <Link to="https://app.bipc.org.br/login" onClick={handleCloseMenu} className="flex items-center gap-2 text-accent hover:bg-zinc-700/30 rounded-md transition-colors justify-start w-full bg-zinc-700/30 pl-2">
             <div className='flex gap-3 py-2 items-center w-full justify-start'>
               <LogIn size={18} />
-              <span>Login</span>
+              <span className='text-sm'>Login</span>
             </div>
           </Link>
         )}
         {
           !isMobile && (
-            <Link to="https://app.bipc.org.br/login" onClick={handleCloseMenu} className="flex items-center gap-2 text-accent hover:bg-zinc-700/30 rounded-md transition-colors justify-start w-full bg-zinc-700/30 pl-2">
-              <Button variant="bipc" size="sm" className="w-full justify-center">
-                <UserCircle size={18} />
-                <span>Entrar</span>
+            
+            <Link to="https://app.bipc.org.br/login" onClick={handleCloseMenu} className="flex items-center gap-2 text-accent hover:bg-zinc-700/30 rounded-md transition-colors justify-start w-full bg-zinc-700/30 pl-2 h-6!">
+              <Button variant="bipc" size="sm" className="px-3 py-0 h-[26px]!">
+                <UserCircle size={16} />
+                <span className='text-sm'>Entrar</span>
               </Button>
             </Link>
           )
@@ -162,7 +163,7 @@ export default function PublicHeader() {
         </Link>
         {/* Desktop Navigation */}
         {!isMobile && (
-          <div className="flex gap-6 items-center py-2 ml-auto">
+          <div className="flex gap-6 items-center ml-auto">
             <NavLinks />
           </div>
         )}

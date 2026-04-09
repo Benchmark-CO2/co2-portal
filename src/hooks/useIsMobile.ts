@@ -1,7 +1,7 @@
 import { useLayoutEffect, useState } from "react";
 
 export const useIsMobile = () => {
-  const [isMobile, setIsMobile] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   useLayoutEffect(() => {
     const handleResize = () => {

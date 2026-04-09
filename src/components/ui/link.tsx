@@ -9,7 +9,7 @@ type LinkProps = {
   onClick?: () => void
 }
 export const Link = ({ to, children, className, activeProps, onClick}: LinkProps) => (
-  <a href={to} className={cn('text-sm flex gap-2 max-md:gap-3 items-center hover:bg-zinc-700/30 rounded-md transition-colors w-full max-md:text-base!', className, activeProps)} onClick={onClick ? onClick : () => null}>
+  <a href={to} className={cn('text-xs flex gap-2 max-md:gap-3 items-center rounded-md transition-colors w-full max-md:text-base!', className, activeProps)} onClick={onClick ? onClick : () => null}>
     {children}
   </a>
 )
