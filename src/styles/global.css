@@ -138,7 +138,7 @@
   --breakpoint-3xl: 1920px;
   --breakpoint-4xl: 2560px;
 
-  --container-xl: 1300px;
+  --container-xl: 1280px;
 
   --font-montserrat: "Montserrat", var(--font-serif);
   --font-inter: "Inter", var(--font-sans);
