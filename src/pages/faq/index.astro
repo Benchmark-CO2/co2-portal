@@ -8,7 +8,7 @@ const onlyQuestions = questions.flatMap(category => category.data.meta?.flatMap(
 ---
 
 <Layout>
-  <div class="w-2/3 max-sm:w-11/12 flex flex-col items-start mx-auto">
+  <div class="w-full max-w-xl max-sm:w-11/12 flex flex-col items-center justify-center mx-auto">
     
     <FaqList client:load items={onlyQuestions} />
   </div>

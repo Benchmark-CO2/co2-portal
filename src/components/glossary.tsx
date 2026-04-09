@@ -147,8 +147,8 @@ export default function Glossary({ items }: GlossaryProps) {
 
   return (
     <div className='w-full overflow-x-hidden'>
-      <div className='fixed flex justify-center items-center left-0 top-7 h-30 bg-white w-full gap-4 max-md:h-50' id='glossary-header'>
-        <div className='absolute left-0 top-10 z-10 w-2/3 max-sm:w-11/12 flex justify-center flex-col px-4'>
+      <div className='fixed flex justify-center items-center left-0 top-7 h-35 bg-white w-full gap-4 max-md:h-50' id='glossary-header'>
+        <div className='absolute left-1/2 -translate-x-1/2 top-10 z-10 w-full max-w-xl max-sm:w-11/12 flex justify-center flex-col'>
             <div className='flex justify-between w-full items-center flex-wrap '>
               <h1 className="text-3xl font-bold text-primary">Glossário</h1>
               <div className='w-full md:w-1/2'>

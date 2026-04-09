@@ -17,7 +17,7 @@ const recordGlossary = {} as Record<string, {item: string, description: string}[
 ---
 
 <Layout>
-  <div class="w-2/3 max-sm:w-11/12 flex flex-col items-start mx-auto">
+  <div class="w-2/3 max-sm:w-11/12 flex flex-col items-start mx-auto max-w-xl">
     <GlossaryList client:load items={recordGlossary} />
   </div>
 </Layout>
