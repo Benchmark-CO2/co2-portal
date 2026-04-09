@@ -52,13 +52,13 @@ const ModalTraining = ({
   }, [isAuthenticated]);
 
   const onNavigateToSignUp = () => {
-    window.open('https://bipc.org.br/sign-up', '_self')
+    window.open('https://app.bipc.org.br/sign-up', '_self')
   };
 
   const handleHasAccount = () => {
     // Sempre minimiza, nunca marca como completed
     handleMinimize();
-    window.open('https://bipc.org.br/login', '_self')
+    window.open('https://app.bipc.org.br/login', '_self')
   };
 
   const handleAlreadyRegistered = () => {
