@@ -339,15 +339,15 @@
       "items": [
         {
           "item": "Madeira Certificada FSC",
-          "description": "Madeira proveniente de manejo florestal responsável com recuperação total da floresta, certificada pelo Forest Stewardship Council (FSC), que assegura critérios ambientais, sociais e econômicos. Do ponto de vista do CO2, o saldo de carbono na atmosfera é zero, de modo semelhante à madeira plantada."
+          "description": "Madeira proveniente de manejo florestal responsável com recuperação total da floresta, certificada pelo Forest Stewardship Council (FSC), que assegura critérios ambientais, sociais e econômicos. Do ponto de vista do CO₂, o saldo de carbono na atmosfera é zero, de modo semelhante à madeira plantada."
         },
         {
           "item": "Madeira nativa",
-          "description": "Madeira extraída de florestas naturais, como a da Amazônia, sem que tenha sido plantada pelo homem. Como não há recuperação total da floresta, do ponto de vista do CO2, é considerada fonte de carbono, uma vez que parte da biomassa florestal é destruída/perdida durante o processo de extração e não é recuperada dentro do período até a exploração florestal subsequente."
+          "description": "Madeira extraída de florestas naturais, como a da Amazônia, sem que tenha sido plantada pelo homem. Como não há recuperação total da floresta, do ponto de vista do CO₂, é considerada fonte de carbono, uma vez que parte da biomassa florestal é destruída/perdida durante o processo de extração e não é recuperada dentro do período até a exploração florestal subsequente."
         },
         {
           "item": "Madeira plantada",
-          "description": "Madeira obtida de monoculturas florestais cultivadas especificamente para fins comerciais, como eucalipto e pinus. O plantio é planejado e controlado, o que reduz a pressão sobre florestas nativas e permite o manejo sustentável. Do ponto de vista do CO2, o saldo de carbono na atmosfera é zero, de modo semelhante à madeira certificada FSC."
+          "description": "Madeira obtida de monoculturas florestais cultivadas especificamente para fins comerciais, como eucalipto e pinus. O plantio é planejado e controlado, o que reduz a pressão sobre florestas nativas e permite o manejo sustentável. Do ponto de vista do CO₂, o saldo de carbono na atmosfera é zero, de modo semelhante à madeira certificada FSC."
         },
         {
           "item": "Madeira tratada",

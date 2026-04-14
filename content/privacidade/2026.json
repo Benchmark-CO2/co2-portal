@@ -1,12 +1,12 @@
 {
   "title": "Política de Privacidade",
-  "sub-title": "Esta Política de Privacidade descreve como coletamos, usamos e protegemos suas informações pessoais ao utilizar nossa plataforma de benchmark de emissões de CO2. Ao acessar ou usar nossa plataforma, você concorda com os termos desta política.",
+  "sub-title": "Esta Política de Privacidade descreve como coletamos, usamos e protegemos suas informações pessoais ao utilizar nossa plataforma de benchmark de emissões de CO₂. Ao acessar ou usar nossa plataforma, você concorda com os termos desta política.",
   "board": {
     "resume": "Esta Política de Privacidade tem por finalidade demonstrar o compromisso da plataforma BIPc, sediada na Cidade de São Paulo, com relação à privacidade e proteção dos dados pessoais coletados de seus USUÁRIOS (pessoas físicas que acessam o site ou realizaram cadastro na plataforma).\n\nServe para dar total transparência sobre como tratamos seus Dados Pessoais ('Dados Pessoais'). É possivel acessar e visualizar esta Política a qualquer momento por meio do endereço bipc.org.br/privacidade.\n\nComo condição para acesso e uso das funcionalidades exclusivas do site da BIPc, o USUÁRIO declara que fez a leitura completa e atenta da presente Política de Privacidade e está plenamente de acordo com seus termos, conferindo, assim, sua livre e expressa concordância com o estipulado neste instrumento e autorizando a obtenção dos dados e informações aqui mencionados, bem como sua utilização para os fins especificados abaixo. Caso não esteja de acordo com estas diretivas, o USUÁRIO deverá descontinuar o seu acesso.",
     "sections": [
       {
         "title": "QUADRO RESUMO",
-        "table": {         
+        "table": {
           "headers": [],
           "rows": [
             {
@@ -119,10 +119,7 @@
         "title": "3. BASES LEGAIS QUE PERMITEM A COLETA E TRATAMENTO DOS DADOS PELA PLATAFORMA BIPc",
         "description": "A coleta e tratamento (qualquer operação com seus dados pessoais, como armazenamento e uso) são autorizados com base nas hipóteses previstas na lei listadas no quadro abaixo",
         "table": {
-          "headers": [
-            "CATEGORIA DE DADOS",
-            "BASE LEGAL DE TRATAMENTO"
-          ],
+          "headers": ["CATEGORIA DE DADOS", "BASE LEGAL DE TRATAMENTO"],
           "rows": [
             {
               "columns": [
@@ -143,7 +140,7 @@
                   "content": "Os registros eletrônicos como IP de origem, data e hora de conexão são coletados para cumprimento de obrigação legal. Já os dados de analytics são coletados com base no legítimo interesse, sendo permitido o opt-out."
                 }
               ]
-            }, 
+            },
             {
               "columns": [
                 {
@@ -175,10 +172,7 @@
         "title": "6. DIREITOS DO TITULAR",
         "description": "Nós levamos a sério os seus direitos e, por conta disso, relacionamos abaixo os seus direitos sobre dados pessoais. São eles:",
         "table": {
-          "headers": [
-            "DIREITOS DE TITULARES",
-            "O QUE SIGNIFICA O DIREITO?"
-          ],
+          "headers": ["DIREITOS DE TITULARES", "O QUE SIGNIFICA O DIREITO?"],
           "rows": [
             {
               "columns": [

@@ -1,8 +1,9 @@
-import BipcIcon from '@/assets/icons/bipc';
+import BipcIcon from "@/assets/icons/bipc";
 import {
   BarChart3,
   Book as BookIcon,
   CircleHelp,
+  ClipboardList,
   FileText,
   Fingerprint,
   GlobeLock,
@@ -14,18 +15,26 @@ import {
   ShieldCheck,
   UserCircle,
   UserPlus,
-  X
+  X,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { cn } from "../../../lib/utils";
+import { commonLinks } from "../../utils/commonLinks";
 import { useIsMobile } from "../../hooks/useIsMobile";
-import { BetaWarning } from '../beta-warning/beta-warning';
-import { SidebarHoverPopover, type PopoverItem } from "../layout/sidebar-hover-popover";
-import { Button } from '../ui/button';
+import { BetaWarning } from "../beta-warning/beta-warning";
+import {
+  SidebarHoverPopover,
+  type PopoverItem,
+} from "../layout/sidebar-hover-popover";
+import { Button } from "../ui/button";
 import Divider from "../ui/divider";
 import { Link } from "../ui/link";
 
-const activeProps = "font-bold";
+const activeProps = {
+  style: {
+    textShadow: "0.4px 0 0 currentColor, -0.4px 0 0 currentColor",
+  },
+};
 
 const saibaMaisItems: PopoverItem[] = [
   { label: "Perguntas frequentes", icon: CircleHelp, linkKey: "faq" },
@@ -37,13 +46,32 @@ const saibaMaisItems: PopoverItem[] = [
 
 const transparenciaItems: PopoverItem[] = [
   { label: "Privacidade dos dados", icon: Fingerprint, linkKey: "privacy" },
-  { label: "Termos de uso", icon: FileText, linkKey: "terms" },
+  { label: "Termos de uso", icon: ClipboardList, linkKey: "terms" },
   { label: "Exercer meus direitos", icon: ShieldCheck, linkKey: "dataForm" },
 ];
 
 export default function PublicHeader() {
   const isMobile = useIsMobile();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [pathname, setPathname] = useState("");
+
+  useEffect(() => {
+    setPathname(window.location.pathname);
+  }, []);
+
+  const isPathActive = (path: string) => {
+    if (path === "/") return pathname === "/";
+    return pathname.startsWith(path);
+  };
+
+  const isPopoverActive = (items: PopoverItem[]) =>
+    items.some((item) => {
+      const url = commonLinks[item.linkKey]?.internal;
+      return url ? isPathActive(url) : false;
+    });
+
+  const getActiveStyle = (active: boolean) =>
+    active ? activeProps.style : undefined;
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -58,16 +86,26 @@ export default function PublicHeader() {
           onClick={handleCloseMenu}
           className="flex items-center gap-2 hover:text-gray-300 transition-colors"
         >
-          <BipcIcon size={16} />
-          <span className="text-sm whitespace-nowrap">Sobre o BIPc</span>
+          <BipcIcon size={18} />
+          <span
+            className="text-sm whitespace-nowrap"
+            style={getActiveStyle(isPathActive("/"))}
+          >
+            Sobre o BIPc
+          </span>
         </Link>
 
         <SidebarHoverPopover
           triggerClassName="flex items-center gap-2 hover:text-gray-300 transition-colors focus-visible:outline-none"
           trigger={
             <>
-              <Rss size={16} />
-              <span className="text-sm whitespace-nowrap">Saiba mais</span>
+              <Rss size={18} />
+              <span
+                className="text-sm whitespace-nowrap"
+                style={getActiveStyle(isPopoverActive(saibaMaisItems))}
+              >
+                Saiba mais
+              </span>
             </>
           }
           items={saibaMaisItems}
@@ -80,8 +118,13 @@ export default function PublicHeader() {
           triggerClassName="flex items-center gap-2 hover:text-gray-300 transition-colors focus-visible:outline-none"
           trigger={
             <>
-              <GlobeLock size={16} />
-              <span className="text-sm">Transparência</span>
+              <GlobeLock size={18} />
+              <span
+                className="text-sm"
+                style={getActiveStyle(isPopoverActive(transparenciaItems))}
+              >
+                Transparência
+              </span>
             </>
           }
           items={transparenciaItems}
@@ -91,7 +134,7 @@ export default function PublicHeader() {
         />
 
         <Divider
-          className={cn("h-[28px] w-0.5 my-0", {
+          className={cn("h-[28px] w-[1px] my-0", {
             hidden: isMobile,
             "mx-4": !isMobile,
           })}
@@ -107,7 +150,7 @@ export default function PublicHeader() {
           onClick={handleCloseMenu}
           className="flex items-center gap-2 hover:text-gray-300 transition-colors"
         >
-          <BarChart3 size={16} />
+          <BarChart3 size={18} />
           <span className="text-sm">Benchmark</span>
         </Link>
         <Divider
@@ -116,54 +159,71 @@ export default function PublicHeader() {
           })}
         />
         {isMobile && (
-          <Link to="https://app.bipc.org.br/sign-up" onClick={handleCloseMenu} className="flex items-center gap-2 text-accent rounded-md transition-colors justify-start w-full pl-2">
-            <div className='flex gap-3 py-0 items-center w-full justify-start'>
+          <Link
+            to="https://app.bipc.org.br/sign-up"
+            onClick={handleCloseMenu}
+            className="flex items-center gap-2 text-accent rounded-md transition-colors justify-start w-full pl-2"
+          >
+            <div className="flex gap-3 py-0 items-center w-full justify-start">
               <UserPlus size={18} />
-              <span className='text-sm'>Cadastre-se</span>
+              <span className="text-sm">Cadastre-se</span>
             </div>
           </Link>
         )}
         {isMobile && (
-          <Link to="https://app.bipc.org.br/login" onClick={handleCloseMenu} className="flex items-center gap-2 text-accent hover:bg-zinc-700/30 rounded-md transition-colors justify-start w-full bg-zinc-700/30 pl-2">
-            <div className='flex gap-3 py-2 items-center w-full justify-start'>
+          <Link
+            to="https://app.bipc.org.br/login"
+            onClick={handleCloseMenu}
+            className="flex items-center gap-2 text-accent hover:bg-zinc-700/30 rounded-md transition-colors justify-start w-full bg-zinc-700/30 pl-2"
+          >
+            <div className="flex gap-3 py-2 items-center w-full justify-start">
               <LogIn size={18} />
-              <span className='text-sm'>Login</span>
+              <span className="text-sm">Login</span>
             </div>
           </Link>
         )}
-        {
-          !isMobile && (
-            
-            <Link to="https://app.bipc.org.br/login" onClick={handleCloseMenu} className="flex items-center gap-2 text-accent hover:bg-zinc-700/30 rounded-md transition-colors justify-start w-full bg-zinc-700/30 pl-2 h-6!">
-              <Button variant="bipc" size="sm" className="px-3 py-0 h-[26px]!">
-                <UserCircle size={16} />
-                <span className='text-sm'>Entrar</span>
-              </Button>
-            </Link>
-          )
-        }
+        {!isMobile && (
+          <Link
+            to="https://app.bipc.org.br/login"
+            onClick={handleCloseMenu}
+            className="flex items-center gap-2 text-accent hover:bg-zinc-700/30 rounded-md transition-colors justify-start w-full bg-zinc-700/30"
+          >
+            <Button
+              variant="secondary"
+              size="sm"
+              className="flex items-center gap-2 text-accent"
+            >
+              <UserCircle size={16} />
+              <span>Entrar</span>
+            </Button>
+          </Link>
+        )}
       </>
     );
   };
 
-
   return (
     <nav className="bg-sidebar text-white w-full">
-      <div className={cn("flex items-center justify-between px-8 py-1.5", {
-        'px-6 py-0 h-15': isMobile
-      })}>
-        <Link to={"https://app.bipc.org.br/benchmark"} className="p-0 max-w-[200px]">
+      <div
+        className={cn("flex items-center justify-between px-4 md:px-8 py-0", {
+          "px-6 py-0 h-15": isMobile,
+        })}
+      >
+        <Link
+          to={"https://app.bipc.org.br/benchmark"}
+          className="p-0 max-w-[200px]"
+        >
           <img
-            src={'/images/assets/logo.svg'}
+            src={"/images/assets/logo.svg"}
             alt="Logo"
             className={cn("h-[30px]", {
-              "h-[26px]": isMobile,
+              "h-[30px]": isMobile,
             })}
           />
         </Link>
         {/* Desktop Navigation */}
         {!isMobile && (
-          <div className="flex gap-6 items-center ml-auto">
+          <div className="flex gap-6 items-center py-2 ml-auto">
             <NavLinks />
           </div>
         )}
@@ -191,27 +251,25 @@ export default function PublicHeader() {
             }}
             className={cn(
               "fixed top-0 left-0 h-screen w-screen bg-black/50 backdrop-blur-sm transition-opacity duration-300 z-40",
-              isMenuOpen
-                ? "opacity-100"
-                : "opacity-0 pointer-events-none"
+              isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none",
             )}
           />
           <div
             className={cn(
               "fixed top-0 left-0 h-screen w-80 bg-sidebar px-4 text-white transition-transform duration-300 z-50 flex flex-col",
-              isMenuOpen ? "translate-x-0" : "-translate-x-full"
+              isMenuOpen ? "translate-x-0" : "-translate-x-full",
             )}
           >
-            <Link to={"https://app.bipc.org.br/benchmark"} className='p-0 mb-6'>
+            <Link to={"https://app.bipc.org.br/benchmark"} className="p-0 mb-6">
               <img
-                src={'/images/assets/logo_full.svg'}
+                src={"/images/assets/logo_full.svg"}
                 alt="Logo"
                 className={cn("h-full mt-2", {
                   "h-[70px]": isMobile,
                 })}
               />
             </Link>
-            <div className='mt-14'>
+            <div className="mt-14">
               <BetaWarning />
             </div>
 
