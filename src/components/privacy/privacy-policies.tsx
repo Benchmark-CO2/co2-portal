@@ -3,11 +3,19 @@ import { cn } from 'lib/utils';
 import React from "react";
 
 export function renderHTML(text: string) {
-  const parts = text.split(/(<b>.*?<\/b>)/g);
+  const parts = text.split(/(<b>.*?<\/b>|\([^)]+\)\[[^\]]+\]|<a\s[^>]*>.*?<\/a>)/g);
   return parts.map((part, i) => {
     if (part.match(/<b>(.*?)<\/b>/)) {
       const content = part.replace(/<\/?b>/g, '');
       return <strong key={i}>{content}</strong>;
+    }
+    const linkMatch = part.match(/^\(([^)]+)\)\[([^\]]+)\]$/);
+    if (linkMatch) {
+      return <a key={i} href={linkMatch[2]} className="text-primary underline" target="_blank" rel="noopener noreferrer">{linkMatch[1]}</a>;
+    }
+    const aTagMatch = part.match(/^<a\s+href="(.*?)"[^>]*>(.*?)<\/a>$/);
+    if (aTagMatch) {
+      return <a key={i} href={aTagMatch[1]} className="text-primary underline" target="_blank" rel="noopener noreferrer">{aTagMatch[2]}</a>;
     }
     if (part.match(/&bull;/)) {
       const content = part.replace(/&bull;/g, '').trim();
@@ -29,7 +37,7 @@ const PrivacyPolicy: React.FC<{privacy: PrivacyFile}> = ({privacy}) => {
         {
           privacy?.board?.resume && privacy?.board.resume?.split('\n\n').map(el => (
             <p className="mb-4" key={el}>
-              {el}
+              {renderHTML(el)}
             </p>
           ))
         }
@@ -46,7 +54,7 @@ const PrivacyPolicy: React.FC<{privacy: PrivacyFile}> = ({privacy}) => {
                   {
                     section.description && section.description.split('\n\n').map(el => (
                       <p className="mb-4" key={el}>
-                        {el}
+                        {renderHTML(el)}
                       </p>
                     ))
                   }
@@ -67,7 +75,7 @@ const PrivacyPolicy: React.FC<{privacy: PrivacyFile}> = ({privacy}) => {
                             <tr key={rowIndex}>
                               {row.columns.map((cell: { content: string; bold?: boolean; }, cellIndex) => (
                                 <td key={cellIndex} className="border border-gray-300 p-3 align-top">
-                                  <span className={cn({ 'font-bold': (cell?.bold || false) })}>{cell.content} </span>
+                                  <span className={cn({ 'font-bold': (cell?.bold || false) })}>{renderHTML(cell.content)} </span>
                                 </td>
                               ))}
                             </tr>

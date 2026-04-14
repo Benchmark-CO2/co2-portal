@@ -2,7 +2,7 @@
   "title": "Política de Privacidade",
   "sub-title": "Esta Política de Privacidade descreve como coletamos, usamos e protegemos suas informações pessoais ao utilizar nossa plataforma de benchmark de emissões de CO₂. Ao acessar ou usar nossa plataforma, você concorda com os termos desta política.",
   "board": {
-    "resume": "Esta Política de Privacidade tem por finalidade demonstrar o compromisso da plataforma BIPc, sediada na Cidade de São Paulo, com relação à privacidade e proteção dos dados pessoais coletados de seus USUÁRIOS (pessoas físicas que acessam o site ou realizaram cadastro na plataforma).\n\nServe para dar total transparência sobre como tratamos seus Dados Pessoais ('Dados Pessoais'). É possivel acessar e visualizar esta Política a qualquer momento por meio do endereço bipc.org.br/privacidade.\n\nComo condição para acesso e uso das funcionalidades exclusivas do site da BIPc, o USUÁRIO declara que fez a leitura completa e atenta da presente Política de Privacidade e está plenamente de acordo com seus termos, conferindo, assim, sua livre e expressa concordância com o estipulado neste instrumento e autorizando a obtenção dos dados e informações aqui mencionados, bem como sua utilização para os fins especificados abaixo. Caso não esteja de acordo com estas diretivas, o USUÁRIO deverá descontinuar o seu acesso.",
+    "resume": "Esta Política de Privacidade tem por finalidade demonstrar o compromisso da plataforma BIPc, sediada na Cidade de São Paulo, com relação à privacidade e proteção dos dados pessoais coletados de seus USUÁRIOS (pessoas físicas que acessam o site ou realizaram cadastro na plataforma).\n\nServe para dar total transparência sobre como tratamos seus Dados Pessoais ('Dados Pessoais'). É possivel acessar e visualizar esta Política a qualquer momento por meio do endereço (bipc.org.br/privacidade)[/privacidade].\n\nComo condição para acesso e uso das funcionalidades exclusivas do site da BIPc, o USUÁRIO declara que fez a leitura completa e atenta da presente Política de Privacidade e está plenamente de acordo com seus termos, conferindo, assim, sua livre e expressa concordância com o estipulado neste instrumento e autorizando a obtenção dos dados e informações aqui mencionados, bem como sua utilização para os fins especificados abaixo. Caso não esteja de acordo com estas diretivas, o USUÁRIO deverá descontinuar o seu acesso.",
     "sections": [
       {
         "title": "QUADRO RESUMO",
@@ -49,7 +49,7 @@
                   "bold": true
                 },
                 {
-                  "content": "Em caso de dúvidas e solicitações, entre em contato por meio do e-mail: privacidade@bipc.org.br."
+                  "content": "Em caso de dúvidas e solicitações, entre em contato por meio da página <a href=\"/contact\">Contato</a> ou pelo e-mail: <a href=\"mailto:privacidade@bipc.org.br\">privacidade@bipc.org.br</a>."
                 }
               ]
             }
@@ -190,7 +190,7 @@
                   "content": "Acesso"
                 },
                 {
-                  "content": "Você pode requerer o acesso aos seus dados pessoais armazenados pela Plataforma, ou em decorrência de um dos nossos serviços, mediante solicitação em nosso canal de contato através do e-mail privacidade@bipc.com.br."
+                  "content": "Você pode requerer o acesso aos seus dados pessoais armazenados pela Plataforma, ou em decorrência de um dos nossos serviços, mediante solicitação em nosso canal de contato através da página <a href=\"/contact\">Contato</a>."
                 }
               ]
             },
@@ -200,7 +200,7 @@
                   "content": "Correção"
                 },
                 {
-                  "content": "Em caso de dados incorretos, você pode solicitar a correção ou atualização de seus dados, mediante solicitação em nosso canal de contato privacidade@bipc.com.br."
+                  "content": "Em caso de dados incorretos, você pode solicitar a correção ou atualização de seus dados, mediante solicitação em nosso canal de contato através da página <a href=\"/contact\">Contato</a>."
                 }
               ]
             },
