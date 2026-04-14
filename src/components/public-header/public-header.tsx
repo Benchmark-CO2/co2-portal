@@ -17,8 +17,9 @@ import {
   UserPlus,
   X,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { cn } from "../../../lib/utils";
+import { commonLinks } from "../../utils/commonLinks";
 import { useIsMobile } from "../../hooks/useIsMobile";
 import { BetaWarning } from "../beta-warning/beta-warning";
 import {
@@ -29,7 +30,11 @@ import { Button } from "../ui/button";
 import Divider from "../ui/divider";
 import { Link } from "../ui/link";
 
-const activeProps = "font-bold";
+const activeProps = {
+  style: {
+    textShadow: "0.4px 0 0 currentColor, -0.4px 0 0 currentColor",
+  },
+};
 
 const saibaMaisItems: PopoverItem[] = [
   { label: "Perguntas frequentes", icon: CircleHelp, linkKey: "faq" },
@@ -48,6 +53,25 @@ const transparenciaItems: PopoverItem[] = [
 export default function PublicHeader() {
   const isMobile = useIsMobile();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [pathname, setPathname] = useState("");
+
+  useEffect(() => {
+    setPathname(window.location.pathname);
+  }, []);
+
+  const isPathActive = (path: string) => {
+    if (path === "/") return pathname === "/";
+    return pathname.startsWith(path);
+  };
+
+  const isPopoverActive = (items: PopoverItem[]) =>
+    items.some((item) => {
+      const url = commonLinks[item.linkKey]?.internal;
+      return url ? isPathActive(url) : false;
+    });
+
+  const getActiveStyle = (active: boolean) =>
+    active ? activeProps.style : undefined;
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -63,7 +87,12 @@ export default function PublicHeader() {
           className="flex items-center gap-2 hover:text-gray-300 transition-colors"
         >
           <BipcIcon size={18} />
-          <span className="text-sm whitespace-nowrap">Sobre o BIPc</span>
+          <span
+            className="text-sm whitespace-nowrap"
+            style={getActiveStyle(isPathActive("/"))}
+          >
+            Sobre o BIPc
+          </span>
         </Link>
 
         <SidebarHoverPopover
@@ -71,7 +100,12 @@ export default function PublicHeader() {
           trigger={
             <>
               <Rss size={18} />
-              <span className="text-sm whitespace-nowrap">Saiba mais</span>
+              <span
+                className="text-sm whitespace-nowrap"
+                style={getActiveStyle(isPopoverActive(saibaMaisItems))}
+              >
+                Saiba mais
+              </span>
             </>
           }
           items={saibaMaisItems}
@@ -85,7 +119,12 @@ export default function PublicHeader() {
           trigger={
             <>
               <GlobeLock size={18} />
-              <span className="text-sm">Transparência</span>
+              <span
+                className="text-sm"
+                style={getActiveStyle(isPopoverActive(transparenciaItems))}
+              >
+                Transparência
+              </span>
             </>
           }
           items={transparenciaItems}
