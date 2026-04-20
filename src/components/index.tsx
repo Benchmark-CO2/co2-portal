@@ -1,3 +1,16 @@
+import {
+  BarChart3,
+  BookText,
+  Code2,
+  FileText,
+  GraduationCap,
+  LayoutGrid,
+  Network,
+  PlugZap,
+  Rocket,
+  Wrench,
+} from "lucide-react";
+
 const stackeholders = [
   {
     name: "FDTE",
@@ -16,7 +29,7 @@ const stackeholders = [
   },
 ];
 
-const Timeline = () => (
+const LegacyTimeline = () => (
   <svg
     width="100%"
     viewBox="0 0 1183 498"
@@ -340,6 +353,331 @@ const Timeline = () => (
     </defs>
   </svg>
 );
+
+const timelineRows = [
+  [
+    {
+      date: "Novembro - 2024",
+      title: "Assinatura do contrato de PD&I e inicio da pesquisa",
+      description:
+        "Formalizacao da parceria entre CAIXA e USP para desenvolvimento da plataforma de medicao de carbono incorporado em edificacoes e inicio dos estudos de base.",
+      icon: FileText,
+      active: true,
+      showDate: true,
+    },
+    {
+      date: "Abril - 2025",
+      title: "Arquitetura do sistema",
+      description:
+        "Definicao da estrutura tecnica da plataforma e planejamento dos modulos de calculo que serao desenvolvidos.",
+      icon: Network,
+      active: true,
+      showDate: true,
+    },
+    {
+      date: "Novembro - 2025",
+      title: "Lancamento da plataforma BIPc",
+      description:
+        "Primeira versao publica com benchmark de XXX edificios. Modulos de calculo disponiveis: estruturas de concreto (portico, alvenaria estrutural e parede monolitica).",
+      icon: Rocket,
+      active: true,
+      showDate: true,
+    },
+    {
+      date: "Dezembro - 2025",
+      title: "Modulo de fundacoes de concreto",
+      description:
+        "Lancamento dos modulos de calculo para fundacoes: estaca, sapata, radier e estaqueado.",
+      icon: Wrench,
+      active: true,
+      showDate: true,
+    },
+    {
+      date: "Janeiro - 2026",
+      title: "Atualizacao do benchmark",
+      description:
+        "Ampliacao da base de dados de referencia com novos projetos cadastrados, somando 173 no total, fortalecendo a comparacao nacional.",
+      icon: LayoutGrid,
+      active: true,
+      showDate: true,
+    },
+  ],
+  [
+    {
+      date: "Fevereiro - 2026",
+      title: "Lancamento da capacitacao",
+      description:
+        "Disponibilizacao de programa de treinamento para projetistas e construtoras utilizarem a plataforma de forma eficiente.",
+      icon: GraduationCap,
+      active: true,
+      showDate: true,
+    },
+    {
+      date: "Marco - 2026",
+      title: "Divulgacao da API",
+      description:
+        "Abertura da interface de programacao para integracao da plataforma com sistemas externos e automacao de processos.",
+      icon: Code2,
+      active: false,
+      showDate: false,
+    },
+    {
+      date: "Abril - 2026",
+      title: "Conteudo e documentacao",
+      description:
+        "Publicacao do Glossario, Perguntas Frequentes e outras paginas informativas em Saiba Mais. Disponibilizacao de relatorio certificado simplificado e detalhado para uso em documentacao tecnica.",
+      icon: BookText,
+      active: false,
+      showDate: false,
+    },
+    {
+      date: "Abril - 2026",
+      title: "Novos modulos de calculo",
+      description:
+        "Lancamento do modulo de calculo para vedacao nao-estrutural e implementacao do grafico de distribuicao regional para analise comparativa de projetos.",
+      icon: BarChart3,
+      active: false,
+      showDate: false,
+    },
+    {
+      date: "Maio - 2026",
+      title: "Integracao com ferramentas de projeto",
+      description:
+        "Lancamento do calculo de telhados e coberturas, plugins para softwares de projeto e importacao de dados do IFC para integracao com modelos BIM.",
+      icon: PlugZap,
+      active: false,
+      showDate: false,
+    },
+  ],
+];
+
+type TimelineItem = (typeof timelineRows)[number][number];
+
+const timelineItems: TimelineItem[] = timelineRows.flat();
+
+const chunkTimelineItems = (
+  items: TimelineItem[],
+  size: number,
+): TimelineItem[][] => {
+  const chunks: TimelineItem[][] = [];
+
+  for (let i = 0; i < items.length; i += size) {
+    chunks.push(items.slice(i, i + size));
+  }
+
+  return chunks;
+};
+
+const TimelineGridLayout = ({
+  cols,
+  layoutClassName,
+}: {
+  cols: number;
+  layoutClassName: string;
+}) => {
+  const rows = chunkTimelineItems(timelineItems, cols);
+
+  return (
+    <div className={layoutClassName}>
+      <div className="w-full flex flex-col">
+        {rows.map((row, rowIndex) => {
+          const hasPrev = rowIndex > 0;
+          const hasNext = rowIndex < rows.length - 1;
+          const rowStartIndex = rowIndex * cols;
+
+          return (
+            <div key={`row-${cols}-${rowIndex}`} className="relative">
+              {hasPrev && (
+                <>
+                  <div className="absolute left-0 top-0 h-[55px] border-r-[5px] border-[#63B332]" />
+                  <div className="absolute left-0 top-[55px] w-28 -translate-y-1/2 border-t-[5px] border-[#63B332]" />
+                </>
+              )}
+
+              {hasNext && (
+                <>
+                  <div className="absolute right-0 top-[55px] w-28 -translate-y-1/2 border-t-[5px] border-[#63B332]" />
+                  <div className="absolute right-0 top-[55px] bottom-6 md:bottom-10 border-r-[5px] border-[#63B332]" />
+                </>
+              )}
+
+              <div
+                className="grid [--timeline-gap:2rem] md:[--timeline-gap:2.5rem] gap-8 md:gap-10"
+                style={{
+                  gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))`,
+                }}
+              >
+                {row.map((item, itemIndex) => {
+                  const Icon = item.icon;
+                  const globalIndex = rowStartIndex + itemIndex;
+                  const nextItem = timelineItems[globalIndex + 1];
+                  const hasNextInSameRow = itemIndex < row.length - 1;
+                  const isTransitionConnector =
+                    item.active && !!nextItem && !nextItem.active;
+
+                  return (
+                    <article
+                      key={`${item.title}-${globalIndex}`}
+                      className="flex flex-col items-center text-center gap-2 relative z-10"
+                    >
+                      {hasNextInSameRow && (
+                        <div
+                          className="absolute left-1/2 translate-x-8 top-[55px] -translate-y-1/2 h-[5px] pointer-events-none z-0"
+                          style={{
+                            width: "calc(100% + var(--timeline-gap) - 4rem)",
+                            background: isTransitionConnector
+                              ? "linear-gradient(to right, #63B332 0%, #63B332 50%, #D4D4D8 50%, #D4D4D8 100%)"
+                              : item.active
+                                ? "#63B332"
+                                : "#D4D4D8",
+                          }}
+                        />
+                      )}
+
+                      <p
+                        className={`h-[15px] flex items-center justify-center text-xs font-bold tracking-[-0.12px] leading-[15px] ${
+                          item.showDate ? "text-primary" : "text-transparent"
+                        }`}
+                      >
+                        {item.date}
+                      </p>
+
+                      <div
+                        className={`relative z-10 w-16 h-16 rounded-full flex items-center justify-center ${
+                          item.active ? "bg-[#63B332]" : "bg-[#D4D4D8]"
+                        }`}
+                      >
+                        <Icon
+                          className={`w-7 h-7 ${
+                            item.active ? "text-[#FBFEFE]" : "text-[#71717A]"
+                          }`}
+                          strokeWidth={2}
+                        />
+                      </div>
+
+                      <h3 className="text-base font-bold tracking-[-0.16px] text-[#121F21] px-2">
+                        {item.title}
+                      </h3>
+
+                      <p
+                        className={`text-xs leading-[15px] tracking-[-0.12px] px-2 ${
+                          item.active ? "text-primary" : "text-[#71717A]"
+                        }`}
+                      >
+                        {item.description}
+                      </p>
+                    </article>
+                  );
+                })}
+              </div>
+
+              {hasNext && (
+                <div className="relative mt-4 md:mt-6 h-8 md:h-10">
+                  <div className="absolute left-0 right-0 top-0 border-t-[5px] border-[#63B332]" />
+                  <div className="absolute left-0 top-0 h-full border-r-[5px] border-[#63B332]" />
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+const TimelineStepperLayout = ({
+  layoutClassName,
+}: {
+  layoutClassName: string;
+}) => {
+  return (
+    <div className={layoutClassName}>
+      <div className="flex flex-col gap-0">
+        {timelineItems.map((item, index) => {
+          const Icon = item.icon;
+          const nextItem = timelineItems[index + 1];
+          const hasNext = index < timelineItems.length - 1;
+          const isTransitionConnector =
+            item.active && !!nextItem && !nextItem.active;
+
+          return (
+            <article
+              key={`${item.title}-${index}`}
+              className={`relative pl-24 ${hasNext ? "pb-8" : ""}`}
+            >
+              <div
+                className={`absolute left-0 top-6 w-16 h-16 rounded-full flex items-center justify-center ${
+                  item.active ? "bg-[#63B332]" : "bg-[#D4D4D8]"
+                }`}
+              >
+                <Icon
+                  className={`w-7 h-7 ${
+                    item.active ? "text-[#FBFEFE]" : "text-[#71717A]"
+                  }`}
+                  strokeWidth={2}
+                />
+              </div>
+
+              {hasNext && (
+                <div
+                  className="absolute left-[30px] top-[88px] w-[5px]"
+                  style={{
+                    bottom: "-32px",
+                    background: isTransitionConnector
+                      ? "linear-gradient(to bottom, #63B332 0%, #63B332 50%, #D4D4D8 50%, #D4D4D8 100%)"
+                      : item.active
+                        ? "#63B332"
+                        : "#D4D4D8",
+                  }}
+                />
+              )}
+
+              <p className="text-xs font-bold text-primary tracking-[-0.12px] leading-[15px] mb-2">
+                {item.date}
+              </p>
+
+              <h3 className="text-base font-bold tracking-[-0.16px] text-[#121F21] mb-2">
+                {item.title}
+              </h3>
+
+              <p
+                className={`text-xs leading-[15px] tracking-[-0.12px] ${
+                  item.active ? "text-primary" : "text-[#71717A]"
+                }`}
+              >
+                {item.description}
+              </p>
+            </article>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+const Timeline = () => {
+  return (
+    <section className="w-full">
+      <div className="w-full rounded-r-[10px] pl-0 pr-4 py-6 md:pr-6 md:py-8">
+        <TimelineGridLayout cols={5} layoutClassName="hidden xl:block" />
+        <TimelineGridLayout
+          cols={4}
+          layoutClassName="hidden lg:block xl:hidden"
+        />
+        <TimelineGridLayout
+          cols={3}
+          layoutClassName="hidden md:block lg:hidden"
+        />
+        <TimelineGridLayout
+          cols={2}
+          layoutClassName="hidden sm:block md:hidden"
+        />
+        <TimelineStepperLayout layoutClassName="block sm:hidden" />
+      </div>
+    </section>
+  );
+};
+
 export const TopSection = () => {
   return (
     <section className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
