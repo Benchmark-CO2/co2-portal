@@ -358,9 +358,9 @@ const timelineRows = [
   [
     {
       date: "Novembro - 2024",
-      title: "Assinatura do contrato de PD&I e inicio da pesquisa",
+      title: "Assinatura do contrato de PD&I e início da pesquisa",
       description:
-        "Formalizacao da parceria entre CAIXA e USP para desenvolvimento da plataforma de medicao de carbono incorporado em edificacoes e inicio dos estudos de base.",
+        "Formalização da parceria entre CAIXA e USP para desenvolvimento da plataforma de medição de carbono incorporado em edificações e início dos estudos de base.",
       icon: FileText,
       active: true,
       showDate: true,
@@ -369,34 +369,34 @@ const timelineRows = [
       date: "Abril - 2025",
       title: "Arquitetura do sistema",
       description:
-        "Definicao da estrutura tecnica da plataforma e planejamento dos modulos de calculo que serao desenvolvidos.",
+        "Definição da estrutura técnica da plataforma e planejamento dos módulos de cálculo que serão desenvolvidos.",
       icon: Network,
       active: true,
       showDate: true,
     },
     {
       date: "Novembro - 2025",
-      title: "Lancamento da plataforma BIPc",
+      title: "Lançamento da plataforma BIPc",
       description:
-        "Primeira versao publica com benchmark de XXX edificios. Modulos de calculo disponiveis: estruturas de concreto (portico, alvenaria estrutural e parede monolitica).",
+        "Primeira versão pública com benchmark de XXX edifícios. Módulos de cálculo disponíveis: estruturas de concreto (pórtico, alvenaria estrutural e parede monolítica).",
       icon: Rocket,
       active: true,
       showDate: true,
     },
     {
       date: "Dezembro - 2025",
-      title: "Modulo de fundacoes de concreto",
+      title: "Módulo de fundações de concreto",
       description:
-        "Lancamento dos modulos de calculo para fundacoes: estaca, sapata, radier e estaqueado.",
+        "Lançamento dos módulos de cálculo para fundações: estaca, sapata, radier e estaqueado.",
       icon: Wrench,
       active: true,
       showDate: true,
     },
     {
       date: "Janeiro - 2026",
-      title: "Atualizacao do benchmark",
+      title: "Atualização do benchmark",
       description:
-        "Ampliacao da base de dados de referencia com novos projetos cadastrados, somando 173 no total, fortalecendo a comparacao nacional.",
+        "Ampliação da base de dados de referência com novos projetos cadastrados, somando 173 no total e fortalecendo a comparação nacional.",
       icon: LayoutGrid,
       active: true,
       showDate: true,
@@ -405,45 +405,45 @@ const timelineRows = [
   [
     {
       date: "Fevereiro - 2026",
-      title: "Lancamento da capacitacao",
+      title: "Lançamento da capacitação",
       description:
-        "Disponibilizacao de programa de treinamento para projetistas e construtoras utilizarem a plataforma de forma eficiente.",
+        "Disponibilização de programa de treinamento para projetistas e construtoras utilizarem a plataforma de forma eficiente.",
       icon: GraduationCap,
       active: true,
       showDate: true,
     },
     {
-      date: "Marco - 2026",
-      title: "Divulgacao da API",
+      date: "Março - 2026",
+      title: "Divulgação da API",
       description:
-        "Abertura da interface de programacao para integracao da plataforma com sistemas externos e automacao de processos.",
+        "Abertura da interface de programação para integração da plataforma com sistemas externos e automação de processos.",
       icon: Code2,
       active: false,
       showDate: false,
     },
     {
       date: "Abril - 2026",
-      title: "Conteudo e documentacao",
+      title: "Conteúdo e documentação",
       description:
-        "Publicacao do Glossario, Perguntas Frequentes e outras paginas informativas em Saiba Mais. Disponibilizacao de relatorio certificado simplificado e detalhado para uso em documentacao tecnica.",
+        "Publicação do Glossário, perguntas frequentes e outras páginas informativas no Saiba Mais. Disponibilização de relatório certificado simplificado e detalhado para uso em documentação técnica.",
       icon: BookText,
       active: false,
       showDate: false,
     },
     {
       date: "Abril - 2026",
-      title: "Novos modulos de calculo",
+      title: "Novos módulos de cálculo",
       description:
-        "Lancamento do modulo de calculo para vedacao nao-estrutural e implementacao do grafico de distribuicao regional para analise comparativa de projetos.",
+        "Lançamento do módulo de cálculo para vedação não estrutural e implementação do gráfico de distribuição regional para análise comparativa de projetos.",
       icon: BarChart3,
       active: false,
       showDate: false,
     },
     {
       date: "Maio - 2026",
-      title: "Integracao com ferramentas de projeto",
+      title: "Integração com ferramentas de projeto",
       description:
-        "Lancamento do calculo de telhados e coberturas, plugins para softwares de projeto e importacao de dados do IFC para integracao com modelos BIM.",
+        "Lançamento do cálculo de telhados e coberturas, plugins para softwares de projeto e importação de dados do IFC para integração com modelos BIM.",
       icon: PlugZap,
       active: false,
       showDate: false,
