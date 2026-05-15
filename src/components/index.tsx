@@ -670,7 +670,7 @@ const TimelineStepperLayout = ({
                 />
               )}
 
-              <p className="text-xs font-bold text-primary tracking-[-0.12px] leading-[15px] mb-2">
+              <p className={`text-xs font-bold tracking-[-0.12px] leading-[15px] mb-2 ${item.showDate ? "text-primary" : "text-transparent"}`}>
                 {item.date}
               </p>
 
