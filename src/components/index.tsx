@@ -800,22 +800,19 @@ export const TeamSection = ({
           key={group}
           className="flex flex-col items-start gap-3 md:gap-4 w-full"
         >
-          <h2 className="text-xl font-semibold text-center text-primary break-words line-clamp-2 self-start">
+          <h2 className="text-xl font-semibold text-center text-active break-words line-clamp-2 self-start">
             {group}
           </h2>
           <div className="grid gap-3 grid-cols-4 max-xl:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 w-full transition-all">
             {members.map((member) => (
-              <div key={member.name} className="w-max px-2 flex gap-1">
-                <h2 className="text-sm md:text-base font-semibold text-center text-accent-foreground break-words line-clamp-2">
+              <div key={member.name} className="w-max px-2 flex flex-col gap-0.5">
+                <h2 className="text-sm md:text-base font-semibold text-accent-foreground break-words line-clamp-2">
                   {member.name}
                 </h2>
                 {member.group === "Coordenação" && (
-                  <>
-                    <span>-</span>
-                    <p className="text-xs sm:text-sm text-primary text-center self-center ml-1">
-                      {member.role}
-                    </p>
-                  </>
+                  <p className="text-xs sm:text-sm">
+                    {member.role}
+                  </p>
                 )}
               </div>
             ))}
