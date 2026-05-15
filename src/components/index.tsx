@@ -9,6 +9,7 @@ import {
   PlugZap,
   Rocket,
   Wrench,
+  ChartLine,
 } from "lucide-react";
 
 const stackeholders = [
@@ -413,7 +414,16 @@ const timelineRows = [
       showDate: true,
     },
     {
-      date: "Março - 2026",
+      date: "Maio - 2026",
+      title: "Relatório de Carbono Embutido",
+      description:
+        "Geração de relatório PDF com dados do projeto, comparativo de benchmark, emissões de CO2 por sistema construtivo e rastreabilidade da origem dos dados. Documento validável via QR Code.",
+      icon: ChartLine,
+      active: true,
+      showDate: true,
+    },
+    {
+      date: "Abril - 2026",
       title: "Divulgação da API",
       description:
         "Abertura da interface de programação para integração da plataforma com sistemas externos e automação de processos.",
@@ -485,19 +495,41 @@ const TimelineGridLayout = ({
           const hasNext = rowIndex < rows.length - 1;
           const rowStartIndex = rowIndex * cols;
 
+          const lastItemOfRow = row[row.length - 1];
+          const firstItemOfRow = row[0];
+          const prevRow = rowIndex > 0 ? rows[rowIndex - 1] : null;
+          const lastItemOfPrevRow = prevRow ? prevRow[prevRow.length - 1] : null;
+          const nextRow = rowIndex < rows.length - 1 ? rows[rowIndex + 1] : null;
+          const firstItemOfNextRow = nextRow ? nextRow[0] : null;
+
+          const rightConnectorColor = lastItemOfRow.active ? "#63B332" : "#D4D4D8";
+          const leftConnectorColor = firstItemOfRow.active ? "#63B332" : "#D4D4D8";
+
           return (
             <div key={`row-${cols}-${rowIndex}`} className="relative">
               {hasPrev && (
                 <>
-                  <div className="absolute left-0 top-0 h-[55px] border-r-[5px] border-[#63B332]" />
-                  <div className="absolute left-0 top-[55px] w-28 -translate-y-1/2 border-t-[5px] border-[#63B332]" />
+                  <div
+                    className="absolute left-0 top-0 h-[55px] border-r-[5px]"
+                    style={{ borderColor: leftConnectorColor }}
+                  />
+                  <div
+                    className="absolute left-0 top-[55px] w-28 -translate-y-1/2 border-t-[5px]"
+                    style={{ borderColor: leftConnectorColor }}
+                  />
                 </>
               )}
 
               {hasNext && (
                 <>
-                  <div className="absolute right-0 top-[55px] w-28 -translate-y-1/2 border-t-[5px] border-[#63B332]" />
-                  <div className="absolute right-0 top-[55px] bottom-6 md:bottom-10 border-r-[5px] border-[#63B332]" />
+                  <div
+                    className="absolute right-0 top-[55px] w-28 -translate-y-1/2 border-t-[5px]"
+                    style={{ borderColor: rightConnectorColor }}
+                  />
+                  <div
+                    className="absolute right-0 top-[55px] bottom-6 md:bottom-10 border-r-[5px]"
+                    style={{ borderColor: rightConnectorColor }}
+                  />
                 </>
               )}
 
@@ -573,8 +605,14 @@ const TimelineGridLayout = ({
 
               {hasNext && (
                 <div className="relative mt-4 md:mt-6 h-8 md:h-10">
-                  <div className="absolute left-0 right-0 top-0 border-t-[5px] border-[#63B332]" />
-                  <div className="absolute left-0 top-0 h-full border-r-[5px] border-[#63B332]" />
+                  <div
+                    className="absolute left-0 right-0 top-0 border-t-[5px]"
+                    style={{ borderColor: rightConnectorColor }}
+                  />
+                  <div
+                    className="absolute left-0 top-0 h-full border-r-[5px]"
+                    style={{ borderColor: rightConnectorColor }}
+                  />
                 </div>
               )}
             </div>
@@ -659,7 +697,7 @@ const Timeline = () => {
   return (
     <section className="w-full">
       <div className="w-full rounded-r-[10px] pl-0 pr-4 py-6 md:pr-6 md:py-8">
-        <TimelineGridLayout cols={5} layoutClassName="hidden xl:block" />
+        <TimelineGridLayout cols={4} layoutClassName="hidden xl:block" />
         <TimelineGridLayout
           cols={4}
           layoutClassName="hidden lg:block xl:hidden"
