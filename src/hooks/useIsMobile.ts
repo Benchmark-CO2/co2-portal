@@ -8,7 +8,7 @@ export const useIsMobile = () => {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    handleResize(); // Check on mount
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
