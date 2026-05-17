@@ -414,6 +414,15 @@ const timelineRows = [
       showDate: true,
     },
     {
+      date: "Março - 2026",
+      title: "Conteúdo e documentação",
+      description:
+        "Publicação do Glossário, perguntas frequentes e outras páginas informativas no Saiba Mais. Disponibilização de relatório certificado simplificado e detalhado para uso em documentação técnica.",
+      icon: BookText,
+      active: true,
+      showDate: true,
+    },
+    {
       date: "Maio - 2026",
       title: "Relatório de Carbono Embutido",
       description:
@@ -428,15 +437,6 @@ const timelineRows = [
       description:
         "Abertura da interface de programação para integração da plataforma com sistemas externos e automação de processos.",
       icon: Code2,
-      active: false,
-      showDate: false,
-    },
-    {
-      date: "Abril - 2026",
-      title: "Conteúdo e documentação",
-      description:
-        "Publicação do Glossário, perguntas frequentes e outras páginas informativas no Saiba Mais. Disponibilização de relatório certificado simplificado e detalhado para uso em documentação técnica.",
-      icon: BookText,
       active: false,
       showDate: false,
     },
