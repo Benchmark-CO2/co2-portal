@@ -229,6 +229,10 @@
       "letter": "F",
       "items": [
         {
+          "item": "Fases do Projeto / Empreendimento",
+          "description": "As opções de indicação de fases para o projeto seguem as fases típicas, utilizadas no setor: estudo preliminar, anteprojeto, executivo, liberado para obra e como construído (as Built). O selo Casa Azul solicita um relatório de cálculo das emissões em dois momentos do empreendimento: no inicio da obra (até 20% executada), correspondendo ao \"liberado para obra\"; e no fim da obra (até 100% executada), correspondendo ao 'como construído (as Built)'."
+        },
+        {
           "item": "Fator de emissão",
           "description": "Valor que relaciona a quantidade de emissões de gases de efeito estufa geradas por uma atividade, processo ou insumo, normalmente expresso em CO₂ equivalente por unidade funcional."
         },
@@ -267,10 +271,6 @@
         {
           "item": "Fundo de Garantia do Tempo de Serviço (FGTS)",
           "description": "Fundo de natureza trabalhista e social, constituído por depósitos mensais realizados pelos empregadores em contas vinculadas aos trabalhadores, regido pela Lei nº 8.036/1990. Na construção civil, o FGTS é uma das principais fontes de financiamento habitacional e de infraestrutura urbana no Brasil."
-        },
-        {
-          "item": "Fases do Projeto / Empreendimento",
-          "description": "As opções de indicação de fases para o projeto seguem as fases típicas, utilizadas no setor: estudo preliminar, anteprojeto, executivo, liberado para obra e como construído (as Built). O selo Casa Azul solicita um relatório de cálculo das emissões em dois momentos do empreendimento: no inicio da obra (até 20% executada), correspondendo ao \"liberado para obra\"; e no fim da obra (até 100% executada), correspondendo ao 'como construído (as Built)'."
         }
       ]
     },
