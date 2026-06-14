@@ -432,13 +432,13 @@ const timelineRows = [
       showDate: true,
     },
     {
-      date: "Abril - 2026",
-      title: "Divulgação da API",
+      date: "Junho - 2026",
+      title: "API de integração e primeiro plug-in",
       description:
-        "Abertura da interface de programação para integração da plataforma com sistemas externos e automação de processos.",
+        "Divulgação da interface de programação para integração da plataforma com sistemas externos e automação de processos; Lançamento da integração com TQS.",
       icon: Code2,
-      active: false,
-      showDate: false,
+      active: true,
+      showDate: true,
     },
     {
       date: "Abril - 2026",
@@ -498,12 +498,19 @@ const TimelineGridLayout = ({
           const lastItemOfRow = row[row.length - 1];
           const firstItemOfRow = row[0];
           const prevRow = rowIndex > 0 ? rows[rowIndex - 1] : null;
-          const lastItemOfPrevRow = prevRow ? prevRow[prevRow.length - 1] : null;
-          const nextRow = rowIndex < rows.length - 1 ? rows[rowIndex + 1] : null;
+          const lastItemOfPrevRow = prevRow
+            ? prevRow[prevRow.length - 1]
+            : null;
+          const nextRow =
+            rowIndex < rows.length - 1 ? rows[rowIndex + 1] : null;
           const firstItemOfNextRow = nextRow ? nextRow[0] : null;
 
-          const rightConnectorColor = lastItemOfRow.active ? "#63B332" : "#D4D4D8";
-          const leftConnectorColor = firstItemOfRow.active ? "#63B332" : "#D4D4D8";
+          const rightConnectorColor = lastItemOfRow.active
+            ? "#63B332"
+            : "#D4D4D8";
+          const leftConnectorColor = firstItemOfRow.active
+            ? "#63B332"
+            : "#D4D4D8";
 
           return (
             <div key={`row-${cols}-${rowIndex}`} className="relative">
@@ -670,7 +677,9 @@ const TimelineStepperLayout = ({
                 />
               )}
 
-              <p className={`text-xs font-bold tracking-[-0.12px] leading-[15px] mb-2 ${item.showDate ? "text-primary" : "text-transparent"}`}>
+              <p
+                className={`text-xs font-bold tracking-[-0.12px] leading-[15px] mb-2 ${item.showDate ? "text-primary" : "text-transparent"}`}
+              >
                 {item.date}
               </p>
 
@@ -843,14 +852,15 @@ export const TeamSection = ({
           </h2>
           <div className="grid gap-3 grid-cols-4 max-xl:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 w-full transition-all">
             {members.map((member) => (
-              <div key={member.name} className="w-max px-2 flex flex-col gap-0.5">
+              <div
+                key={member.name}
+                className="w-max px-2 flex flex-col gap-0.5"
+              >
                 <h2 className="text-sm md:text-base font-semibold text-accent-foreground break-words line-clamp-2">
                   {member.name}
                 </h2>
                 {member.group === "Coordenação" && (
-                  <p className="text-xs sm:text-sm">
-                    {member.role}
-                  </p>
+                  <p className="text-xs sm:text-sm">{member.role}</p>
                 )}
               </div>
             ))}
