@@ -13,7 +13,6 @@
       "role": "Coordenação adjunta",
       "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Mayara+Munaro.png",
       "group": "Coordenação"
-
     },
     {
       "name": "Lucas Melchiori Pereira",
@@ -47,51 +46,45 @@
     },
     {
       "name": "Abram Belk",
-      "role": "",
+      "role": "TQS",
       "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Abram+Belk.png",
       "group": "Comitê consultivo"
     },
     {
       "name": "Ana Cecília Sestak",
-      "role": "",
+      "role": "Autodoc Tecnologia",
       "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Ana+Sestak.png",
       "group": "Comitê consultivo"
-
     },
     {
-      "name": "Carlos Massucato",
-      "role": "",
+      "name": "Carlos José Massucato",
+      "role": "IBRACON",
       "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Carlos+Massucato.png",
       "group": "Comitê consultivo"
-
     },
     {
       "name": "Clarice Degani",
-      "role": "",
+      "role": "CBCS",
       "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Clarisse+Degani.png",
       "group": "Comitê consultivo"
-
     },
     {
       "name": "Felipe Althoff",
-      "role": "",
-      "image": "",
+      "role": "AltoQI",
+      "image": "https://bipc.org.br/images/assets/city-about.png",
       "group": "Comitê consultivo"
-
     },
     {
       "name": "Ricardo França",
-      "role": "",
-      "image": "",
+      "role": "França e Associados Engenharia",
+      "image": "https://bipc.org.br/images/assets/city-about.png",
       "group": "Comitê consultivo"
-
     },
     {
       "name": "Valter Frigieri Jr.",
-      "role": "",
-      "image": "",
+      "role": "ABCP",
+      "image": "https://bipc.org.br/images/assets/city-about.png",
       "group": "Comitê consultivo"
-
     },
     {
       "name": "Gabriela Lopes Barroso",
@@ -118,16 +111,9 @@
       "group": "Transparência em Proteção de Dados"
     },
     {
-      "name": "Felipe Okino",
+      "name": "Anderson Alvarenga",
       "role": "Desenvolvedor",
-      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Felipe+Okino.png",
-      "group": "Desenvolvimento"
-
-    },
-    {
-      "name": "Mateus Miranda",
-      "role": "Desenvolvedor",
-      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Mateus+Miranda.png",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Anderson+Alvarenga.png",
       "group": "Desenvolvimento"
     },
     {
@@ -137,9 +123,9 @@
       "group": "Desenvolvimento"
     },
     {
-      "name": "Anderson Alvarenga",
+      "name": "Felipe Okino",
       "role": "Desenvolvedor",
-      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Anderson+Alvarenga.png",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Felipe+Okino.png",
       "group": "Desenvolvimento"
     },
     {
@@ -147,6 +133,22 @@
       "role": "Design UX/UI",
       "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Igor+Vac.png",
       "group": "Design UX/UI"
+    },
+    {
+      "name": "Jean Amaro",
+      "role": "Desenvolvedor",
+      "image": "https://bipc.org.br/images/assets/city-about.png"
+    },
+    {
+      "name": "Mariana Rodrigues",
+      "role": "Desenvolvedora",
+      "image": "https://bipc.org.br/images/assets/city-about.png"
+    },
+    {
+      "name": "Mateus Miranda",
+      "role": "Desenvolvedor",
+      "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Mateus+Miranda.png",
+      "group": "Desenvolvimento"
     },
     {
       "name": "Alessandra Petrecca",
@@ -208,7 +210,6 @@
       "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Arthur+Araujo.png",
       "group": "Pesquisadores"
     },
-  
     {
       "name": "Cristina de Hollanda C. Tsuha",
       "role": "Pesquisadora",
@@ -262,22 +263,26 @@
     {
       "name": "Abram Belk",
       "role": "",
-      "photo": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Abram+Belk.png"
+      "photo": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Abram+Belk.png",
+      "image": "https://bipc.org.br/images/assets/city-about.png"
     },
     {
       "name": "Ana Cecília Sestak",
       "role": "",
-      "photo": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Ana+Sestak.png"
+      "photo": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Ana+Sestak.png",
+      "image": "https://bipc.org.br/images/assets/city-about.png"
     },
     {
       "name": "Carlos Massucato",
       "role": "",
-      "photo": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Carlos+Massucato.png"
+      "photo": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Carlos+Massucato.png",
+      "image": "https://bipc.org.br/images/assets/city-about.png"
     },
     {
       "name": "Clarice Degani",
       "role": "",
-      "photo": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Clarisse+Degani.png"
+      "photo": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Clarisse+Degani.png",
+      "image": "https://bipc.org.br/images/assets/city-about.png"
     }
   ],
   "stackholders": []
