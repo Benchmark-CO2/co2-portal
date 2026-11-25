@@ -257,6 +257,16 @@
       "role": "Pesquisadora",
       "image": "https://bipc-avatar.s3.sa-east-1.amazonaws.com/Juliana+Clark.png",
       "group": "Pesquisadores"
+    },
+    {
+      "name": "Jean Amaro",
+      "image": "''",
+      "role": "Desenvolvedor"
+    },
+    {
+      "name": "Mariana Rodrigues",
+      "role": "Desenvolvedor",
+      "image": "''"
     }
   ],
   "advisoryCommittee": [
