@@ -62,6 +62,7 @@ collections:
             { name: name, label: Nome, widget: string },
             { name: image, label: Imagem, widget: string },
             { name: role, label: Cargo, widget: string },
+            { name: group, label: Grupo, widget: string },
           ]
         }
       - {name: advisoryCommittee, label: Comitê, widget: list, 
